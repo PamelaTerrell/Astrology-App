@@ -16,9 +16,12 @@ const horoscopes = {
 };
 
 function Horoscope({ zodiac }) {
+  const imagePath = `/images/zodiac/${zodiac.toLowerCase()}.png`;
+
   return (
     <div className="horoscope-box">
       <h2>Your Sign: {zodiac}</h2>
+      <img src={imagePath} alt={zodiac} width="100" style={{ marginBottom: '15px' }} />
       <p>{horoscopes[zodiac]}</p>
     </div>
   );

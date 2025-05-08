@@ -7,7 +7,8 @@ function App() {
   const [zodiac, setZodiac] = useState('');
 
   const getZodiacSign = (date) => {
-    const [year, month, day] = date.split('-').map(Number);
+    const [, month, day] = date.split('-').map(Number);
+
 
     const signs = [
       { sign: "Capricorn", start: "01-01", end: "01-19" },
@@ -39,6 +40,8 @@ function App() {
 
   return (
     <div className="App">
+      <div className="stars"></div>
+
       <h1>Astrology App</h1>
       <form onSubmit={handleSubmit}>
         <label>Enter your birthdate:</label><br/>

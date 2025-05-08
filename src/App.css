@@ -22,3 +22,130 @@ button {
   border-radius: 8px;
   display: inline-block;
 }
+
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.App {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #9a7bff;
+  margin-bottom: 30px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+input[type="date"] {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #9a7bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #7e5ce5;
+}
+
+.horoscope-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #9a7bff50;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.horoscope-box:hover {
+  transform: scale(1.03);
+}
+
+h2 {
+  color: #ffd86b;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #f8f8f8;
+}
+
+/* Star field effect */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none; /* <-- This allows clicks to pass through */
+}
+
+
+.horoscope-box img {
+  filter: drop-shadow(0 0 10px #ffd86b);
+  transition: transform 0.3s;
+}
+
+.horoscope-box img:hover {
+  transform: scale(1.1);
+}
+
