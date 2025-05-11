@@ -57,28 +57,20 @@ function Horoscope({ zodiac }) {
   const [daily, setDaily] = useState('');
   const signData = horoscopes[zodiac];
 
-  useEffect(() => {
-    if (!zodiac) return;
+useEffect(() => {
+  if (!zodiac) return;
 
-    const fetchDailyHoroscope = async () => {
-      try {
-        const response = await fetch(`https://aztro.sameerkumar.website/?sign=${zodiac.toLowerCase()}&day=today`, {
-          method: 'POST'
-        });
-        const data = await response.json();
-        setDaily(data.description);
-      } catch (error) {
-        console.error('Failed to fetch daily horoscope:', error);
-        setDaily('Unable to fetch today’s horoscope. Please try again later.');
-      }
-    };
+  fetch(`https://ohmanda.com/api/horoscope/${zodiac.toLowerCase()}`)
+    .then(res => res.json())
+    .then(data => setDaily(data.horoscope))
+    .catch(() => setDaily("Unable to load daily horoscope at the moment."));
+}, [zodiac]);
 
-    fetchDailyHoroscope();
-  }, [zodiac]);
 
-  if (!signData) {
-    return <p>No horoscope available.</p>;
-  }
+
+  
+
+  if (!signData) return <p>No horoscope data found.</p>;
 
   return (
     <div className="horoscope">
