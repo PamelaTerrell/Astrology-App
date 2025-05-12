@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Horoscope from './components/Horoscope';
 
+
+
 function App() {
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
