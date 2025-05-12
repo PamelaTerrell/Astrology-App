@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Image Credits
+
+Background image by [tairova.kamila](https://wallpapers.com/background/astrology-background-3200-x-2227-h7gaji875i4qwkyc.html) via Wallpapers.com
+
+
 ## Available Scripts
 
 In the project directory, you can run:
