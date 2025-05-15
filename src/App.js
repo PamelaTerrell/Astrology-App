@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Horoscope from './components/Horoscope';
+import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; // Fixed typo from "ZodiacCompatability" to "ZodiacCompatibility"
+import NavBar from './components/NavBar'; // Import the NavBar component
 
-
-
-function App() {
+function Home() {
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
 
   const getZodiacSign = (date) => {
     const [, month, day] = date.split('-').map(Number);
-
 
     const signs = [
       { sign: "Capricorn", start: "01-01", end: "01-19" },
@@ -41,17 +41,37 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div className="stars"></div>
-
+    <div>
       <h1>Astrology App</h1>
       <form onSubmit={handleSubmit}>
-        <label>Enter your birthdate:</label><br/>
-        <input type="date" value={birthDate} onChange={(e) => setBirthDate(e.target.value)} required />
+        <label>Enter your birthdate:</label><br />
+        <input
+          type="date"
+          value={birthDate}
+          onChange={(e) => setBirthDate(e.target.value)}
+          required
+        />
         <button type="submit">Get My Zodiac Sign</button>
       </form>
       {zodiac && <Horoscope zodiac={zodiac} />}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        {/* Use the NavBar component */}
+        <NavBar />
+
+        {/* Set up routing for the pages */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/compatibility" element={<ZodiacCompatibility />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
