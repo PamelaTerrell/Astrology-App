@@ -60,10 +60,7 @@ function Horoscope({ zodiac }) {
 useEffect(() => {
   if (!zodiac) return;
 
-  fetch(`https://ohmanda.com/api/horoscope/${zodiac.toLowerCase()}`)
-    .then(res => res.json())
-    .then(data => setDaily(data.horoscope))
-    .catch(() => setDaily("Unable to load daily horoscope at the moment."));
+
 }, [zodiac]);
 
 

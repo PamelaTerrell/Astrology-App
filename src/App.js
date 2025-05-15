@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Horoscope from './components/Horoscope';
-import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; // Fixed typo from "ZodiacCompatability" to "ZodiacCompatibility"
-import NavBar from './components/NavBar'; // Import the NavBar component
+import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
+import NavBar from './components/NavBar'; 
 
 function Home() {
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
+  const [dailyHoroscope, setDailyHoroscope] = useState('');
 
   const getZodiacSign = (date) => {
     const [, month, day] = date.split('-').map(Number);
@@ -40,6 +41,34 @@ function Home() {
     setZodiac(sign);
   };
 
+  // Function to fetch daily horoscope from the backend
+  const getDailyHoroscope = async (zodiac) => {
+    if (zodiac) {
+      try {
+
+        console.log('Making API request to backend...');
+
+        const res = await fetch('http://localhost:5000/api/daily-horoscope', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ zodiac }),
+        });
+        const data = await res.json();
+        setDailyHoroscope(data.horoscope);  // Assuming the API returns the horoscope text in the `horoscope` key
+      } catch (error) {
+        console.error('Error fetching daily horoscope:', error);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (zodiac) {
+      getDailyHoroscope(zodiac);  // Fetch daily horoscope when zodiac changes
+    }
+  }, [zodiac]);
+
   return (
     <div>
       <h1>Astrology App</h1>
@@ -54,6 +83,14 @@ function Home() {
         <button type="submit">Get My Zodiac Sign</button>
       </form>
       {zodiac && <Horoscope zodiac={zodiac} />}
+      
+      {/* Show the daily horoscope if available */}
+      {dailyHoroscope && (
+        <div>
+          <h2>Daily Horoscope for {zodiac}</h2>
+          <p>{dailyHoroscope}</p>
+        </div>
+      )}
     </div>
   );
 }
@@ -62,10 +99,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Use the NavBar component */}
         <NavBar />
-
-        {/* Set up routing for the pages */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/compatibility" element={<ZodiacCompatibility />} />
