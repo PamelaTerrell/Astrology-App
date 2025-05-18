@@ -61,7 +61,7 @@ function Home() {
 
   return (
     <div>
-      <h1>Astrology App</h1>
+      <h1>Cosmic Zodiac Astrology</h1>
       <form onSubmit={handleSubmit}>
         <label>Enter your birthdate:</label><br />
         <input

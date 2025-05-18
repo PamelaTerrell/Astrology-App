@@ -58,6 +58,7 @@ body {
 
 /* Header */
 h1 {
+  padding: 25px;
   font-size: 3rem;
   color: #ffffff;
   text-shadow: 0 0 20px #9a7bff, 0 0 30px #ff8c00;

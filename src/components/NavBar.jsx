@@ -10,29 +10,26 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`navbar ${menuActive ? 'active' : ''}`}>
-      <div className="navbar-container">
+    <nav className="navbar">
+      <div className={`navbar-container ${menuActive ? 'active' : ''}`}>
         <Link to="/" className="navbar-logo">
-          Astrology App
+          ✨ Astrology
         </Link>
-        <ul className="navbar-menu">
+
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
+        <ul className={`navbar-menu ${menuActive ? 'active' : ''}`}>
           <li className="navbar-item">
-            <Link to="/" className="navbar-links">
-              Home
-            </Link>
+            <Link to="/" className="navbar-links" onClick={() => setMenuActive(false)}>Home</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/compatibility" className="navbar-links">
-              Zodiac Compatibility
-            </Link>
+            <Link to="/compatibility" className="navbar-links" onClick={() => setMenuActive(false)}>Zodiac Compatibility</Link>
           </li>
         </ul>
-        {/* Hamburger Icon */}
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
       </div>
     </nav>
   );

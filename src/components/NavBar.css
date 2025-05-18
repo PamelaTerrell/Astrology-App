@@ -117,4 +117,43 @@
   }
 }
 
+/* Add this if missing */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #2c3e50;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+}
 
