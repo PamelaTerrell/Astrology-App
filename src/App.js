@@ -1,14 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Horoscope from './components/Horoscope';
+//import Horoscope from './components/Horoscope';
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
-import NavBar from './components/NavBar'; 
+import NavBar from './components/NavBar.jsx'; 
+//import zodiacData from './data/zodiacData.js';
 
 function Home() {
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
   const [dailyHoroscope, setDailyHoroscope] = useState('');
+
+  // Hardcoded horoscopes for each zodiac sign
+  const horoscopes = {
+    Aries: "Today is a great day for new beginnings!",
+    Taurus: "Be patient, your hard work will pay off soon.",
+    Gemini: "Communication is key today, so speak your mind.",
+    Cancer: "Stay grounded today, things will balance out soon.",
+    Leo: "Your confidence will be your strength today.",
+    Virgo: "Look closely at details, you'll find a solution.",
+    Libra: "Focus on harmony, peace will come your way.",
+    Scorpio: "A good day to reflect and dive deep into your thoughts.",
+    Sagittarius: "Adventure awaits, stay open to new opportunities.",
+    Capricorn: "Hard work pays off, stay focused on your goals.",
+    Aquarius: "Your creativity will lead to exciting breakthroughs.",
+    Pisces: "Trust your intuition, it will guide you well."
+  };
 
   const getZodiacSign = (date) => {
     const [, month, day] = date.split('-').map(Number);
@@ -39,35 +56,8 @@ function Home() {
     e.preventDefault();
     const sign = getZodiacSign(birthDate);
     setZodiac(sign);
+    setDailyHoroscope(horoscopes[sign]);  // Get horoscope from the hardcoded object
   };
-
-  // Function to fetch daily horoscope from the backend
-  const getDailyHoroscope = async (zodiac) => {
-    if (zodiac) {
-      try {
-
-        console.log('Making API request to backend...');
-
-        const res = await fetch('http://localhost:5000/api/daily-horoscope', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ zodiac }),
-        });
-        const data = await res.json();
-        setDailyHoroscope(data.horoscope);  // Assuming the API returns the horoscope text in the `horoscope` key
-      } catch (error) {
-        console.error('Error fetching daily horoscope:', error);
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (zodiac) {
-      getDailyHoroscope(zodiac);  // Fetch daily horoscope when zodiac changes
-    }
-  }, [zodiac]);
 
   return (
     <div>
@@ -82,7 +72,7 @@ function Home() {
         />
         <button type="submit">Get My Zodiac Sign</button>
       </form>
-      {zodiac && <Horoscope zodiac={zodiac} />}
+      {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
       
       {/* Show the daily horoscope if available */}
       {dailyHoroscope && (
