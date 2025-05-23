@@ -1,12 +1,26 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//import Horoscope from './components/Horoscope';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
-//import zodiacData from './data/zodiacData.js';
+import ariesImage from './assets/images/aries.jpg';
+import taurusImage from './assets/images/taurus.jpg';
+import geminiImage from './assets/images/gemini.jpg';
+import cancerImage from './assets/images/cancer.jpg';
+import leoImage from './assets/images/leo.jpg';
+import virgoImage from './assets/images/virgo.jpg';
+import libraImage from './assets/images/libra.jpg';
+import scorpioImage from './assets/images/scorpio.jpg';
+import sagittariusImage from './assets/images/sagittarius.jpg';
+import capricornImage from './assets/images/capricorn.jpg';
+import aquariusImage from './assets/images/aquarius.jpg';
+import piscesImage from './assets/images/pisces.jpg';
 
 function Home() {
+
+  console.log('Aries Image Path:', ariesImage);
+
+
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
   const [dailyHoroscope, setDailyHoroscope] = useState('');
@@ -81,6 +95,51 @@ function Home() {
           <p>{dailyHoroscope}</p>
         </div>
       )}
+
+
+
+
+
+
+      {/* Zodiac Image Grid */}
+      <div className="zodiac-grid">
+        <Link to="/aries">
+          <img src={ariesImage} alt="Aries" className="zodiac-image" />
+        </Link>
+        <Link to="/taurus">
+          <img src={taurusImage} alt="Taurus" className="zodiac-image" />
+        </Link>
+        <Link to="/gemini">
+          <img src={geminiImage} alt="Gemini" className="zodiac-image" />
+        </Link>
+        <Link to="/cancer">
+          <img src={cancerImage} alt="Cancer" className="zodiac-image" />
+        </Link>
+        <Link to="/leo">
+          <img src={leoImage} alt="Leo" className="zodiac-image" />
+        </Link>
+        <Link to="/virgo">
+          <img src={virgoImage} alt="Virgo" className="zodiac-image" />
+        </Link>
+        <Link to="/libra">
+          <img src={libraImage} alt="Libra" className="zodiac-image" />
+        </Link>
+        <Link to="/scorpio">
+          <img src={scorpioImage} alt="Scorpio" className="zodiac-image" />
+        </Link>
+        <Link to="/sagittarius">
+          <img src={sagittariusImage} alt="Sagittarius" className="zodiac-image" />
+        </Link>
+        <Link to="/capricorn">
+          <img src={capricornImage} alt="Capricorn" className="zodiac-image" />
+        </Link>
+        <Link to="/aquarius">
+          <img src={aquariusImage} alt="Aquarius" className="zodiac-image" />
+        </Link>
+        <Link to="/pisces">
+          <img src={piscesImage} alt="Pisces" className="zodiac-image" />
+        </Link>
+      </div>
     </div>
   );
 }

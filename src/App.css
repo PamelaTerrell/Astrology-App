@@ -168,6 +168,29 @@ p strong {
   color: #ffcc00;
 }
 
+/* Grid layout for zodiac images */
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for the zodiac image */
+.zodiac-image {
+  width: 100%; /* Makes the image responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for zodiac images */
+.zodiac-image:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .App {
