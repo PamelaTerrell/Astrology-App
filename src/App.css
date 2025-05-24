@@ -168,6 +168,18 @@ p strong {
   color: #ffcc00;
 }
 
+/* Dedication.css */
+.dedication {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+
 /* Grid layout for zodiac images */
 .zodiac-grid {
   display: grid;

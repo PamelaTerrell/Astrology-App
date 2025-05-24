@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
+import Dedication from './components/Dedication.js';
 
 // Images
 import ariesImage from './assets/images/aries.jpg';
@@ -114,6 +115,9 @@ function Home() {
         <Link to="/aquarius"><img src={aquariusImage} alt="Aquarius" className="zodiac-image" /></Link>
         <Link to="/pisces"><img src={piscesImage} alt="Pisces" className="zodiac-image" /></Link>
       </div>
+
+      <Dedication />
+
     </div>
   );
 }
@@ -141,7 +145,12 @@ function App() {
         </Routes>
       </div>
     </Router>
-  );
+
+  
+  ); 
+
+  
+
 }
 
 export default App;
