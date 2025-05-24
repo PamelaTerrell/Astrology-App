@@ -56,7 +56,9 @@ function Home() {
   const getZodiacSign = (date) => {
     const [, month, day] = date.split('-').map(Number);
     const signs = [
+      { sign: "Capricorn", start: "12-22", end: "12-31" },
       { sign: "Capricorn", start: "01-01", end: "01-19" },
+      
       { sign: "Aquarius", start: "01-20", end: "02-18" },
       { sign: "Pisces", start: "02-19", end: "03-20" },
       { sign: "Aries", start: "03-21", end: "04-19" },
@@ -68,8 +70,8 @@ function Home() {
       { sign: "Libra", start: "09-23", end: "10-22" },
       { sign: "Scorpio", start: "10-23", end: "11-21" },
       { sign: "Sagittarius", start: "11-22", end: "12-21" },
-      { sign: "Capricorn", start: "12-22", end: "12-31" },
     ];
+    
 
     const formatted = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
     const found = signs.find(({ start, end }) => formatted >= start && formatted <= end);
