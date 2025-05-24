@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
+
+// Images
 import ariesImage from './assets/images/aries.jpg';
 import taurusImage from './assets/images/taurus.jpg';
 import geminiImage from './assets/images/gemini.jpg';
@@ -16,16 +18,25 @@ import capricornImage from './assets/images/capricorn.jpg';
 import aquariusImage from './assets/images/aquarius.jpg';
 import piscesImage from './assets/images/pisces.jpg';
 
+// Zodiac Pages
+import Aries from './pages/Aries';
+import Taurus from './pages/Taurus';
+import Gemini from './pages/Gemini';
+import Cancer from './pages/Cancer';
+import Leo from './pages/Leo';
+import Virgo from './pages/Virgo';
+import Libra from './pages/Libra';
+import Scorpio from './pages/Scorpio';
+import Sagittarius from './pages/Sagittarius';
+import Capricorn from './pages/Capricorn';
+import Aquarius from './pages/Aquarius';
+import Pisces from './pages/Pisces';
+
 function Home() {
-
-  console.log('Aries Image Path:', ariesImage);
-
-
   const [birthDate, setBirthDate] = useState('');
   const [zodiac, setZodiac] = useState('');
   const [dailyHoroscope, setDailyHoroscope] = useState('');
 
-  // Hardcoded horoscopes for each zodiac sign
   const horoscopes = {
     Aries: "Today is a great day for new beginnings!",
     Taurus: "Be patient, your hard work will pay off soon.",
@@ -43,7 +54,6 @@ function Home() {
 
   const getZodiacSign = (date) => {
     const [, month, day] = date.split('-').map(Number);
-
     const signs = [
       { sign: "Capricorn", start: "01-01", end: "01-19" },
       { sign: "Aquarius", start: "01-20", end: "02-18" },
@@ -61,7 +71,6 @@ function Home() {
     ];
 
     const formatted = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-
     const found = signs.find(({ start, end }) => formatted >= start && formatted <= end);
     return found ? found.sign : '';
   };
@@ -70,7 +79,7 @@ function Home() {
     e.preventDefault();
     const sign = getZodiacSign(birthDate);
     setZodiac(sign);
-    setDailyHoroscope(horoscopes[sign]);  // Get horoscope from the hardcoded object
+    setDailyHoroscope(horoscopes[sign]);
   };
 
   return (
@@ -87,58 +96,23 @@ function Home() {
         <button type="submit">Get My Zodiac Sign</button>
       </form>
       {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
-      
-      {/* Show the daily horoscope if available */}
-      {dailyHoroscope && (
-        <div>
-          <h2>Daily Horoscope for {zodiac}</h2>
-          <p>{dailyHoroscope}</p>
-        </div>
-      )}
-
-
-
-
+      {dailyHoroscope && <p>Your Horoscope: {dailyHoroscope}</p>}
 
 
       {/* Zodiac Image Grid */}
       <div className="zodiac-grid">
-        <Link to="/aries">
-          <img src={ariesImage} alt="Aries" className="zodiac-image" />
-        </Link>
-        <Link to="/taurus">
-          <img src={taurusImage} alt="Taurus" className="zodiac-image" />
-        </Link>
-        <Link to="/gemini">
-          <img src={geminiImage} alt="Gemini" className="zodiac-image" />
-        </Link>
-        <Link to="/cancer">
-          <img src={cancerImage} alt="Cancer" className="zodiac-image" />
-        </Link>
-        <Link to="/leo">
-          <img src={leoImage} alt="Leo" className="zodiac-image" />
-        </Link>
-        <Link to="/virgo">
-          <img src={virgoImage} alt="Virgo" className="zodiac-image" />
-        </Link>
-        <Link to="/libra">
-          <img src={libraImage} alt="Libra" className="zodiac-image" />
-        </Link>
-        <Link to="/scorpio">
-          <img src={scorpioImage} alt="Scorpio" className="zodiac-image" />
-        </Link>
-        <Link to="/sagittarius">
-          <img src={sagittariusImage} alt="Sagittarius" className="zodiac-image" />
-        </Link>
-        <Link to="/capricorn">
-          <img src={capricornImage} alt="Capricorn" className="zodiac-image" />
-        </Link>
-        <Link to="/aquarius">
-          <img src={aquariusImage} alt="Aquarius" className="zodiac-image" />
-        </Link>
-        <Link to="/pisces">
-          <img src={piscesImage} alt="Pisces" className="zodiac-image" />
-        </Link>
+        <Link to="/aries"><img src={ariesImage} alt="Aries" className="zodiac-image" /></Link>
+        <Link to="/taurus"><img src={taurusImage} alt="Taurus" className="zodiac-image" /></Link>
+        <Link to="/gemini"><img src={geminiImage} alt="Gemini" className="zodiac-image" /></Link>
+        <Link to="/cancer"><img src={cancerImage} alt="Cancer" className="zodiac-image" /></Link>
+        <Link to="/leo"><img src={leoImage} alt="Leo" className="zodiac-image" /></Link>
+        <Link to="/virgo"><img src={virgoImage} alt="Virgo" className="zodiac-image" /></Link>
+        <Link to="/libra"><img src={libraImage} alt="Libra" className="zodiac-image" /></Link>
+        <Link to="/scorpio"><img src={scorpioImage} alt="Scorpio" className="zodiac-image" /></Link>
+        <Link to="/sagittarius"><img src={sagittariusImage} alt="Sagittarius" className="zodiac-image" /></Link>
+        <Link to="/capricorn"><img src={capricornImage} alt="Capricorn" className="zodiac-image" /></Link>
+        <Link to="/aquarius"><img src={aquariusImage} alt="Aquarius" className="zodiac-image" /></Link>
+        <Link to="/pisces"><img src={piscesImage} alt="Pisces" className="zodiac-image" /></Link>
       </div>
     </div>
   );
@@ -152,6 +126,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/compatibility" element={<ZodiacCompatibility />} />
+          <Route path="/aries" element={<Aries />} />
+          <Route path="/taurus" element={<Taurus />} />
+          <Route path="/gemini" element={<Gemini />} />
+          <Route path="/cancer" element={<Cancer />} />
+          <Route path="/leo" element={<Leo />} />
+          <Route path="/virgo" element={<Virgo />} />
+          <Route path="/libra" element={<Libra />} />
+          <Route path="/scorpio" element={<Scorpio />} />
+          <Route path="/sagittarius" element={<Sagittarius />} />
+          <Route path="/capricorn" element={<Capricorn />} />
+          <Route path="/aquarius" element={<Aquarius />} />
+          <Route path="/pisces" element={<Pisces />} />
         </Routes>
       </div>
     </Router>
