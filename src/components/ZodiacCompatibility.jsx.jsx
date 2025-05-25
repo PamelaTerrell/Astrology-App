@@ -38,40 +38,50 @@ const ZodiacCompatibility = () => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
       <h2>Zodiac Compatibility</h2>
 
-      <select value={sign1} onChange={(e) => setSign1(e.target.value)} style={selectStyle}>
-        <option value="">Select First Sign</option>
-        {options}
-      </select>
+      {/* Sign 1 and Gender Selection */}
+      <div className="selection-container">
+        <select value={sign1} onChange={(e) => setSign1(e.target.value)} style={selectStyle}>
+          <option value="">Select First Sign</option>
+          {options}
+        </select>
 
-      <select value={gender1} onChange={(e) => setGender1(e.target.value)} style={selectStyle}>
-        <option value="">Select First Person's Gender</option>
-        <option value="man">Man</option>
-        <option value="woman">Woman</option>
-        <option value="non-binary">Non-binary</option>
-        <option value="prefer-not-to-say">Prefer not to say</option>
-      </select>
+        <select value={gender1} onChange={(e) => setGender1(e.target.value)} style={selectStyle}>
+          <option value="">Select First Person's Gender</option>
+          <option value="man">Man</option>
+          <option value="woman">Woman</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+      </div>
 
-      <select value={sign2} onChange={(e) => setSign2(e.target.value)} style={selectStyle}>
-        <option value="">Select Second Sign</option>
-        {options}
-      </select>
+      {/* Sign 2 and Gender Selection */}
+      <div className="selection-container">
+        <select value={sign2} onChange={(e) => setSign2(e.target.value)} style={selectStyle}>
+          <option value="">Select Second Sign</option>
+          {options}
+        </select>
 
-      <select value={gender2} onChange={(e) => setGender2(e.target.value)} style={selectStyle}>
-        <option value="">Select Second Person's Gender</option>
-        <option value="man">Man</option>
-        <option value="woman">Woman</option>
-        <option value="non-binary">Non-binary</option>
-        <option value="prefer-not-to-say">Prefer not to say</option>
-      </select>
+        <select value={gender2} onChange={(e) => setGender2(e.target.value)} style={selectStyle}>
+          <option value="">Select Second Person's Gender</option>
+          <option value="man">Man</option>
+          <option value="woman">Woman</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+      </div>
 
-      <select value={relationshipType} onChange={(e) => setRelationshipType(e.target.value)} style={selectStyle}>
-        <option value="">Select Relationship Type</option>
-        <option value="heterosexual">Heterosexual</option>
-        <option value="gay">Gay (Male-Male)</option>
-        <option value="lesbian">Lesbian (Female-Female)</option>
-        <option value="lgbtq">LGBTQ+ / Other</option>
-      </select>
+      {/* Centered Relationship Type Selection */}
+      <div className="relationship-type-container">
+        <select value={relationshipType} onChange={(e) => setRelationshipType(e.target.value)} style={selectStyle}>
+          <option value="">Select Relationship Type</option>
+          <option value="heterosexual">Heterosexual</option>
+          <option value="gay">Gay (Male-Male)</option>
+          <option value="lesbian">Lesbian (Female-Female)</option>
+          <option value="lgbtq">LGBTQ+ / Other</option>
+        </select>
+      </div>
 
+      {/* Check Compatibility Button */}
       <button 
         onClick={handleCheck}
         style={{
@@ -80,7 +90,9 @@ const ZodiacCompatibility = () => {
           color: 'white',
           border: 'none',
           borderRadius: '5px',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          fontWeight: 'bold',
+          marginTop: '20px',
         }}
         onMouseOver={(e) => e.target.style.backgroundColor = '#45a049'}
         onMouseOut={(e) => e.target.style.backgroundColor = '#4CAF50'}
@@ -88,7 +100,55 @@ const ZodiacCompatibility = () => {
         Check Compatibility
       </button>
 
+      {/* Compatibility Result */}
       {result && <p style={{ marginTop: '20px', fontSize: '18px', fontWeight: 'bold' }}>{result}</p>}
+
+      <style jsx>{`
+        .selection-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 600px;
+          margin-bottom: 10px;
+        }
+
+        .selection-container select {
+          width: 48%;
+        }
+
+        /* Centered Relationship Type Container */
+        .relationship-type-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 15px;
+        }
+
+        .relationship-type-container select {
+          width: 40%; /* Adjusted to make it narrower */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+          .selection-container {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .selection-container select {
+            width: 90%;
+            margin-bottom: 10px;
+          }
+
+          .relationship-type-container {
+            margin-top: 20px;
+          }
+
+          .relationship-type-container select {
+            width: 70%; /* Adjust width on smaller screens */
+          }
+        }
+      `}</style>
     </div>
   );
 };
