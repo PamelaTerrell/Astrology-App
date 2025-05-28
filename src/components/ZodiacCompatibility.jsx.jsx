@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import zodiacData from '../data/zodiacData';
+import Footer from './Footer';
 
 const ZodiacCompatibility = () => {
   const [sign1, setSign1] = useState('');
@@ -99,6 +100,9 @@ const ZodiacCompatibility = () => {
       >
         Check Compatibility
       </button>
+
+
+      <Footer />
 
       {/* Compatibility Result */}
       {result && <p style={{ marginTop: '20px', fontSize: '18px', fontWeight: 'bold' }}>{result}</p>}

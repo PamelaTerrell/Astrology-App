@@ -5,6 +5,7 @@ import ZodiacCompatibility from './components/ZodiacCompatibility.jsx';
 import NavBar from './components/NavBar.jsx'; 
 import Dedication from './components/Dedication.js';
 
+
 // Images
 import ariesImage from './assets/images/aries.jpg';
 import taurusImage from './assets/images/taurus.jpg';
@@ -32,6 +33,7 @@ import Sagittarius from './pages/Sagittarius';
 import Capricorn from './pages/Capricorn';
 import Aquarius from './pages/Aquarius';
 import Pisces from './pages/Pisces';
+import Footer from './components/Footer.js';
 
 function Home() {
   const [birthDate, setBirthDate] = useState('');
@@ -120,7 +122,14 @@ function Home() {
 
       <Dedication />
 
+      <Footer />
+
     </div>
+
+    
+
+
+
   );
 }
 
@@ -145,6 +154,7 @@ function App() {
           <Route path="/aquarius" element={<Aquarius />} />
           <Route path="/pisces" element={<Pisces />} />
         </Routes>
+        
       </div>
     </Router>
 
