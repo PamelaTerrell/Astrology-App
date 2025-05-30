@@ -102,7 +102,7 @@ const ZodiacCompatibility = () => {
       </button>
 
 
-      <Footer />
+    
 
       {/* Compatibility Result */}
       {result && <p style={{ marginTop: '20px', fontSize: '18px', fontWeight: 'bold' }}>{result}</p>}
@@ -153,6 +153,9 @@ const ZodiacCompatibility = () => {
           }
         }
       `}</style>
+
+        <Footer />
+
     </div>
   );
 };
