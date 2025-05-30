@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
 import Dedication from './components/Dedication.js';
+import LoveSigns from './pages/LoveSigns.js';
 
 
 // Images
@@ -141,6 +142,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/compatibility" element={<ZodiacCompatibility />} />
+          <Route path="/love-signs" element={<LoveSigns />} />
           <Route path="/aries" element={<Aries />} />
           <Route path="/taurus" element={<Taurus />} />
           <Route path="/gemini" element={<Gemini />} />

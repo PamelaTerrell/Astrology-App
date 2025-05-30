@@ -29,6 +29,9 @@ const NavBar = () => {
           <li className="navbar-item">
             <Link to="/compatibility" className="navbar-links" onClick={() => setMenuActive(false)}>Zodiac Compatibility</Link>
           </li>
+          <li className="navbar-item">
+            <Link to="/love-signs" className="navbar-links" onClick={() => setMenuActive(false)}>Love Signs</Link>
+          </li>
         </ul>
       </div>
     </nav>
