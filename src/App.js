@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // added useEffect
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Analytics } from "@vercel/analytics/react"
@@ -6,7 +6,6 @@ import ZodiacCompatibility from './components/ZodiacCompatibility.jsx';
 import NavBar from './components/NavBar.jsx'; 
 import Dedication from './components/Dedication.js';
 import LoveSigns from './pages/LoveSigns.js';
-
 
 // Images
 import ariesImage from './assets/images/aries.jpg';
@@ -42,6 +41,11 @@ function Home() {
   const [zodiac, setZodiac] = useState('');
   const [dailyHoroscope, setDailyHoroscope] = useState('');
 
+  // Set tab title on Home load
+  useEffect(() => {
+    document.title = "Cosmic Zodiac Astrology";
+  }, []);
+
   const horoscopes = {
     Aries: "Today is a great day for new beginnings!",
     Taurus: "Be patient, your hard work will pay off soon.",
@@ -62,7 +66,6 @@ function Home() {
     const signs = [
       { sign: "Capricorn", start: "12-22", end: "12-31" },
       { sign: "Capricorn", start: "01-01", end: "01-19" },
-      
       { sign: "Aquarius", start: "01-20", end: "02-18" },
       { sign: "Pisces", start: "02-19", end: "03-20" },
       { sign: "Aries", start: "03-21", end: "04-19" },
@@ -76,7 +79,6 @@ function Home() {
       { sign: "Sagittarius", start: "11-22", end: "12-21" },
     ];
     
-
     const formatted = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
     const found = signs.find(({ start, end }) => formatted >= start && formatted <= end);
     return found ? found.sign : '';
@@ -105,8 +107,6 @@ function Home() {
       {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
       {dailyHoroscope && <p>Your Horoscope: {dailyHoroscope}</p>}
 
-
-      {/* Zodiac Image Grid */}
       <div className="zodiac-grid">
         <Link to="/aries"><img src={ariesImage} alt="Aries" className="zodiac-image" /></Link>
         <Link to="/taurus"><img src={taurusImage} alt="Taurus" className="zodiac-image" /></Link>
@@ -125,13 +125,7 @@ function Home() {
       <Dedication />
 
       <Footer />
-
     </div>
-
-    
-
-
-
   );
 }
 
@@ -157,16 +151,10 @@ function App() {
           <Route path="/aquarius" element={<Aquarius />} />
           <Route path="/pisces" element={<Pisces />} />
         </Routes>
-        
       </div>
       <Analytics />
     </Router>
-
-  
-  ); 
-
-  
-
+  );
 }
 
 export default App;
