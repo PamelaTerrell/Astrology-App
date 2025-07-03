@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
 import Dedication from './components/Dedication.js';
@@ -158,6 +159,7 @@ function App() {
         </Routes>
         
       </div>
+      <Analytics />
     </Router>
 
   
