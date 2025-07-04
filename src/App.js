@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'; // added useEffect
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics, track } from '@vercel/analytics/react';
+
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
 import Dedication from './components/Dedication.js';
@@ -130,6 +131,10 @@ function Home() {
 }
 
 function App() {
+  useEffect(() => {
+    track('pageview');
+  }, []);
+
   return (
     <>
       <Router>
@@ -158,6 +163,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;
