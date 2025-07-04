@@ -131,30 +131,33 @@ function Home() {
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/compatibility" element={<ZodiacCompatibility />} />
-          <Route path="/love-signs" element={<LoveSigns />} />
-          <Route path="/aries" element={<Aries />} />
-          <Route path="/taurus" element={<Taurus />} />
-          <Route path="/gemini" element={<Gemini />} />
-          <Route path="/cancer" element={<Cancer />} />
-          <Route path="/leo" element={<Leo />} />
-          <Route path="/virgo" element={<Virgo />} />
-          <Route path="/libra" element={<Libra />} />
-          <Route path="/scorpio" element={<Scorpio />} />
-          <Route path="/sagittarius" element={<Sagittarius />} />
-          <Route path="/capricorn" element={<Capricorn />} />
-          <Route path="/aquarius" element={<Aquarius />} />
-          <Route path="/pisces" element={<Pisces />} />
-        </Routes>
-      </div>
+    <>
+      <Router>
+        <div className="App">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/compatibility" element={<ZodiacCompatibility />} />
+            <Route path="/love-signs" element={<LoveSigns />} />
+            <Route path="/aries" element={<Aries />} />
+            <Route path="/taurus" element={<Taurus />} />
+            <Route path="/gemini" element={<Gemini />} />
+            <Route path="/cancer" element={<Cancer />} />
+            <Route path="/leo" element={<Leo />} />
+            <Route path="/virgo" element={<Virgo />} />
+            <Route path="/libra" element={<Libra />} />
+            <Route path="/scorpio" element={<Scorpio />} />
+            <Route path="/sagittarius" element={<Sagittarius />} />
+            <Route path="/capricorn" element={<Capricorn />} />
+            <Route path="/aquarius" element={<Aquarius />} />
+            <Route path="/pisces" element={<Pisces />} />
+          </Routes>
+        </div>
+      </Router>
       <Analytics />
-    </Router>
+    </>
   );
 }
+
 
 export default App;
