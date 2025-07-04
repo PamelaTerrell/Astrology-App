@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'; // added useEffect
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Analytics, track } from '@vercel/analytics/react';
+
+import { Analytics } from '@vercel/analytics/react';
 
 import ZodiacCompatibility from './components/ZodiacCompatibility.jsx'; 
 import NavBar from './components/NavBar.jsx'; 
@@ -38,11 +39,10 @@ import Pisces from './pages/Pisces';
 import Footer from './components/Footer.js';
 
 function Home() {
-  const [birthDate, setBirthDate] = useState('');
-  const [zodiac, setZodiac] = useState('');
-  const [dailyHoroscope, setDailyHoroscope] = useState('');
+  const [birthDate, setBirthDate] = React.useState('');
+  const [zodiac, setZodiac] = React.useState('');
+  const [dailyHoroscope, setDailyHoroscope] = React.useState('');
 
-  // Set tab title on Home load
   useEffect(() => {
     document.title = "Cosmic Zodiac Astrology";
   }, []);
@@ -79,7 +79,7 @@ function Home() {
       { sign: "Scorpio", start: "10-23", end: "11-21" },
       { sign: "Sagittarius", start: "11-22", end: "12-21" },
     ];
-    
+
     const formatted = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
     const found = signs.find(({ start, end }) => formatted >= start && formatted <= end);
     return found ? found.sign : '';
@@ -124,17 +124,12 @@ function Home() {
       </div>
 
       <Dedication />
-
       <Footer />
     </div>
   );
 }
 
 function App() {
-  useEffect(() => {
-    track('pageview');
-  }, []);
-
   return (
     <>
       <Router>
