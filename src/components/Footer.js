@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        &copy; 2025 CosmicZodiacAstrology.com | All rights reserved.
+        &copy; 2025 Cosmic Zodiac Astrology . com | All rights reserved.
       </p>
 
     <p>
