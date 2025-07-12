@@ -26,7 +26,7 @@ export default function NavBar() {
           <li><a href="/">Home</a></li>
           <li><a href="/compatibility">Compatibility</a></li>
           <li><a href="/love signs">Love Signs</a></li>
-          <li><a href="/contact">Contact</a></li>
+          
         </ul>
       </nav>
 
