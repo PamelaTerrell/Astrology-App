@@ -25,7 +25,7 @@ export default function NavBar() {
         <ul className={`nav-links ${menuOpen ? "nav-active" : ""}`}>
           <li><a href="/">Home</a></li>
           <li><a href="/compatibility">Compatibility</a></li>
-          <li><a href="/love signs">Love signs</a></li>
+          <li><a href="/love signs">Love Signs</a></li>
           
         </ul>
       </nav>
