@@ -705,48 +705,196 @@ const zodiacSigns = [
   intimacyLevel: "Very high – deeply bonding and soulful."
 
     },
-    "Leo-Virgo": {
-      overview: "Fire and earth in balance.",
-      strengths: "Mutual respect.",
-      challenges: "Criticism vs. pride.",
-      advice: "Encourage without judgment."
-    },
-    "Leo-Libra": {
-      overview: "Elegant and harmonious.",
-      strengths: "Creativity and romance.",
-      challenges: "Vanity.",
-      advice: "Share the spotlight."
-    },
-    "Leo-Scorpio": {
-      overview: "Powerful and passionate.",
-      strengths: "Intensity and devotion.",
-      challenges: "Control issues.",
-      advice: "Practice mutual respect."
-    },
-    "Leo-Sagittarius": {
-      overview: "Adventurous and bold.",
-      strengths: "Optimism and enthusiasm.",
-      challenges: "Impatience.",
-      advice: "Support each other's goals."
-    },
-    "Leo-Capricorn": {
-      overview: "Ambition unites them.",
-      strengths: "Determination.",
-      challenges: "Different expressions of love.",
-      advice: "Be open to compromise."
-    },
-    "Leo-Aquarius": {
-      overview: "Innovative and dynamic.",
-      strengths: "Mutual admiration.",
-      challenges: "Stubbornness.",
-      advice: "Celebrate individuality."
-    },
-    "Leo-Pisces": {
-      overview: "Warmth meets sensitivity.",
-      strengths: "Compassion.",
-      challenges: "Emotional mismatch.",
-      advice: "Show empathy and understanding."
-    },
+    "Leo-Aries": {
+  overview: "Two bold fire signs—their relationship is radiant, confident, and full of passion.",
+  strengths: "Mutual enthusiasm, strong leadership, and loyalty fuel a dynamic partnership.",
+  challenges: "Egos may clash, and competition for attention can spark friction.",
+  advice: "Celebrate each other's wins and share the spotlight to avoid power struggles.",
+  compatibilityScore: 88,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Jennifer Lawrence (Leo) & Cooke Maroney (Aries)"],
+  loveLanguageTips: {
+    Leo: "Grand romantic gestures and verbal praise",
+    Aries: "Passionate action and protective support"
+  },
+  communicationStyle: "Bold, heartfelt, and expressive—rarely shy with their feelings.",
+  intimacyLevel: "Very high – fiery passion and deep connection."
+},
+
+"Leo-Taurus": {
+  overview: "Earth-meets-fire with deep affection and pride.",
+  strengths: "Taurus’ steadiness blends with Leo’s warmth for a devoted relationship.",
+  challenges: "Both can be stubborn and possessive, leading to conflict.",
+  advice: "Balance indulgence with responsibility, and appreciate each other’s rhythms.",
+  compatibilityScore: 72,
+  elementHarmony: "Fire (Leo) + Earth (Taurus)",
+  famousCouples: ["Julia Roberts (Leo) & Daniel Moder (Taurus)"],
+  loveLanguageTips: {
+    Leo: "Appreciative words, attention, and lavish gifts",
+    Taurus: "Physical comfort and consistent devotion"
+  },
+  communicationStyle: "Expressive and direct, with an emphasis on loyalty.",
+  intimacyLevel: "High – passionate and deeply affectionate."
+},
+
+"Leo-Gemini": {
+  overview: "Playful and expressive—this duo shines in social circles.",
+  strengths: "Mutual creativity, social joy, and intellectual fuel.",
+  challenges: "Egos and restlessness can clash—avoid attention wars.",
+  advice: "Rotate focus and share the limelight graciously.",
+  compatibilityScore: 78,
+  elementHarmony: "Fire (Leo) + Air (Gemini)",
+  famousCouples: ["Johnny Depp (Gemini) & Amber Heard (Leo)"],
+  loveLanguageTips: {
+    Leo: "Acts of admiration and grand romantic surprises",
+    Gemini: "Quality time and witty communication"
+  },
+  communicationStyle: "Vibrant, flamboyant, and emotionally direct.",
+  intimacyLevel: "High – exciting and affectionate."
+},
+
+"Leo-Cancer": {
+  overview: "Warm-hearted Leo meets sensitive Cancer—a nurturing and bright bond.",
+  strengths: "Leo’s confidence matched with Cancer’s caring soul.",
+  challenges: "Cancer may feel overshadowed; Leo may misread emotions.",
+  advice: "Leo should nurture with sensitivity; Cancer should embrace Leo’s vibrance.",
+  compatibilityScore: 70,
+  elementHarmony: "Fire (Leo) + Water (Cancer)",
+  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Leo)"],
+  loveLanguageTips: {
+    Leo: "Verbal praise and attention",
+    Cancer: "Emotional closeness and shared traditions"
+  },
+  communicationStyle: "Expressive and open—trust strengthens clarity.",
+  intimacyLevel: "High – warm with emotional safety."
+},
+
+"Leo-Leo": {
+  overview: "Two Leos together create a dramatic, loving, and vibrant duo.",
+  strengths: "Radiant energy, mutual admiration, and creativity abound.",
+  challenges: "Can be overly dramatic—balance needed around attention and pride.",
+  advice: "Share the spotlight and celebrate each other consistently.",
+  compatibilityScore: 85,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Bill Clinton (Leo) & Hillary Clinton (Leo)"],
+  loveLanguageTips: {
+    Leo: "Public displays of affection and verbal appreciation"
+  },
+  communicationStyle: "Bold, dramatic, and emotionally generous.",
+  intimacyLevel: "Very high – flamboyant, passionate, and expressive."
+},
+
+"Leo-Virgo": {
+  overview: "Passion meets precision—balance between vigor and detail.",
+  strengths: "Leo brings creativity; Virgo brings thoughtfulness.",
+  challenges: "Virgo’s critique may hurt Leo’s pride; Leo’s flair may overwhelm Virgo.",
+  advice: "Virgo should praise; Leo should honor Virgo’s careful contributions.",
+  compatibilityScore: 65,
+  elementHarmony: "Fire (Leo) + Earth (Virgo)",
+  famousCouples: ["Justin Bieber (Virgo) & Hailey Bieber (Leo)"],
+  loveLanguageTips: {
+    Leo: "Acts of love and admiration",
+    Virgo: "Helpful gestures and calm reassurance"
+  },
+  communicationStyle: "Expressive vs. analytical—balance emotion with clarity.",
+  intimacyLevel: "Moderate to high – chemistry grows with mutual respect."
+},
+
+"Leo-Libra": {
+  overview: "Glamorous and harmonious—this duo balances charm and passion.",
+  strengths: "Strong romance, social harmony, and shared love of beauty.",
+  challenges: "Both may avoid conflict—decisiveness is necessary.",
+  advice: "Speak truths with love, and make decisions together.",
+  compatibilityScore: 82,
+  elementHarmony: "Fire (Leo) + Air (Libra)",
+  famousCouples: ["Blake Lively (Leo) & Ryan Reynolds (Libra)"],
+  loveLanguageTips: {
+    Leo: "Romantic surprises and verbal praise",
+    Libra: "Quality time and aesthetic experiences"
+  },
+  communicationStyle: "Smooth, diplomatic, and charismatic.",
+  intimacyLevel: "High – affectionate, stylish, and expressive."
+},
+
+"Leo-Scorpio": {
+  overview: "Intense and magnetic—a passionate blend of fire and water.",
+  strengths: "Loyalty, devotion, and powerful chemistry.",
+  challenges: "Power struggles and jealousy may emerge.",
+  advice: "Cultivate trust and allow vulnerability to deepen your bond.",
+  compatibilityScore: 80,
+  elementHarmony: "Fire (Leo) + Water (Scorpio)",
+  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio/Leo?)"],
+  loveLanguageTips: {
+    Leo: "Attention and dramatic gestures",
+    Scorpio: "Emotional depth and physical intimacy"
+  },
+  communicationStyle: "Fiery and intense—conversations are heartfelt.",
+  intimacyLevel: "Very high – sensual, transformative, and loyal."
+},
+
+"Leo-Sagittarius": {
+  overview: "Fire signs united—adventurous, optimistic, and unstoppable.",
+  strengths: "High energy, shared goals, and fearless optimism.",
+  challenges: "Restlessness or lack of grounding may arise.",
+  advice: "Set shared visions but commit to daily rituals together.",
+  compatibilityScore: 90,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo)"],
+  loveLanguageTips: {
+    Leo: "Grand romance and praise",
+    Sagittarius: "Adventure, humor, and freedom"
+  },
+  communicationStyle: "Bold, optimistic, and spirited—always moving forward.",
+  intimacyLevel: "Very high – energized and adventurous."
+},
+
+"Leo-Capricorn": {
+  overview: "Ambition meets ambition—strong power couple with steady vision.",
+  strengths: "Shared goals, leadership, and mutual respect.",
+  challenges: "Different tones—Capricorn’s reserve vs. Leo’s showmanship.",
+  advice: "Leo should respect structure; Capricorn should allow celebration.",
+  compatibilityScore: 75,
+  elementHarmony: "Fire (Leo) + Earth (Capricorn)",
+  famousCouples: ["Davide Gramicci (Leo) & Others"],
+  loveLanguageTips: {
+    Leo: "Praise and attention",
+    Capricorn: "Consistency and practical support"
+  },
+  communicationStyle: "Strategic meets expressive—clarify goals and feelings.",
+  intimacyLevel: "High – trusting and passionate when aligned."
+},
+
+"Leo-Aquarius": {
+  overview: "Bold meets innovative—dynamic duo with social vision.",
+  strengths: "Friendship, creativity, and a shared love for change.",
+  challenges: "Leo’s need for attention vs. Aquarius’s independence.",
+  advice: "Celebrate individuality and coordinate public humility.",
+  compatibilityScore: 80,
+  elementHarmony: "Fire (Leo) + Air (Aquarius)",
+  famousCouples: ["Jennifer Aniston (Aquarius) & Brad Pitt (Leo)"],
+  loveLanguageTips: {
+    Leo: "Public praise and thoughtful gestures",
+    Aquarius: "Intellectual connection and shared ideals"
+  },
+  communicationStyle: "Creative and visionary, but may need emotional depth checks.",
+  intimacyLevel: "High – energetic and ideative with emotional tuning."
+},
+
+"Leo-Pisces": {
+  overview: "Creative and dreamy—romantic yet emotionally profound.",
+  strengths: "Leo brings confidence; Pisces brings compassion.",
+  challenges: "Pisces may feel overshadowed; Leo might lack sensitivity.",
+  advice: "Leo should lead with gentleness; Pisces should articulate needs.",
+  compatibilityScore: 68,
+  elementHarmony: "Fire (Leo) + Water (Pisces)",
+  famousCouples: ["Celine Dion (Leo) & René Angélil (Pisces)"],
+  loveLanguageTips: {
+    Leo: "Affirmations and grand gestures",
+    Pisces: "Emotional connection and imaginative love"
+  },
+  communicationStyle: "Warm expressive vs. intuitive and poetic.",
+  intimacyLevel: "High – loving, emotional, and dreamy."
+},
     "Virgo-Libra": {
       overview: "Graceful and thoughtful.",
       strengths: "Harmony and intellect.",
