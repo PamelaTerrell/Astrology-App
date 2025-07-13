@@ -24,7 +24,7 @@ export default function Highlights2025() {
           <h2>🌌 Key Planetary Movements in 2025</h2>
           <ul>
             <li>
-              <strong>Jupiter in Taurus (May 2024 – May 2025):</strong> Jupiter expands growth and abundance; in Taurus, it encourages financial stability and enjoying life's comforts. Earth signs will feel this energy strongly.
+              <strong>Jupiter in Taurus (May 2024 – May 2025):</strong> Jupiter expands growth and abundance; in Taurus, it encourages financial stability and enjoying life comforts. Earth signs will feel this energy strongly.
             </li>
             <li>
               <strong>Saturn in Pisces (March 2023 – February 2026):</strong> Saturn influence in dreamy Pisces asks all signs to get serious about their spiritual growth and emotional boundaries.
