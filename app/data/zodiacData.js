@@ -1086,65 +1086,197 @@ const zodiacSigns = [
   intimacyLevel: "Very high – soulful, nurturing, and transformative."
 
     },
-    "Libra-Sagittarius": {
-      overview: "Light-hearted and free.",
-      strengths: "Optimism.",
-      challenges: "Inconsistency.",
-      advice: "Anchor your plans."
-    },
-    "Libra-Capricorn": {
-      overview: "Charm meets ambition.",
-      strengths: "Shared aspirations.",
-      challenges: "Emotional reserve.",
-      advice: "Foster open dialogue."
-    },
-    "Libra-Aquarius": {
-      overview: "Intellectual connection.",
-      strengths: "Creativity and friendship.",
-      challenges: "Emotional detachment.",
-      advice: "Stay present."
-    },
-    "Libra-Pisces": {
-      overview: "Romantic and artistic.",
-      strengths: "Empathy.",
-      challenges: "Avoidance.",
-      advice: "Stay grounded."
-    },
-    "Scorpio-Sagittarius": {
-      overview: "Passion meets freedom.",
-      strengths: "Excitement.",
-      challenges: "Control vs. independence.",
-      advice: "Respect each other's needs."
-    },
-    "Scorpio-Capricorn": {
-      overview: "Intense and strategic.",
-      strengths: "Commitment.",
-      challenges: "Emotional barriers.",
-      advice: "Share vulnerabilities."
-    },
-    "Scorpio-Aquarius": {
-      overview: "Powerful and intriguing.",
-      strengths: "Depth.",
-      challenges: "Detachment.",
-      advice: "Value trust."
-    },
-    "Scorpio-Pisces": {
-      overview: "Profound emotional connection.",
-      strengths: "Empathy.",
-      challenges: "Overwhelm.",
-      advice: "Set healthy boundaries."
-    },
-    "Sagittarius-Capricorn": {
-      overview: "Adventure vs. ambition.",
-      strengths: "Growth.",
-      challenges: "Different drives.",
-      advice: "Encourage compromise."
-    },
-    "Sagittarius-Aquarius": {
-      overview: "Visionary and inspiring.",
-      strengths: "Innovation.",
-      challenges: "Restlessness.",
-      advice: "Stay connected."
+   
+    "Libra-Aries": {
+  overview: "Balanced lovers—optimism meets courage in an engaging dynamic.",
+  strengths: "Aries brings passion; Libra brings harmony, making for a lively duo.",
+  challenges: "Aries may rush decisions; Libra may struggle with indecision.",
+  advice: "Aries should practice patience; Libra should be proactive.",
+  compatibilityScore: 75,
+  elementHarmony: "Air (Libra) + Fire (Aries)",
+  famousCouples: ["Hugh Hefner (Aries) & Crystal Harris (Libra)"],
+  loveLanguageTips: {
+    Libra: "Quality time and peaceful cooperation",
+    Aries: "Bold action and enthusiastic praise"
+  },
+  communicationStyle: "Diplomatic and direct—seek compromise to thrive.",
+  intimacyLevel: "High – affectionate and enthusiastic."
+},
+
+"Libra-Taurus": {
+  overview: "Art-loving duo—beauty meets comfort in a sensual union.",
+  strengths: "Shared taste for luxury, romance, and harmony.",
+  challenges: "Libra seeks variety; Taurus prefers routine.",
+  advice: "Combine stability with cultural experiences.",
+  compatibilityScore: 70,
+  elementHarmony: "Air (Libra) + Earth (Taurus)",
+  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Taurus)"],
+  loveLanguageTips: {
+    Libra: "Finessed compliments and aesthetic endeavors",
+    Taurus: "Physical touch and heartfelt devotion"
+  },
+  communicationStyle: "Diplomatic, smooth, and considerate.",
+  intimacyLevel: "Moderate – romantic with shared comfort."
+},
+
+"Libra-Gemini": {
+  overview: "Air signs in harmony—playful, social, and intellectually driven.",
+  strengths: "Shared curiosity, communication, and spontaneity.",
+  challenges: "Can drift into indecision or superficiality.",
+  advice: "Set mutual goals to keep the dynamic moving forward.",
+  compatibilityScore: 82,
+  elementHarmony: "Air + Air",
+  famousCouples: ["John F. Kennedy Jr. (Gemini) & Carolyn Bessette (Libra)"],
+  loveLanguageTips: {
+    Libra: "Quality time and mutual admiration",
+    Gemini: "Witty conversation and shared adventures"
+  },
+  communicationStyle: "Smooth and engaging—connected through constant dialogue.",
+  intimacyLevel: "High – mentally stimulating and affectionate."
+},
+
+"Libra-Cancer": {
+  overview: "Harmony meets emotion—a gentle and nurturing match.",
+  strengths: "Libra brings balance; Cancer brings empathy and security.",
+  challenges: "Libra’s social focus vs. Cancer’s privacy needs.",
+  advice: "Alternate between socializing and quiet bonding time.",
+  compatibilityScore: 68,
+  elementHarmony: "Air (Libra) + Water (Cancer)",
+  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Cancer)"],
+  loveLanguageTips: {
+    Libra: "Quality time and romantic creativity",
+    Cancer: "Emotional closeness and caring routines"
+  },
+  communicationStyle: "Balanced and receptive—ideal for compassionate dialogue.",
+  intimacyLevel: "Moderate – emotionally sweet and supportive."
+},
+
+"Libra-Leo": {
+  overview: "Glamorous power couple—charisma meets grace in a romantic union.",
+  strengths: "Mutual admiration, style, and warmth.",
+  challenges: "Both may avoid conflict—can lead to unspoken issues.",
+  advice: "Be honest with love and gentleness.",
+  compatibilityScore: 82,
+  elementHarmony: "Air (Libra) + Fire (Leo)",
+  famousCouples: ["Blake Lively (Leo) & Ryan Reynolds (Libra)"],
+  loveLanguageTips: {
+    Libra: "Quality time and artistic experiences",
+    Leo: "Public praise and loyal displays"
+  },
+  communicationStyle: "Elegant and expressive—anchored in mutual respect.",
+  intimacyLevel: "High – affectionate and vibrant."
+},
+
+"Libra-Virgo": {
+  overview: "Harmony seeks precision—balance blends diplomacy with detail.",
+  strengths: "Libra smooths Virgo’s critique; Virgo grounds Libra’s indecision.",
+  challenges: "Virgo’s practicality vs. Libra’s social focus.",
+  advice: "Merge thoughtful logistics with social structure.",
+  compatibilityScore: 70,
+  elementHarmony: "Air (Libra) + Earth (Virgo)",
+  famousCouples: ["Alicia Silverstone (Libra) & Christopher Jarecki (Virgo)"],
+  loveLanguageTips: {
+    Libra: "Quality time and shared experiences",
+    Virgo: "Helpful gestures and consistent dependability"
+  },
+  communicationStyle: "Balanced and diplomatic—productive when combining minds.",
+  intimacyLevel: "Moderate – affectionate with thoughtful structure."
+},
+
+"Libra-Libra": {
+  overview: "Double harmony—beautiful, sociable, and idealistically aligned.",
+  strengths: "Shared love for connection, fairness, and beauty.",
+  challenges: "May overthink issues or avoid making firm decisions.",
+  advice: "Set clear priorities while maintaining balance.",
+  compatibilityScore: 85,
+  elementHarmony: "Air + Air",
+  famousCouples: ["Eddie Murphy (Libra) & Nicole Mitchell Murphy (Libra)"],
+  loveLanguageTips: {
+    Libra: "Collaboration and shared aesthetics"
+  },
+  communicationStyle: "Soothing, balanced, and thoughtfully reflective.",
+  intimacyLevel: "High – loving, cooperative, and supportive."
+},
+
+"Libra-Scorpio": {
+  overview: "Charm meets intensity—graceful yet deeply passionate.",
+  strengths: "Libra brings tact; Scorpio brings emotional depth.",
+  challenges: "Scorpio’s intensity vs. Libra’s need for harmony.",
+  advice: "Scorpio should soften; Libra should engage deeply.",
+  compatibilityScore: 65,
+  elementHarmony: "Air (Libra) + Water (Scorpio)",
+  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Scorpio)"],
+  loveLanguageTips: {
+    Libra: "Quality time and affectionate words",
+    Scorpio: "Emotional truth and sensuality"
+  },
+  communicationStyle: "Courteous meets intense—seek honest, balanced talks.",
+  intimacyLevel: "High – deep, transformative intimacy."
+},
+
+"Libra-Sagittarius": {
+  overview: "Charming explorers—adventurous, sociable, and optimistic.",
+  strengths: "Shared enthusiasm for exploration and growth.",
+  challenges: "Sagittarius may be too blunt; Libra too hesitant.",
+  advice: "Speak honestly and plan thoughtfully.",
+  compatibilityScore: 80,
+  elementHarmony: "Air (Libra) + Fire (Sagittarius)",
+  famousCouples: ["Katie Holmes (Sagittarius) & Tom Cruise (Libra)"],
+  loveLanguageTips: {
+    Libra: "Cultural experiences and affection",
+    Sagittarius: "Adventure and playful humor"
+  },
+  communicationStyle: "Openhearted and exploratory—great for big-picture planning.",
+  intimacyLevel: "High – spirited and connected."
+},
+
+"Libra-Capricorn": {
+  overview: "Style meets structure—diplomatic meets pragmatic.",
+  strengths: "Libra brings grace; Capricorn brings dependability.",
+  challenges: "Capricorn may focus too much on duty; Libra on social balance.",
+  advice: "Combine practicality with cordiality in decisions.",
+  compatibilityScore: 75,
+  elementHarmony: "Air (Libra) + Earth (Capricorn)",
+  famousCouples: ["Michelle Obama (Libra) & Barack Obama (Capricorn)"],
+  loveLanguageTips: {
+    Libra: "Quality time and beautiful moments",
+    Capricorn: "Acts of service and consistent reliability"
+  },
+  communicationStyle: "Balanced, respectful, and goal-oriented.",
+  intimacyLevel: "Moderate – affectionate through shared purpose."
+},
+
+"Libra-Aquarius": {
+  overview: "Intellectual match—visionaries united in harmony.",
+  strengths: "Shared ideals, humanitarian focus, and social charm.",
+  challenges: "Both may avoid deep emotion in favor of rationality.",
+  advice: "Prioritize emotional connection as well as mental rapport.",
+  compatibilityScore: 85,
+  elementHarmony: "Air + Air",
+  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Libra)"],
+  loveLanguageTips: {
+    Libra: "Collaborative time and shared adventures",
+    Aquarius: "Idea exchanges and personal autonomy"
+  },
+  communicationStyle: "Forward-thinking and diplomatic—balanced in conversation.",
+  intimacyLevel: "High – intellectual and emotionally open."
+},
+
+"Libra-Pisces": {
+  overview: "Romantic dreamers—balanced by intuition and beauty.",
+  strengths: "Shared creativity, sensitivity, and empathy.",
+  challenges: "Pisces may retreat; Libra may avoid emotional slog.",
+  advice: "Share emotional support while exploring creativity.",
+  compatibilityScore: 82,
+  elementHarmony: "Air (Libra) + Water (Pisces)",
+  famousCouples: ["Céline Dion (Leo/Pisces) & René Angélil (Pisces)"], // example
+  loveLanguageTips: {
+    Libra: "Quality time and thoughtful harmony",
+    Pisces: "Emotional reassurance and gentle physical touch"
+  },
+  communicationStyle: "Gentle and expressive—ideal for emotional depth.",
+  intimacyLevel: "High – dreamy, artistic, and deeply connected."
+
     },
     "Sagittarius-Pisces": {
       overview: "Dreamer meets explorer.",
