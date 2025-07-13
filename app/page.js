@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./components/Footer";
 
 export default function HomePage() {
   const [birthDate, setBirthDate] = useState("");
@@ -59,46 +60,61 @@ export default function HomePage() {
   };
 
   return (
-    <main>
-      <h1>Cosmic Zodiac Astrology</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Enter your birthdate:</label><br />
-        <input
-          type="date"
-          value={birthDate}
-          onChange={(e) => setBirthDate(e.target.value)}
-          required
-        />
-        <button type="submit">Get My Zodiac Sign</button>
-      </form>
-      {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
-      {dailyHoroscope && <p>Your Horoscope: {dailyHoroscope}</p>}
+    <>
+      <main>
+        <h1>Cosmic Zodiac Astrology</h1>
+        <form onSubmit={handleSubmit}>
+          <label>Enter your birthdate:</label><br />
+          <input
+            type="date"
+            value={birthDate}
+            onChange={(e) => setBirthDate(e.target.value)}
+            required
+          />
+          <button type="submit">Get My Zodiac Sign</button>
+        </form>
+        {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
+        {dailyHoroscope && <p>Your Horoscope: {dailyHoroscope}</p>}
 
-      <div className="zodiac-grid">
-        {[
-          "aries",
-          "taurus",
-          "gemini",
-          "cancer",
-          "leo",
-          "virgo",
-          "libra",
-          "scorpio",
-          "sagittarius",
-          "capricorn",
-          "aquarius",
-          "pisces",
-        ].map((sign) => (
-          <Link key={sign} href={`/${sign}`}>
-            <Image
-              src={`/${sign}.jpg`}
-              alt={sign}
-              width={150}
-              height={150}
-            />
-          </Link>
-        ))}
-      </div>
-    </main>
+        <div className="zodiac-grid">
+          {[
+            "aries",
+            "taurus",
+            "gemini",
+            "cancer",
+            "leo",
+            "virgo",
+            "libra",
+            "scorpio",
+            "sagittarius",
+            "capricorn",
+            "aquarius",
+            "pisces",
+          ].map((sign) => (
+            <Link key={sign} href={`/${sign}`}>
+              <Image
+                src={`/${sign}.jpg`}
+                alt={sign}
+                width={150}
+                height={150}
+              />
+            </Link>
+          ))}
+        </div>
+        <style jsx>{`
+  .zodiac-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px; /* Add a gap between items */
+  }
+  .zodiac-link {
+    margin: 6px; /* margin around each image/link */
+    display: inline-block; /* to respect margin */
+  }
+`}</style>
+      </main>
+      <Footer />
+    </>
   );
 }
