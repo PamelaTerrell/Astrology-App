@@ -18,71 +18,170 @@ const zodiacSigns = [
   // This is your manually defined compatibility data.
   const existingCompatibility = {
     "Aries-Taurus": {
-      overview: "A relationship built on contrast and fascination.",
-      strengths: "Aries brings energy and Taurus offers stability.",
-      challenges: "Impulsiveness vs. caution can create tension.",
-      advice: "Practice patience and celebrate your differences."
-    },
+  overview: "A relationship built on contrast and fascination.",
+  strengths: "Aries brings energy and Taurus offers stability.",
+  challenges: "Impulsiveness vs. caution can create tension.",
+  advice: "Practice patience and celebrate your differences.",
+  compatibilityScore: 72,
+  elementHarmony: "Fire (Aries) + Earth (Taurus)",
+  famousCouples: ["Robert Pattinson (Taurus) & Kristen Stewart (Aries)"],
+  loveLanguageTips: {
+    Aries: "Words of affirmation and spontaneous acts of love",
+    Taurus: "Physical touch and steady routines"
+  },
+  communicationStyle: "Aries is fast-paced and blunt; Taurus is deliberate and measured.",
+  intimacyLevel: "Moderate – connection deepens through trust and physical affection."
+},
     "Aries-Gemini": {
-      overview: "Dynamic, exciting, and full of adventure.",
-      strengths: "Shared curiosity and enthusiasm.",
-      challenges: "Aries may be too direct for sensitive Gemini.",
-      advice: "Keep communication open and flexible."
-    },
-    "Aries-Cancer": {
-      overview: "Fire meets water in this passionate pairing.",
-      strengths: "Strong attraction and emotional growth.",
-      challenges: "Different temperaments can clash.",
-      advice: "Balance independence with nurturing."
-    },
+  overview: "Dynamic, exciting, and full of adventure.",
+  strengths: "Shared curiosity and enthusiasm.",
+  challenges: "Aries may be too direct for sensitive Gemini.",
+  advice: "Keep communication open and flexible.",
+  compatibilityScore: 84,
+  elementHarmony: "Fire (Aries) + Air (Gemini)",
+  famousCouples: ["Marilyn Monroe (Gemini) & Arthur Miller (Aries)"],
+  loveLanguageTips: {
+    Aries: "Bold gestures and vocal admiration",
+    Gemini: "Playful banter and shared activities"
+  },
+  communicationStyle: "Both love to talk – Aries is assertive, Gemini is witty and playful.",
+  intimacyLevel: "High – a playful and energetic sexual bond."
+},
+   "Aries-Cancer": {
+  overview: "Fire meets water in this passionate pairing.",
+  strengths: "Strong attraction and emotional growth.",
+  challenges: "Different temperaments can clash.",
+  advice: "Balance independence with nurturing.",
+  compatibilityScore: 65,
+  elementHarmony: "Fire (Aries) + Water (Cancer)",
+  famousCouples: ["Ariana Grande (Cancer) & Pete Davidson (Aries)"],
+  loveLanguageTips: {
+    Aries: "Acts of courage and excitement",
+    Cancer: "Emotional reassurance and cozy moments"
+  },
+  communicationStyle: "Aries is bold and blunt; Cancer is sensitive and reactive.",
+  intimacyLevel: "Moderate – emotional connection must be nurtured to sustain passion."
+},
     "Aries-Leo": {
-      overview: "Two fire signs with bold energy.",
-      strengths: "Confidence and shared ambitions.",
-      challenges: "Potential for ego battles.",
-      advice: "Support each other's success."
-    },
+  overview: "Two fire signs with bold energy, creating a passionate and dramatic duo.",
+  strengths: "Confidence, ambition, and mutual enthusiasm.",
+  challenges: "Potential for ego clashes and competitiveness.",
+  advice: "Channel energy into shared goals and practice mutual admiration.",
+  compatibilityScore: 88,
+  elementHarmony: "Fire (Aries) + Fire (Leo)",
+  famousCouples: ["Sarah Jessica Parker (Aries) & Matthew Broderick (Leo)"],
+  loveLanguageTips: {
+    Aries: "Words of praise and active adventure",
+    Leo: "Admiration and grand romantic gestures"
+  },
+  communicationStyle: "Both signs are outspoken and bold – conversations can be exciting or explosive.",
+  intimacyLevel: "Very high – intense physical chemistry and fiery romance."
+},
     "Aries-Virgo": {
-      overview: "An unlikely but intriguing match.",
-      strengths: "Drive and practicality.",
-      challenges: "Different approaches to life.",
-      advice: "Appreciate complementary strengths."
-    },
+  overview: "An unlikely but intriguing match between action and analysis.",
+  strengths: "Motivated partnership with complementary skills.",
+  challenges: "Impulsivity vs. overthinking can cause misunderstandings.",
+  advice: "Embrace differences and use them to balance each other.",
+  compatibilityScore: 60,
+  elementHarmony: "Fire (Aries) + Earth (Virgo)",
+  famousCouples: ["Keanu Reeves (Virgo) & Diane Keaton (Aries – rumored past)"],
+  loveLanguageTips: {
+    Aries: "Direct affection and spontaneity",
+    Virgo: "Acts of service and subtle reassurance"
+  },
+  communicationStyle: "Aries speaks first, thinks later; Virgo analyzes before speaking. Misalignment can cause friction.",
+  intimacyLevel: "Moderate – chemistry builds slowly through trust and thoughtful gestures."
+},
     "Aries-Libra": {
-      overview: "Opposites attract in this dynamic duo.",
-      strengths: "Passion and balance.",
-      challenges: "Impatience vs. indecision.",
-      advice: "Find common ground through respect."
-    },
+  overview: "Opposites attract in this bold, romantic pairing. Aries leads with fire while Libra seeks harmony.",
+  strengths: "Aries brings passion and decisiveness; Libra offers charm and balance.",
+  challenges: "Aries may find Libra indecisive, while Libra may see Aries as aggressive.",
+  advice: "Celebrate differences and learn to meet halfway without compromising identity.",
+  compatibilityScore: 75,
+  elementHarmony: "Fire (Aries) + Air (Libra)",
+  famousCouples: ["Hugh Hefner (Aries) & Crystal Harris (Libra)"],
+  loveLanguageTips: {
+    Aries: "Excitement and physical affection",
+    Libra: "Words of affirmation and shared experiences"
+  },
+  communicationStyle: "Aries is bold and upfront; Libra is diplomatic and persuasive – potential for a dynamic yet respectful dialogue.",
+  intimacyLevel: "High – sparks fly, especially when emotional balance is maintained."
+},
     "Aries-Scorpio": {
-      overview: "An intense and transformative connection.",
-      strengths: "Shared determination.",
-      challenges: "Possessiveness and power struggles.",
-      advice: "Be honest and set clear boundaries."
-    },
+  overview: "This is a powerful and intense match – both signs are passionate, determined, and fiercely loyal.",
+  strengths: "Deep emotional connection, shared drive, and magnetic chemistry.",
+  challenges: "Power struggles and jealousy may arise due to both signs’ strong personalities.",
+  advice: "Cultivate emotional honesty and practice vulnerability to build deep trust.",
+  compatibilityScore: 68,
+  elementHarmony: "Fire (Aries) + Water (Scorpio)",
+  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio)"],
+  loveLanguageTips: {
+    Aries: "Physical touch and acts of bravery",
+    Scorpio: "Deep emotional connection and loyalty"
+  },
+  communicationStyle: "Both signs speak with intensity – potential for profound conversations or dramatic conflict.",
+  intimacyLevel: "Extremely high – sensual, transformative, and magnetic."
+},
     "Aries-Sagittarius": {
-      overview: "A vibrant, adventurous relationship.",
-      strengths: "Mutual zest for life.",
-      challenges: "Restlessness may interfere with stability.",
-      advice: "Embrace exploration together."
-    },
+  overview: "A fiery duo full of energy, exploration, and enthusiasm. Both are adventurous and live for the moment.",
+  strengths: "High energy, shared sense of humor, spontaneous love for life.",
+  challenges: "Restlessness and impulsivity may lead to conflict or lack of grounding.",
+  advice: "Maintain focus and build emotional depth alongside your adventures.",
+  compatibilityScore: 88,
+  elementHarmony: "Fire (Aries) + Fire (Sagittarius)",
+  famousCouples: ["Jay-Z (Sagittarius) & Mariah Carey (Aries, rumored past)"],
+  loveLanguageTips: {
+    Aries: "Passionate action and excitement",
+    Sagittarius: "Freedom, laughter, and shared adventure"
+  },
+  communicationStyle: "Fast-paced, honest, and often hilarious. These two rarely hold back.",
+  intimacyLevel: "High – fun, physical, and uninhibited."
+},
     "Aries-Capricorn": {
-      overview: "A pairing of ambition and discipline.",
-      strengths: "Productive partnership.",
-      challenges: "Different pacing and priorities.",
-      advice: "Respect each other's goals."
-    },
-    "Aries-Aquarius": {
-      overview: "Innovative and stimulating connection.",
-      strengths: "Shared love of progress.",
-      challenges: "Emotional distance.",
-      advice: "Support individuality."
-    },
+  overview: "A high-powered match of ambition and drive, but with different strategies toward success and control.",
+  strengths: "Strong leadership, commitment to goals, mutual respect for effort.",
+  challenges: "Aries is impulsive, Capricorn is calculated – this can create friction over timing and control.",
+  advice: "Respect each other's tempo and learn from your complementary traits.",
+  compatibilityScore: 61,
+  elementHarmony: "Fire (Aries) + Earth (Capricorn)",
+  famousCouples: ["Kristen Stewart (Aries) & St. Vincent (Capricorn)"],
+  loveLanguageTips: {
+    Aries: "Initiation, thrill, and acts of courage",
+    Capricorn: "Consistency, support, and long-term investment"
+  },
+  communicationStyle: "Aries speaks from passion; Capricorn from strategy – but both can be direct.",
+  intimacyLevel: "Moderate to high – requires patience to build trust and rhythm."
+},
+   "Aries-Aquarius": {
+  overview: "A bold and futuristic match, filled with passion, rebellion, and intellectual stimulation.",
+  strengths: "Innovative ideas, strong independence, mutual drive to break boundaries.",
+  challenges: "Emotional detachment (Aquarius) vs. emotional intensity (Aries). Can clash over leadership.",
+  advice: "Give each other room to be authentic while staying emotionally present.",
+  compatibilityScore: 80,
+  elementHarmony: "Fire (Aries) + Air (Aquarius)",
+  famousCouples: ["Ellen Page (Aquarius) & Samantha Thomas (Aries, former couple)"],
+  loveLanguageTips: {
+    Aries: "Adventurous gestures and fierce loyalty",
+    Aquarius: "Intellectual banter, acts of friendship, and freedom to explore"
+  },
+  communicationStyle: "Quick, quirky, and passionate. Lots of ideas, debates, and fast decision-making.",
+  intimacyLevel: "Spontaneous and exciting, but may lack emotional warmth unless nurtured."
+},
     "Aries-Pisces": {
-      overview: "A relationship of action and intuition.",
-      strengths: "Creative inspiration.",
-      challenges: "Emotional disconnect.",
-      advice: "Practice compassion and patience."
-    },
+  overview: "A relationship of fire and water — dreamer meets doer. Emotion and intuition meet bold action.",
+  strengths: "Creative synergy, emotional depth (Pisces) balanced by courage (Aries).",
+  challenges: "Pisces may feel overwhelmed by Aries’ intensity; Aries may feel Pisces is too passive or evasive.",
+  advice: "Cultivate patience and learn to listen beyond words. Let softness and strength coexist.",
+  compatibilityScore: 58,
+  elementHarmony: "Fire (Aries) + Water (Pisces)",
+  famousCouples: ["Jessica Chastain (Aries) & Gian Luca Passi de Preposulo (Pisces)"],
+  loveLanguageTips: {
+    Aries: "Bold declarations, quick action, and protection",
+    Pisces: "Tender words, spiritual closeness, emotional intimacy"
+  },
+  communicationStyle: "Aries is blunt; Pisces is poetic. Conflict can arise from misunderstanding each other’s expression.",
+  intimacyLevel: "Very high when safe space is created — can be deeply soulful and artistic."
+},
     "Taurus-Gemini": {
       overview: "Earth meets air in this curious match.",
       strengths: "Balance between stability and spontaneity.",

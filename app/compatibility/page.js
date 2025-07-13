@@ -92,19 +92,102 @@ const ZodiacCompatibility = () => {
         {result && (
           typeof result === "object" ? (
             <div className="result">
-              <h3>Overview</h3>
-              <p>{result.overview}</p>
-              <h3>Strengths</h3>
-              <p>{result.strengths}</p>
-              <h3>Challenges</h3>
-              <p>{result.challenges}</p>
-              <h3>Advice</h3>
-              <p>{result.advice}</p>
+              {result.compatibilityScore !== undefined && (
+                <>
+                  <h3>✨ Compatibility Score</h3>
+                  <p>{result.compatibilityScore} / 100</p>
+                </>
+              )}
+
+              {result.overview && (
+                <>
+                  <h3>🌌 Overview</h3>
+                  <p>{result.overview}</p>
+                </>
+              )}
+
+              {result.strengths && (
+                <>
+                  <h3>💪 Strengths</h3>
+                  <p>{result.strengths}</p>
+                </>
+              )}
+
+              {result.challenges && (
+                <>
+                  <h3>⚠️ Challenges</h3>
+                  <p>{result.challenges}</p>
+                </>
+              )}
+
+              {result.advice && (
+                <>
+                  <h3>🔮 Advice</h3>
+                  <p>{result.advice}</p>
+                </>
+              )}
+
+              {result.elementHarmony && (
+                <>
+                  <h3>🧬 Element Harmony</h3>
+                  <p>{result.elementHarmony}</p>
+                </>
+              )}
+
+              {result.communicationStyle && (
+                <>
+                  <h3>🗣️ Communication Style</h3>
+                  <p>{result.communicationStyle}</p>
+                </>
+              )}
+
+              {result.intimacyLevel && (
+                <>
+                  <h3>🔥 Intimacy Level</h3>
+                  <p>{result.intimacyLevel}</p>
+                </>
+              )}
+
+              {result.loveLanguageTips && (
+                <>
+                  <h3>💞 Love Language Tips</h3>
+                  <ul>
+                    {Object.entries(result.loveLanguageTips).map(([sign, tip]) => (
+                      <li key={sign}>
+                        <strong>{sign}:</strong> {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {result.famousCouples && (
+                <>
+                  <h3>🌟 Famous Couples</h3>
+                  <ul>
+                    {Array.isArray(result.famousCouples) ? (
+                      result.famousCouples.map((couple, idx) => (
+                        <li key={idx}>{couple}</li>
+                      ))
+                    ) : typeof result.famousCouples === "object" ? (
+                      Object.entries(result.famousCouples).map(([sign, name]) => (
+                        <li key={sign}>
+                          <strong>{sign}:</strong> {name}
+                        </li>
+                      ))
+                    ) : (
+                      <li>{result.famousCouples}</li>
+                    )}
+                  </ul>
+                </>
+              )}
             </div>
           ) : (
             <div className="result">{result}</div>
           )
         )}
+
+        <Footer />
 
         <style jsx>{`
           .container {
@@ -198,12 +281,23 @@ const ZodiacCompatibility = () => {
           }
 
           .result h3 {
-            color: #d0d0ff;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            color: #e0d0ff;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #444;
+            padding-bottom: 0.4rem;
           }
 
           .result p {
-            margin: 0.4rem 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+          }
+
+          .result ul {
+            list-style: inside disc;
+            margin-left: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
           }
 
           @media (max-width: 600px) {
@@ -216,8 +310,6 @@ const ZodiacCompatibility = () => {
           }
         `}</style>
       </div>
-
-    
     </>
   );
 };
