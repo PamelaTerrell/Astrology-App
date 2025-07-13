@@ -141,7 +141,7 @@ const zodiacSigns = [
   overview: "A high-powered match of ambition and drive, but with different strategies toward success and control.",
   strengths: "Strong leadership, commitment to goals, mutual respect for effort.",
   challenges: "Aries is impulsive, Capricorn is calculated – this can create friction over timing and control.",
-  advice: "Respect each other's tempo and learn from your complementary traits.",
+  advice: "Respect each other and learn from your complementary traits.",
   compatibilityScore: 61,
   elementHarmony: "Fire (Aries) + Earth (Capricorn)",
   famousCouples: ["Kristen Stewart (Aries) & St. Vincent (Capricorn)"],
@@ -1377,7 +1377,7 @@ const zodiacSigns = [
 "Sagittarius-Libra": {
   overview: "Social explorers—culture, ideas, and camaraderie abound.",
   strengths: "Shared love of learning, diplomacy, and fun.",
-  challenges: "Libra's indecision vs. Sagittarius’ bluntness.",
+  challenges: "Libra is indecisive vs. Sagittarius is blunt.",
   advice: "Make decisions together and speak with kindness.",
   compatibilityScore: 80,
   elementHarmony: "Fire + Air",
