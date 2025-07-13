@@ -895,47 +895,196 @@ const zodiacSigns = [
   communicationStyle: "Warm expressive vs. intuitive and poetic.",
   intimacyLevel: "High – loving, emotional, and dreamy."
 },
-    "Virgo-Libra": {
-      overview: "Graceful and thoughtful.",
-      strengths: "Harmony and intellect.",
-      challenges: "Over-analysis.",
-      advice: "Simplify decision-making."
-    },
-    "Virgo-Scorpio": {
-      overview: "Deep and perceptive.",
-      strengths: "Loyalty.",
-      challenges: "Intensity.",
-      advice: "Allow space to process feelings."
-    },
-    "Virgo-Sagittarius": {
-      overview: "Practicality meets adventure.",
-      strengths: "Learning together.",
-      challenges: "Different priorities.",
-      advice: "Balance work and play."
-    },
-    "Virgo-Capricorn": {
-      overview: "Grounded and dependable.",
-      strengths: "Shared goals.",
-      challenges: "Work focus over romance.",
-      advice: "Make time for connection."
-    },
-    "Virgo-Aquarius": {
-      overview: "Logic and innovation.",
-      strengths: "Problem-solving.",
-      challenges: "Emotional distance.",
-      advice: "Communicate feelings openly."
-    },
-    "Virgo-Pisces": {
-      overview: "Dreams and reality blend.",
-      strengths: "Completeness.",
-      challenges: "Misunderstandings.",
-      advice: "Practice compassion."
-    },
-    "Libra-Scorpio": {
-      overview: "Beauty and depth.",
-      strengths: "Intensity.",
-      challenges: "Emotional friction.",
-      advice: "Balance light and shadow."
+    "Virgo-Aries": {
+  overview: "Practical Virgo meets spontaneous Aries—an intriguing blend of carefulness and action.",
+  strengths: "Virgo’s organization complements Aries’ drive.",
+  challenges: "Aries’ impulsivity vs. Virgo’s need for order can create friction.",
+  advice: "Practice patience and planning to balance action with analysis.",
+  compatibilityScore: 60,
+  elementHarmony: "Earth (Virgo) + Fire (Aries)",
+  famousCouples: ["Serena Williams (Virgo) & Alexis Ohanian (Aries)"],
+  loveLanguageTips: {
+    Virgo: "Acts of service and thoughtful consistency",
+    Aries: "Physical affection and adventurous support"
+  },
+  communicationStyle: "Virgo is precise; Aries is direct—find middle ground through clarity.",
+  intimacyLevel: "Moderate to high – deepens with trust and understanding."
+},
+
+"Virgo-Taurus": {
+  overview: "Earth signs in perfect harmony—steady, supportive, and grounded.",
+  strengths: "Both value routine, loyalty, and practical care.",
+  challenges: "May become too rigid or routine-heavy over time.",
+  advice: "Introduce variety through shared small adventures.",
+  compatibilityScore: 85,
+  elementHarmony: "Earth + Earth",
+  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Taurus)"],
+  loveLanguageTips: {
+    Virgo: "Organized help and stability",
+    Taurus: "Physical comfort and reliable affection"
+  },
+  communicationStyle: "Calm, deliberate, and reliable—excellent for solving problems.",
+  intimacyLevel: "High – comfortable, steady, and intimate."
+},
+
+"Virgo-Gemini": {
+  overview: "Analytical meets curious—a relationship rich in ideas and growth.",
+  strengths: "Virgo brings depth; Gemini brings adaptability.",
+  challenges: "Virgo's critique may frustrate Gemini’s spontaneity.",
+  advice: "Balance detailed planning with spontaneous fun.",
+  compatibilityScore: 60,
+  elementHarmony: "Earth + Air",
+  famousCouples: ["Paul Rudd (Gemini) & Julie Yaeger (Virgo)"],
+  loveLanguageTips: {
+    Virgo: "Thoughtful acts and consistent reassurance",
+    Gemini: "Playful banter and shared learning"
+  },
+  communicationStyle: "Clear and intelligent—best when attentive and open-minded.",
+  intimacyLevel: "Moderate – evolves through mutual appreciation."
+},
+
+"Virgo-Cancer": {
+  overview: "Nurturing Cancer pairs with practical Virgo for a supportive bond.",
+  strengths: "Mutual care, emotional honesty, and steady support.",
+  challenges: "Virgo may seem overly critical; Cancer may feel sensitive.",
+  advice: "Communicate needs kindly and validate each other’s efforts.",
+  compatibilityScore: 78,
+  elementHarmony: "Earth + Water",
+  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Cancer)"],
+  loveLanguageTips: {
+    Virgo: "Helping hands and attentive listening",
+    Cancer: "Emotional closeness and nurturing rituals"
+  },
+  communicationStyle: "Gentle and considerate—perfect for emotional balance.",
+  intimacyLevel: "High – deep, caring, and emotionally secure."
+},
+
+"Virgo-Leo": {
+  overview: "Careful planning meets bold expression—a relationship of growth.",
+  strengths: "Leo brings flair; Virgo brings organization.",
+  challenges: "Leo’s need for spotlight vs. Virgo’s preference for quiet can clash.",
+  advice: "Leo should show appreciation; Virgo should celebrate spontaneity.",
+  compatibilityScore: 65,
+  elementHarmony: "Earth + Fire",
+  famousCouples: ["Justin Bieber (Virgo) & Hailey Bieber (Leo)"],
+  loveLanguageTips: {
+    Virgo: "Supportive actions and reliability",
+    Leo: "Praise and romantic attention"
+  },
+  communicationStyle: "Balanced between analysis and enthusiasm—respect both styles.",
+  intimacyLevel: "Moderate – grows with mutual recognition."
+},
+
+"Virgo-Virgo": {
+  overview: "Two Virgos together create a harmonious, detail-oriented life.",
+  strengths: "Shared values of organization, support, and reliability.",
+  challenges: "Tendency to overanalyze or become overly critical.",
+  advice: "Focus on compassion and occasional spontaneity.",
+  compatibilityScore: 80,
+  elementHarmony: "Earth + Earth",
+  famousCouples: ["Zendaya (Virgo) & Tom Holland (Virgo) — rumored"],
+  loveLanguageTips: {
+    Virgo: "Thoughtful actions and unwavering support"
+  },
+  communicationStyle: "Explicit and clear—sometimes too perfectionistic.",
+  intimacyLevel: "High – deep emotional connection with thoughtful care."
+},
+
+"Virgo-Libra": {
+  overview: "Balance-driven relationship—logic meets harmony.",
+  strengths: "Virgo provides structure; Libra brings diplomacy.",
+  challenges: "Virgo's critique vs. Libra's indecision can stall decisions.",
+  advice: "Encourage thoughtful compromise and make decisions together.",
+  compatibilityScore: 70,
+  elementHarmony: "Earth + Air",
+  famousCouples: ["Alicia Silverstone (Libra) & Christopher Jarecki (Virgo)"],
+  loveLanguageTips: {
+    Virgo: "Helpful gestures and clear communication",
+    Libra: "Quality time and peaceful collaboration"
+  },
+  communicationStyle: "Gentle, balanced, and considerate.",
+  intimacyLevel: "Moderate – affectionate and balanced."
+},
+
+"Virgo-Scorpio": {
+  overview: "Perceptive Virgo meets intense Scorpio—deep and transformative.",
+  strengths: "Both are dedicated, loyal, and emotionally deep.",
+  challenges: "Scorpio’s intensity may overwhelm Virgo’s analytical nature.",
+  advice: "Use trust-building and open sharing to manage depth.",
+  compatibilityScore: 82,
+  elementHarmony: "Earth + Water",
+  famousCouples: ["Keira Knightley (Virgo) & James Righton (Scorpio)"],
+  loveLanguageTips: {
+    Virgo: "Quiet support and consistent effort",
+    Scorpio: "Emotional candor and physical intimacy"
+  },
+  communicationStyle: "Insightful and considerate—powerful when honest.",
+  intimacyLevel: "Very high – intimate, loyal, and profound."
+},
+
+"Virgo-Sagittarius": {
+  overview: "Grounded Virgo meets adventurous Sagittarius—growth through contrast.",
+  strengths: "Virgo brings order; Sagittarius brings exploration.",
+  challenges: "Different life paces can cause impatience.",
+  advice: "Respect each other’s pace and share learning experiences.",
+  compatibilityScore: 55,
+  elementHarmony: "Earth + Fire",
+  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Virgo) — past"],
+  loveLanguageTips: {
+    Virgo: "Thoughtful routines and organized care",
+    Sagittarius: "Adventures and shared laughter"
+  },
+  communicationStyle: "Analytical meets free-thinking—value both sides.",
+  intimacyLevel: "Moderate – enriches through mutual exploration."
+},
+
+"Virgo-Capricorn": {
+  overview: "Earth signs united—efficient, reliable, and ambitious.",
+  strengths: "Shared work ethic, planning, and mutual respect.",
+  challenges: "Risk of working too much and neglecting romance.",
+  advice: "Schedule love time alongside goals.",
+  compatibilityScore: 88,
+  elementHarmony: "Earth + Earth",
+  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Capricorn) — alternate chart views"],
+  loveLanguageTips: {
+    Virgo: "Practical actions and emotional safety",
+    Capricorn: "Dependable support and discipline"
+  },
+  communicationStyle: "Focused, respectful, and goal-oriented.",
+  intimacyLevel: "High – steady, deep, and affectionate."
+},
+
+"Virgo-Aquarius": {
+  overview: "Analytical meets visionary—smart and creative union.",
+  strengths: "Virgo offers structure; Aquarius offers innovation.",
+  challenges: "Virgo’s detail orientation may frustrate Aquarius’ big-picture mind.",
+  advice: "Combine structure with vision; respect each style.",
+  compatibilityScore: 75,
+  elementHarmony: "Earth + Air",
+  famousCouples: ["Alicia Keys (Aquarius) & Swizz Beatz (Virgo)"],
+  loveLanguageTips: {
+    Virgo: "Helpful support and clear communication",
+    Aquarius: "Intellectual freedom and shared causes"
+  },
+  communicationStyle: "Logical, thoughtful, and creative.",
+  intimacyLevel: "Moderate – grounded by trust and imagination."
+},
+
+"Virgo-Pisces": {
+  overview: "Dreamy Pisces meets practical Virgo—a beautifully complementary duo.",
+  strengths: "Virgo grounds dreams; Pisces inspires compassion.",
+  challenges: "Pisces can feel criticized; Virgo may feel overwhelmed emotionally.",
+  advice: "Cultivate empathy and celebrate each other's gifts.",
+  compatibilityScore: 90,
+  elementHarmony: "Earth + Water",
+  famousCouples: ["Zendaya (Virgo) & Tom Holland (Pisces) — rumored"],
+  loveLanguageTips: {
+    Virgo: "Acts of service and stable support",
+    Pisces: "Emotional openness and spiritual connection"
+  },
+  communicationStyle: "Gentle yet insightful—ideal for deeper understanding.",
+  intimacyLevel: "Very high – soulful, nurturing, and transformative."
+
     },
     "Libra-Sagittarius": {
       overview: "Light-hearted and free.",
