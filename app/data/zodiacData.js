@@ -1276,13 +1276,198 @@ const zodiacSigns = [
   },
   communicationStyle: "Gentle and expressive—ideal for emotional depth.",
   intimacyLevel: "High – dreamy, artistic, and deeply connected."
+},
 
-    },
-    "Sagittarius-Pisces": {
-      overview: "Dreamer meets explorer.",
-      strengths: "Creativity.",
-      challenges: "Practicality.",
-      advice: "Balance ideals and reality."
+    "Sagittarius-Aries": {
+  overview: "High-energy fire duo—passion and spontaneity combined.",
+  strengths: "Shared optimism, adventure, and direct communication.",
+  challenges: "Both can be impatient and impulsive, risking burnout.",
+  advice: "Balance excitement with occasional grounding rituals.",
+  compatibilityScore: 85,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo, past)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventure and humor",
+    Aries: "Bold acts and frequent encouragement"
+  },
+  communicationStyle: "Bold, honest, and fast-paced—great for open rapport.",
+  intimacyLevel: "High – passionate and enthusiastic."
+},
+
+"Sagittarius-Taurus": {
+  overview: "Freedom vs. stability—an intriguing but varied relationship.",
+  strengths: "Taurus brings grounding; Sagittarius brings excitement.",
+  challenges: "Different paces and priorities can cause friction.",
+  advice: "Allow space for adventure while keeping roots strong.",
+  compatibilityScore: 60,
+  elementHarmony: "Fire + Earth",
+  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Taurus)"],
+  loveLanguageTips: {
+    Sagittarius: "Laughter and experiential acts",
+    Taurus: "Physical comfort and reliability"
+  },
+  communicationStyle: "Sagittarius is adventurous; Taurus is steady—balance is essential.",
+  intimacyLevel: "Moderate – grows with trust."
+},
+
+"Sagittarius-Gemini": {
+  overview: "Opposites attract in witty adventure—vibrant and curious duo.",
+  strengths: "Shared love for exploration and mental stimulation.",
+  challenges: "Restlessness and commitment fears may surface.",
+  advice: "Stay anchored emotionally during adventures.",
+  compatibilityScore: 85,
+  elementHarmony: "Fire + Air",
+  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Gemini)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventure and playful banter",
+    Gemini: "Words of affirmation and shared ideas"
+  },
+  communicationStyle: "Open, dynamic, and playful—always moving forward.",
+  intimacyLevel: "High – energetic and loving."
+},
+
+"Sagittarius-Cancer": {
+  overview: "Explorer meets nurturer—freedom faces emotional caution.",
+  strengths: "Cancer’s care softens; Sagittarius’ spontaneity enlivens.",
+  challenges: "Cancer’s need for security vs. Sagittarius’ desire for freedom.",
+  advice: "Cultivate trust and balance between rootedness and exploration.",
+  compatibilityScore: 50,
+  elementHarmony: "Fire + Water",
+  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Cancer)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventures and humor",
+    Cancer: "Emotional reassurance and bonding time"
+  },
+  communicationStyle: "Direct vs. sensitive—honesty with empathy works best.",
+  intimacyLevel: "Moderate – grows stronger over trust."
+},
+
+"Sagittarius-Leo": {
+  overview: "Fire signs in harmony—lively, confident, and adventurous.",
+  strengths: "Shared energy, optimism, and charismatic fun.",
+  challenges: "Impulsivity or ego-driven friction can arise.",
+  advice: "Align on shared dreams and celebrate each other openly.",
+  compatibilityScore: 90,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo)"],
+  loveLanguageTips: {
+    Sagittarius: "Fun adventures and shared laughter",
+    Leo: "Praise, attention, and grand romance"
+  },
+  communicationStyle: "Spirited, humorous, and bold.",
+  intimacyLevel: "Very high – enthusiastic and passionate."
+},
+
+"Sagittarius-Virgo": {
+  overview: "Free-spirited meets anchored—a journey of growth.",
+  strengths: "Virgo brings planning; Sagittarius brings exploration.",
+  challenges: "Different paces can cause impatience or rigidity.",
+  advice: "Plan adventures together with structure and spontaneity.",
+  compatibilityScore: 55,
+  elementHarmony: "Fire + Earth",
+  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Virgo, past)"],
+  loveLanguageTips: {
+    Sagittarius: "Humor and shared experiences",
+    Virgo: "Acts of service and thoughtful stability"
+  },
+  communicationStyle: "Sagittarius is big-picture; Virgo is detailed—blended communication helps.",
+  intimacyLevel: "Moderate – deepens over shared understanding."
+},
+
+"Sagittarius-Libra": {
+  overview: "Social explorers—culture, ideas, and camaraderie abound.",
+  strengths: "Shared love of learning, diplomacy, and fun.",
+  challenges: "Libra's indecision vs. Sagittarius’ bluntness.",
+  advice: "Make decisions together and speak with kindness.",
+  compatibilityScore: 80,
+  elementHarmony: "Fire + Air",
+  famousCouples: ["Katie Holmes (Sagittarius) & Tom Cruise (Libra)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventures and playful honesty",
+    Libra: "Quality time and cultural connection"
+  },
+  communicationStyle: "Friendly and collaborative—balanced discussions thrive.",
+  intimacyLevel: "High – open-hearted and curious."
+},
+
+"Sagittarius-Scorpio": {
+  overview: "Intense and adventurous—fire meets depth.",
+  strengths: "Passion, loyalty, and transformative energy.",
+  challenges: "Scorpio’s intensity vs. Sagittarius’ independence.",
+  advice: "Scorpio should embrace freedom; Sagittarius should offer emotional space.",
+  compatibilityScore: 65,
+  elementHarmony: "Fire + Water",
+  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio–Sagittarius mix)"],
+  loveLanguageTips: {
+    Sagittarius: "Freedom and shared exploration",
+    Scorpio: "Emotional depth and quality time"
+  },
+  communicationStyle: "Bold meets intense—think, speak, and respond with respect.",
+  intimacyLevel: "High – deeply passionate and evolving."
+},
+
+"Sagittarius-Sagittarius": {
+  overview: "Two wanderers—adventure, freedom, and infinite possibility.",
+  strengths: "Shared ambition, optimism, and enthusiasm.",
+  challenges: "Lack of grounding or excess restlessness.",
+  advice: "Create routines within adventure to maintain balance.",
+  compatibilityScore: 85,
+  elementHarmony: "Fire + Fire",
+  famousCouples: ["Nicki Minaj (Sagittarius) & Kenneth Petty (Sagittarius)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventure, laughter, and free expression"
+  },
+  communicationStyle: "Open, spontaneous, and unfiltered.",
+  intimacyLevel: "High – adventurous and loving."
+},
+
+"Sagittarius-Capricorn": {
+  overview: "Dreamer meets realist—a balance of vision and structure.",
+  strengths: "Capricorn organises; Sagittarius inspires.",
+  challenges: "Different tempos—Sagittarius wants speed, Capricorn plans carefully.",
+  advice: "Plan long-term with room for surprise.",
+  compatibilityScore: 70,
+  elementHarmony: "Fire + Earth",
+  famousCouples: ["Davide Gramicci (Sagittarius) & Others"],
+  loveLanguageTips: {
+    Sagittarius: "Adventure and freedom",
+    Capricorn: "Stability and consistent support"
+  },
+  communicationStyle: "Big picture vs. detail-focused—listen to build clarity.",
+  intimacyLevel: "High – balanced by mutual respect."
+},
+
+"Sagittarius-Aquarius": {
+  overview: "Visionary duo—originality and innovation meet wanderlust.",
+  strengths: "Shared ideals, independence, and social freedom.",
+  challenges: "Detached emotional expression may make depth difficult.",
+  advice: "Prioritise emotional check-ins and shared ideals.",
+  compatibilityScore: 82,
+  elementHarmony: "Fire + Air",
+  famousCouples: ["Brad Pitt (Aquarius) & Jennifer Aniston (Sagittarius)"],
+  loveLanguageTips: {
+    Sagittarius: "Frequent adventure and witty talk",
+    Aquarius: "Idea sharing and individual space"
+  },
+  communicationStyle: "Enthusiastic and future-focused.",
+  intimacyLevel: "High – emotionally curious and innovative."
+},
+
+"Sagittarius-Pisces": {
+  overview: "Dream meets adventure—emotional freedom and creative exploration.",
+  strengths: "Pisces deepens emotion; Sagittarius expands horizons.",
+  challenges: "Pisces may feel overwhelmed; Sagittarius may feel held back.",
+  advice: "Balance emotional understanding with spontaneity.",
+  compatibilityScore: 60,
+  elementHarmony: "Fire + Water",
+  famousCouples: ["Jon Bon Jovi (Cancer) & Dorothea Hurley (Pisces—Sagittarius mix)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventure and playful energy",
+    Pisces: "Emotional support and spiritual connection"
+  },
+  communicationStyle: "Playful meets poetic—communicate with warmth.",
+  intimacyLevel: "Moderate – soulful when emotionally aligned."
+
     },
     "Capricorn-Aquarius": {
       overview: "Tradition meets progress.",
