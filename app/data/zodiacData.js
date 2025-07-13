@@ -334,60 +334,197 @@ const zodiacSigns = [
   intimacyLevel: "High – tender and deeply soulful."
 },
   
-    "Gemini-Cancer": {
-      overview: "Head and heart unite.",
-      strengths: "Learning and emotional growth.",
-      challenges: "Emotional needs vs. intellectual curiosity.",
-      advice: "Communicate openly about feelings."
-    },
-    "Gemini-Leo": {
-      overview: "Playful and expressive.",
-      strengths: "Creativity and social joy.",
-      challenges: "Clashes over attention.",
-      advice: "Celebrate each other's successes."
-    },
-    "Gemini-Virgo": {
-      overview: "Intellectually stimulating.",
-      strengths: "Mutual curiosity.",
-      challenges: "Overthinking and criticism.",
-      advice: "Offer patience and kindness."
-    },
-    "Gemini-Libra": {
-      overview: "A lively and charming duo.",
-      strengths: "Social connection and ideas.",
-      challenges: "Indecision.",
-      advice: "Focus on shared values."
-    },
-    "Gemini-Scorpio": {
-      overview: "Mysterious and fascinating.",
-      strengths: "Depth and intrigue.",
-      challenges: "Trust issues.",
-      advice: "Be transparent and patient."
-    },
-    "Gemini-Sagittarius": {
-      overview: "An adventurous, free-spirited match.",
-      strengths: "Shared love of discovery.",
-      challenges: "Restlessness.",
-      advice: "Keep exploring together."
-    },
-    "Gemini-Capricorn": {
-      overview: "A balance of fun and responsibility.",
-      strengths: "Different strengths complement each other.",
-      challenges: "Different priorities.",
-      advice: "Respect each other's paths."
-    },
-    "Gemini-Aquarius": {
-      overview: "Visionary and exciting.",
-      strengths: "Innovation and friendship.",
-      challenges: "Detachment.",
-      advice: "Stay connected emotionally."
-    },
-    "Gemini-Pisces": {
-      overview: "Dreamer meets thinker.",
-      strengths: "Creativity and inspiration.",
-      challenges: "Practicality may suffer.",
-      advice: "Ground your plans."
-    },
+  "Gemini-Aries": {
+  overview: "Dynamic and adventurous, this pairing is full of energy and excitement.",
+  strengths: "Mutual enthusiasm and a love for variety keep the relationship lively.",
+  challenges: "Both can be impulsive and impatient, leading to clashes.",
+  advice: "Practice patience and listen actively to balance excitement with understanding.",
+  compatibilityScore: 75,
+  elementHarmony: "Air (Gemini) + Fire (Aries)",
+  famousCouples: ["Angelina Jolie (Gemini) & Brad Pitt (Aries)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and playful banter",
+    Aries: "Physical touch and acts of service"
+  },
+  communicationStyle: "Fast-paced and direct; both enjoy stimulating conversations.",
+  intimacyLevel: "High – driven by passion and curiosity."
+},
+
+"Gemini-Taurus": {
+  overview: "Earth meets air in this curious and stimulating match.",
+  strengths: "Balance between Taurus' stability and Gemini's spontaneity brings freshness and grounding.",
+  challenges: "Taurus craves routine and security, while Gemini seeks novelty and change, which can cause friction.",
+  advice: "Practice flexibility and compromise to appreciate both stability and variety.",
+  compatibilityScore: 58,
+  elementHarmony: "Air (Gemini) + Earth (Taurus)",
+  famousCouples: ["Adele (Gemini) & Simon Konecki (Taurus)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and playful communication",
+    Taurus: "Physical touch and thoughtful gestures"
+  },
+  communicationStyle: "Taurus is steady and deliberate; Gemini is quick-witted and curious. Patience is key.",
+  intimacyLevel: "Moderate – builds with time as trust deepens."
+},
+
+"Gemini-Gemini": {
+  overview: "A lively, intellectual connection full of fun and endless conversation.",
+  strengths: "Shared curiosity and adaptability keep things exciting.",
+  challenges: "Both may struggle with inconsistency and commitment.",
+  advice: "Focus on grounding your bond with trust and reliability.",
+  compatibilityScore: 70,
+  elementHarmony: "Air + Air",
+  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Gemini)"],
+  loveLanguageTips: {
+    Gemini: "Quality time and verbal affirmations"
+  },
+  communicationStyle: "Highly communicative, often juggling multiple topics at once.",
+  intimacyLevel: "Playful and exploratory."
+},
+
+"Gemini-Cancer": {
+  overview: "Head and heart unite in this complex emotional-intellectual mix.",
+  strengths: "Learning and emotional growth through mutual understanding.",
+  challenges: "Cancer's emotional depth may overwhelm Gemini’s lighthearted nature.",
+  advice: "Communicate openly and respect each other's needs.",
+  compatibilityScore: 52,
+  elementHarmony: "Air (Gemini) + Water (Cancer)",
+  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Cancer)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and playful teasing",
+    Cancer: "Acts of service and physical touch"
+  },
+  communicationStyle: "Gemini is quick and light; Cancer is intuitive and emotional.",
+  intimacyLevel: "Varies – builds with emotional trust."
+},
+
+"Gemini-Leo": {
+  overview: "Playful and expressive, this duo loves to shine together.",
+  strengths: "Creativity and social joy fuel a fun-loving partnership.",
+  challenges: "Clashes may arise over attention and ego.",
+  advice: "Celebrate each other's successes and share the spotlight.",
+  compatibilityScore: 78,
+  elementHarmony: "Air (Gemini) + Fire (Leo)",
+  famousCouples: ["Johnny Depp (Gemini) & Amber Heard (Leo)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and shared adventures",
+    Leo: "Gifts and quality time"
+  },
+  communicationStyle: "Vibrant and outgoing, full of enthusiasm and flair.",
+  intimacyLevel: "High – passionate and warm."
+},
+
+"Gemini-Virgo": {
+  overview: "Intellectually stimulating but potentially critical pairing.",
+  strengths: "Mutual curiosity and complementary strengths.",
+  challenges: "Virgo’s critical nature may clash with Gemini’s spontaneity.",
+  advice: "Offer patience and kindness, and embrace differences.",
+  compatibilityScore: 60,
+  elementHarmony: "Air (Gemini) + Earth (Virgo)",
+  famousCouples: ["Paul Rudd (Gemini) & Julie Yaeger (Virgo)"],
+  loveLanguageTips: {
+    Gemini: "Quality time and playful communication",
+    Virgo: "Acts of service and thoughtful words"
+  },
+  communicationStyle: "Gemini is abstract and fast; Virgo is precise and methodical.",
+  intimacyLevel: "Moderate – grows with mutual respect."
+},
+
+"Gemini-Libra": {
+  overview: "Air signs with a natural affinity for harmony and socializing.",
+  strengths: "Shared love for communication and intellectual pursuits.",
+  challenges: "Indecisiveness and conflict avoidance.",
+  advice: "Make decisions together and express honest opinions.",
+  compatibilityScore: 82,
+  elementHarmony: "Air + Air",
+  famousCouples: ["John F. Kennedy Jr. (Gemini) & Carolyn Bessette (Libra)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and spontaneity",
+    Libra: "Quality time and physical touch"
+  },
+  communicationStyle: "Smooth, diplomatic, and engaging.",
+  intimacyLevel: "High – emotional and intellectual connection."
+},
+
+"Gemini-Scorpio": {
+  overview: "Intense and mysterious pairing with contrasting energies.",
+  strengths: "Gemini’s adaptability complements Scorpio’s depth.",
+  challenges: "Trust and control issues may surface.",
+  advice: "Build honesty and respect boundaries.",
+  compatibilityScore: 48,
+  elementHarmony: "Air (Gemini) + Water (Scorpio)",
+  famousCouples: ["Katy Perry (Gemini) & Russell Brand (Scorpio)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and lightheartedness",
+    Scorpio: "Physical touch and quality time"
+  },
+  communicationStyle: "Gemini is light and social; Scorpio is intense and private.",
+  intimacyLevel: "Deep and transformative but requires trust."
+},
+
+"Gemini-Sagittarius": {
+  overview: "Opposites attract in this adventurous and freedom-loving pair.",
+  strengths: "Shared love for exploration and learning.",
+  challenges: "Restlessness and commitment fears.",
+  advice: "Balance independence with connection.",
+  compatibilityScore: 85,
+  elementHarmony: "Air (Gemini) + Fire (Sagittarius)",
+  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Gemini)"],
+  loveLanguageTips: {
+    Gemini: "Quality time and verbal communication",
+    Sagittarius: "Acts of service and adventure"
+  },
+  communicationStyle: "Open, honest, and enthusiastic.",
+  intimacyLevel: "High energy and passionate."
+},
+
+"Gemini-Capricorn": {
+  overview: "Grounded Capricorn meets playful Gemini for a balancing act.",
+  strengths: "Pragmatism meets creativity, fostering growth.",
+  challenges: "Different pace and priorities can cause friction.",
+  advice: "Respect each other’s differences and find common goals.",
+  compatibilityScore: 55,
+  elementHarmony: "Air (Gemini) + Earth (Capricorn)",
+  famousCouples: ["Mary-Kate Olsen (Gemini) & Olivier Sarkozy (Capricorn)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and shared fun",
+    Capricorn: "Acts of service and quality time"
+  },
+  communicationStyle: "Gemini is lively and chatty; Capricorn is reserved and practical.",
+  intimacyLevel: "Moderate – trust builds over time."
+},
+
+"Gemini-Aquarius": {
+  overview: "A meeting of minds with a love for innovation and freedom.",
+  strengths: "Shared ideals and adventurous spirits.",
+  challenges: "Emotional depth may be avoided.",
+  advice: "Open up emotionally and maintain intellectual connection.",
+  compatibilityScore: 80,
+  elementHarmony: "Air + Air",
+  famousCouples: ["Morgan Freeman (Gemini) & Myrna Colley-Lee (Aquarius)"],
+  loveLanguageTips: {
+    Gemini: "Quality time and verbal wit",
+    Aquarius: "Acts of service and shared causes"
+  },
+  communicationStyle: "Progressive, forward-thinking, and open-minded.",
+  intimacyLevel: "Intellectual and emotionally curious."
+},
+
+"Gemini-Pisces": {
+  overview: "Imaginative and dreamy pairing with complementary qualities.",
+  strengths: "Creativity and emotional empathy blend well.",
+  challenges: "Different ways of processing emotions can cause misunderstandings.",
+  advice: "Practice patience and empathy in communication.",
+  compatibilityScore: 50,
+  elementHarmony: "Air (Gemini) + Water (Pisces)",
+  famousCouples: ["Bob Dylan (Gemini) & Joan Baez (Pisces)"],
+  loveLanguageTips: {
+    Gemini: "Words of affirmation and lively conversation",
+    Pisces: "Physical touch and quality time"
+  },
+  communicationStyle: "Gemini is rational and quick; Pisces is intuitive and sensitive.",
+  intimacyLevel: "Emotional and spiritual connection develops gradually."
+},
+
     "Cancer-Leo": {
       overview: "Warmth and devotion.",
       strengths: "Loyalty and generosity.",
