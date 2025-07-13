@@ -15,6 +15,16 @@ export default function Footer() {
             pamelajterrell.com
           </a>
         </p>
+        <p>
+          <a
+            href="https://www.flaticon.com/free-icons/sky"
+            title="sky icons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sky icons created by Freepik - Flaticon
+          </a>
+        </p>
       </footer>
 
       <style jsx>{`
@@ -23,15 +33,20 @@ export default function Footer() {
           padding: 1rem;
           border-top: 1px solid #6a0dad;
           margin-top: 2rem;
-          font-size: 0.6rem;
-          font-weight: 300;
-          color: #d9b3ff;
           background-color: transparent;
           text-shadow: 0 0 5px rgba(217, 179, 255, 0.7);
           font-family: 'Georgia', serif;
           letter-spacing: 0.05em;
         }
-        a {
+
+        .footer p {
+          font-size: 0.8rem;
+          font-weight: 300;
+          color: #d9b3ff;
+          margin: 0.25rem 0;
+        }
+
+        .footer a {
           color: #b18aff;
           text-decoration: underline;
           font-weight: 300;
