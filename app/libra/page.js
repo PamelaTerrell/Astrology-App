@@ -10,7 +10,7 @@ export default function LibraPage() {
         
         <h2>Personality Overview</h2>
         <p>
-          Libra is the zodiac’s peacemaker, guided by a deep desire for balance, harmony, and justice. Ruled 
+          Libra is the Zodiac’s peacemaker, guided by a deep desire for balance, harmony, and justice. Ruled 
           by Venus, the planet of love and beauty, Libras are naturally charming and have a strong aesthetic 
           sense. They seek fairness in all areas of life and are gifted at seeing multiple perspectives, making 
           them excellent mediators and friends.
