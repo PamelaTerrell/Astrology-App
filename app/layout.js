@@ -21,7 +21,7 @@ export const metadata = {
   description:
     "Discover your zodiac sign, explore astrology insights, and find your perfect compatibility matches.",
   icons: {
-    icon: "/stars.png", // 👈 Add this line
+    icon: "/star.png", // 👈 Add this line
   },
 };
 

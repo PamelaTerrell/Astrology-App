@@ -17,12 +17,12 @@ export default function Footer() {
         </p>
         <p>
           <a
-            href="https://www.flaticon.com/free-icons/sky"
-            title="sky icons"
+            href="https://www.flaticon.com/free-icons/astrology"
+            title="astrology icons"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Sky icons created by Freepik - Flaticon
+            Astrology icons created by monkik - Flaticon
           </a>
         </p>
       </footer>
