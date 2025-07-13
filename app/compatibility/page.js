@@ -217,7 +217,7 @@ const ZodiacCompatibility = () => {
         `}</style>
       </div>
 
-      <Footer />
+    
     </>
   );
 };
