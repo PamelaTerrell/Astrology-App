@@ -187,7 +187,7 @@ const ZodiacCompatibility = () => {
           )
         )}
 
-        <Footer />
+        
 
         <style jsx>{`
           .container {
