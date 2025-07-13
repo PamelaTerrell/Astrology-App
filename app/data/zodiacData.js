@@ -182,66 +182,158 @@ const zodiacSigns = [
   communicationStyle: "Aries is blunt; Pisces is poetic. Conflict can arise from misunderstanding each other’s expression.",
   intimacyLevel: "Very high when safe space is created — can be deeply soulful and artistic."
 },
+
     "Taurus-Gemini": {
-      overview: "Earth meets air in this curious match.",
-      strengths: "Balance between stability and spontaneity.",
-      challenges: "Taurus craves routine, Gemini seeks novelty.",
-      advice: "Meet halfway through compromise."
-    },
-    "Taurus-Cancer": {
-      overview: "A nurturing, harmonious connection.",
-      strengths: "Shared love of comfort and loyalty.",
-      challenges: "Overattachment may stifle growth.",
-      advice: "Maintain healthy independence."
-    },
-    "Taurus-Leo": {
-      overview: "Warmth and pride create a magnetic bond.",
-      strengths: "Devotion and affection.",
-      challenges: "Possessiveness and stubbornness.",
-      advice: "Honor each other's need for admiration."
-    },
-    "Taurus-Virgo": {
-      overview: "A grounded, practical relationship.",
-      strengths: "Shared values and reliability.",
-      challenges: "Overemphasis on routine.",
-      advice: "Embrace small adventures."
-    },
-    "Taurus-Libra": {
-      overview: "Beauty and pleasure bind these two.",
-      strengths: "Appreciation of art and romance.",
-      challenges: "Different social needs.",
-      advice: "Balance home life with social activities."
-    },
-    "Taurus-Scorpio": {
-      overview: "Intense and deeply bonded.",
-      strengths: "Passion and commitment.",
-      challenges: "Power dynamics can be challenging.",
-      advice: "Cultivate trust and honesty."
-    },
-    "Taurus-Sagittarius": {
-      overview: "A clash of freedom and stability.",
-      strengths: "Potential for growth.",
-      challenges: "Different lifestyle preferences.",
-      advice: "Allow each other space to grow."
-    },
-    "Taurus-Capricorn": {
-      overview: "A solid, dependable union.",
-      strengths: "Shared ambitions and values.",
-      challenges: "Work-life balance.",
-      advice: "Remember to nurture the relationship."
-    },
-    "Taurus-Aquarius": {
-      overview: "Conventional meets unconventional.",
-      strengths: "Unique perspectives.",
-      challenges: "Different life philosophies.",
-      advice: "Be open to learning from each other."
-    },
-    "Taurus-Pisces": {
-      overview: "Gentle and romantic.",
-      strengths: "Deep emotional understanding.",
-      challenges: "Avoiding escapism.",
-      advice: "Support each other's dreams."
-    },
+  overview: "Earth meets air in this curious and stimulating match.",
+  strengths: "Balance between Taurus' stability and Gemini's spontaneity brings freshness and grounding.",
+  challenges: "Taurus craves routine and security, while Gemini seeks novelty and change, which can cause friction.",
+  advice: "Practice flexibility and compromise to appreciate both stability and variety.",
+  compatibilityScore: 58,
+  elementHarmony: "Earth (Taurus) + Air (Gemini)",
+  famousCouples: ["Adele (Gemini) & Simon Konecki (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Physical touch and thoughtful gestures",
+    Gemini: "Words of affirmation and playful communication"
+  },
+  communicationStyle: "Taurus is steady and deliberate; Gemini is quick-witted and curious. Patience is key.",
+  intimacyLevel: "Moderate – builds with time as trust deepens."
+},
+"Taurus-Cancer": {
+  overview: "A nurturing, harmonious connection grounded in loyalty and care.",
+  strengths: "Both value home, comfort, and emotional security, making for a strong bond.",
+  challenges: "Tendency toward overattachment may limit personal growth.",
+  advice: "Maintain healthy boundaries to foster individual independence within the relationship.",
+  compatibilityScore: 80,
+  elementHarmony: "Earth (Taurus) + Water (Cancer)",
+  famousCouples: ["Prince William (Cancer) & Kate Middleton (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Consistent acts of service and physical affection",
+    Cancer: "Emotional support and cozy quality time"
+  },
+  communicationStyle: "Calm and caring; both communicate with warmth and sensitivity.",
+  intimacyLevel: "High – deep emotional and physical connection."
+},
+"Taurus-Leo": {
+  overview: "Warmth and pride create a magnetic and passionate bond.",
+  strengths: "Devotion, affection, and a shared love for luxury and fun.",
+  challenges: "Possessiveness and stubbornness can lead to power struggles.",
+  advice: "Honor each other's need for admiration while respecting boundaries.",
+  compatibilityScore: 72,
+  elementHarmony: "Earth (Taurus) + Fire (Leo)",
+  famousCouples: ["Barbra Streisand (Leo) & James Brolin (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Physical touch and steady reassurance",
+    Leo: "Grand romantic gestures and verbal praise"
+  },
+  communicationStyle: "Both are expressive but need to manage ego clashes for harmony.",
+  intimacyLevel: "High – passionate and loyal."
+},
+"Taurus-Virgo": {
+  overview: "A grounded, practical relationship built on shared values and reliability.",
+  strengths: "Mutual dedication, trustworthiness, and a love of routine.",
+  challenges: "Can become too routine or rigid without spontaneity.",
+  advice: "Embrace small adventures and openness to new experiences.",
+  compatibilityScore: 85,
+  elementHarmony: "Earth (Taurus) + Earth (Virgo)",
+  famousCouples: ["Beyoncé (Virgo) & Jay-Z (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Acts of service and affectionate touch",
+    Virgo: "Thoughtful help and attentive listening"
+  },
+  communicationStyle: "Practical, thoughtful, and clear — great for problem-solving together.",
+  intimacyLevel: "Moderate to high – builds gradually with trust."
+},
+"Taurus-Libra": {
+  overview: "Beauty and pleasure bind these two with shared love for harmony and indulgence.",
+  strengths: "Strong appreciation for art, romance, and social grace.",
+  challenges: "Different social needs: Libra is outgoing, Taurus more home-centered.",
+  advice: "Balance time spent between social activities and quiet, intimate moments.",
+  compatibilityScore: 70,
+  elementHarmony: "Earth (Taurus) + Air (Libra)",
+  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Consistent physical affection and reliability",
+    Libra: "Words of affirmation and shared experiences"
+  },
+  communicationStyle: "Diplomatic and warm, but sometimes Libra’s indecisiveness may test Taurus’ patience.",
+  intimacyLevel: "Moderate – harmonious and affectionate."
+},
+"Taurus-Scorpio": {
+  overview: "Intense and deeply bonded, this is a relationship of passion and loyalty.",
+  strengths: "Strong emotional connection and mutual commitment.",
+  challenges: "Power dynamics and jealousy can create challenges.",
+  advice: "Build trust through open communication and honesty.",
+  compatibilityScore: 78,
+  elementHarmony: "Earth (Taurus) + Water (Scorpio)",
+  famousCouples: ["Bill Gates (Taurus) & Melinda Gates (Scorpio)"],
+  loveLanguageTips: {
+    Taurus: "Physical touch and consistent support",
+    Scorpio: "Emotional depth and loyalty"
+  },
+  communicationStyle: "Both are intense and private; patience is essential to navigate conflicts.",
+  intimacyLevel: "Very high – deeply sensual and transformative."
+},
+"Taurus-Sagittarius": {
+  overview: "A clash between Taurus' desire for stability and Sagittarius' love for freedom.",
+  strengths: "Potential for personal growth by balancing stability with adventure.",
+  challenges: "Different lifestyle preferences can cause tension.",
+  advice: "Give each other space and embrace learning from differences.",
+  compatibilityScore: 52,
+  elementHarmony: "Earth (Taurus) + Fire (Sagittarius)",
+  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Reliable presence and gentle touch",
+    Sagittarius: "Fun, laughter, and shared explorations"
+  },
+  communicationStyle: "Taurus is grounded and steady; Sagittarius is spontaneous and optimistic.",
+  intimacyLevel: "Moderate – requires mutual respect for boundaries."
+},
+"Taurus-Capricorn": {
+  overview: "A solid, dependable union based on shared ambition and values.",
+  strengths: "Strong work ethic, loyalty, and practical support.",
+  challenges: "Balancing career focus with nurturing the relationship.",
+  advice: "Make time to nurture emotional intimacy alongside goals.",
+  compatibilityScore: 90,
+  elementHarmony: "Earth (Taurus) + Earth (Capricorn)",
+  famousCouples: ["Dwayne Johnson (Taurus) & Lauren Hashian (Capricorn)"],
+  loveLanguageTips: {
+    Taurus: "Consistent affection and reliability",
+    Capricorn: "Acts of service and long-term commitment"
+  },
+  communicationStyle: "Pragmatic and supportive communication style.",
+  intimacyLevel: "High – steady and deeply connected."
+},
+"Taurus-Aquarius": {
+  overview: "Conventional Taurus meets unconventional Aquarius, creating a unique dynamic.",
+  strengths: "Brings together tradition and innovation with mutual respect.",
+  challenges: "Different life philosophies can lead to misunderstandings.",
+  advice: "Be open to learning and celebrate differences.",
+  compatibilityScore: 55,
+  elementHarmony: "Earth (Taurus) + Air (Aquarius)",
+  famousCouples: ["Alicia Keys (Aquarius) & Swizz Beatz (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Physical reassurance and nurturing",
+    Aquarius: "Intellectual connection and personal freedom"
+  },
+  communicationStyle: "Grounded Taurus balances quirky Aquarius; requires patience.",
+  intimacyLevel: "Moderate – needs effort to align emotional rhythms."
+},
+"Taurus-Pisces": {
+  overview: "Gentle and romantic pairing of earth and water.",
+  strengths: "Deep emotional understanding and creative synergy.",
+  challenges: "Tendency toward escapism and avoidance of conflict.",
+  advice: "Support each other's dreams while staying grounded in reality.",
+  compatibilityScore: 77,
+  elementHarmony: "Earth (Taurus) + Water (Pisces)",
+  famousCouples: ["Queen Elizabeth II (Pisces) & Prince Philip (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Steady presence and physical affection",
+    Pisces: "Emotional intimacy and spiritual closeness"
+  },
+  communicationStyle: "Soft and empathetic communication; promotes harmony.",
+  intimacyLevel: "High – tender and deeply soulful."
+},
+  
     "Gemini-Cancer": {
       overview: "Head and heart unite.",
       strengths: "Learning and emotional growth.",
