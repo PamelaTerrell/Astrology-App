@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link"; // 
+import Link from "next/link";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,11 +30,12 @@ export default function NavBar() {
           <li>
             <Link href="/compatibility">Compatibility</Link>
           </li>
-          
+          <li>
+            <Link href="/astrology-2025">2025 Highlights</Link> {/* New Link */}
+          </li>
         </ul>
       </nav>
 
-      
       <style jsx>{`
         .navbar {
           display: flex;
