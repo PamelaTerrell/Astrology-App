@@ -27,7 +27,7 @@ export default function Highlights2025() {
               <strong>Jupiter in Taurus (May 2024 – May 2025):</strong> Jupiter expands growth and abundance; in Taurus, it encourages financial stability and enjoying life's comforts. Earth signs will feel this energy strongly.
             </li>
             <li>
-              <strong>Saturn in Pisces (March 2023 – February 2026):</strong> Saturn’s influence in dreamy Pisces asks all signs to get serious about their spiritual growth and emotional boundaries.
+              <strong>Saturn in Pisces (March 2023 – February 2026):</strong> Saturn influence in dreamy Pisces asks all signs to get serious about their spiritual growth and emotional boundaries.
             </li>
             <li>
               <strong>Mercury Retrogrades:</strong> Mercury retrogrades several times in 2025, offering chances to reflect but caution with communication and travel plans.
