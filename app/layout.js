@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import NavBar from "./components/NavBar";
 import ReturnHomeLink from "./components/ReturnHomeLink";
-import Footer from "./components/Footer"; // if not already here
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +20,9 @@ export const metadata = {
   title: "Cosmic Zodiac Astrology",
   description:
     "Discover your zodiac sign, explore astrology insights, and find your perfect compatibility matches.",
+  icons: {
+    icon: "/stars.png", // 👈 Add this line
+  },
 };
 
 export default function RootLayout({ children }) {
