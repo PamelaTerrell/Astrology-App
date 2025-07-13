@@ -49,7 +49,7 @@ export default function Highlights2025() {
 
         <section className="call-to-action">
           <p>
-            🔮 Dive deeper into your personal chart and discover how 2025’s cosmic energies can illuminate your path. Your stars are waiting — will you answer the call?
+            🔮 Dive deeper into your personal chart and discover how 2025 cosmic energies can illuminate your path. Your stars are waiting — will you answer the call?
           </p>
           <a href="/compatibility" className="explore-link">Explore Compatibility & Insights</a>
         </section>
