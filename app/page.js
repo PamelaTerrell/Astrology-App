@@ -114,7 +114,7 @@ export default function HomePage() {
   }
 `}</style>
       </main>
-      <Footer />
+      
     </>
   );
 }
