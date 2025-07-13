@@ -20,7 +20,7 @@ export default function HomePage() {
     Gemini: "Communication is key today, so speak your mind.",
     Cancer: "Stay grounded today, things will balance out soon.",
     Leo: "Your confidence will be your strength today.",
-    Virgo: "Look closely at details, you'll find a solution.",
+    Virgo: "Look closely at details, you will find a solution.",
     Libra: "Focus on harmony, peace will come your way.",
     Scorpio: "A good day to reflect and dive deep into your thoughts.",
     Sagittarius: "Adventure awaits, stay open to new opportunities.",
