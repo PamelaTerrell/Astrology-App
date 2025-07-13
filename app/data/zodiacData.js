@@ -525,53 +525,185 @@ const zodiacSigns = [
   intimacyLevel: "Emotional and spiritual connection develops gradually."
 },
 
-    "Cancer-Leo": {
-      overview: "Warmth and devotion.",
-      strengths: "Loyalty and generosity.",
-      challenges: "Mood swings and pride.",
-      advice: "Show consistent appreciation."
-    },
-    "Cancer-Virgo": {
-      overview: "A gentle, supportive connection.",
-      strengths: "Care and practicality.",
-      challenges: "Overworrying.",
-      advice: "Create a safe space for honesty."
-    },
-    "Cancer-Libra": {
-      overview: "Romantic but delicate.",
-      strengths: "Affection and beauty.",
-      challenges: "Different emotional needs.",
-      advice: "Keep open lines of communication."
-    },
-    "Cancer-Scorpio": {
-      overview: "Deep emotional resonance.",
-      strengths: "Intensity and loyalty.",
-      challenges: "Possessiveness.",
-      advice: "Set healthy boundaries."
-    },
-    "Cancer-Sagittarius": {
-      overview: "Comfort vs. adventure.",
-      strengths: "Growth and learning.",
-      challenges: "Clashing lifestyles.",
-      advice: "Embrace compromise."
-    },
-    "Cancer-Capricorn": {
-      overview: "Opposites balance each other.",
-      strengths: "Security and ambition.",
-      challenges: "Emotional expression.",
-      advice: "Value your differences."
-    },
-    "Cancer-Aquarius": {
-      overview: "Traditional meets modern.",
-      strengths: "Unique perspectives.",
-      challenges: "Emotional disconnect.",
-      advice: "Work to understand each other's needs."
-    },
-    "Cancer-Pisces": {
-      overview: "Tender and empathetic.",
-      strengths: "Emotional intuition.",
-      challenges: "Over-sensitivity.",
-      advice: "Maintain clear communication."
+   "Cancer-Aries": {
+  overview: "Water meets fire—emotional depth contrasts bold spontaneity.",
+  strengths: "Aries’ enthusiasm brings excitement, Cancer offers emotional support.",
+  challenges: "Aries may feel held back; Cancer may feel overwhelmed.",
+  advice: "Bridge energy and sensitivity by honoring each other's paces.",
+  compatibilityScore: 65,
+  elementHarmony: "Water (Cancer) + Fire (Aries)",
+  famousCouples: ["Ariana Grande (Cancer) & Pete Davidson (Aries)"],
+  loveLanguageTips: {
+    Cancer: "Quality time and emotional affirmation",
+    Aries: "Action and protective gestures"
+  },
+  communicationStyle: "Cancer is soothing; Aries is direct—find balance in tone.",
+  intimacyLevel: "High – emotional closeness grows over time."
+},
+"Cancer-Taurus": {
+  overview: "A deeply nurturing and stable bond grounded in comfort.",
+  strengths: "Shared love of home, loyalty, and quiet devotion.",
+  challenges: "Both can become overly protective or resistant to change.",
+  advice: "Encourage new experiences together to avoid stagnation.",
+  compatibilityScore: 80,
+  elementHarmony: "Water (Cancer) + Earth (Taurus)",
+  famousCouples: ["Prince William (Cancer) & Kate Middleton (Taurus)"],
+  loveLanguageTips: {
+    Cancer: "Emotional reassurance and cozy intimacy",
+    Taurus: "Physical touch and caring acts"
+  },
+  communicationStyle: "Gentle and caring—great for emotional support.",
+  intimacyLevel: "Very high – built on strong trust and comfort."
+},
+"Cancer-Gemini": {
+  overview: "Emotional vs. intellectual—soft and curious exchange.",
+  strengths: "Gemini lifts the mood; Cancer deepens emotion.",
+  challenges: "Cancer needs stability, Gemini loves unpredictability.",
+  advice: "Gemini should nurture stability; Cancer should lighten up.",
+  compatibilityScore: 52,
+  elementHarmony: "Water (Cancer) + Air (Gemini)",
+  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Caring words and supportive gestures",
+    Gemini: "Fun conversation and mental stimulation"
+  },
+  communicationStyle: "Cancer is emotional; Gemini is playful—listen with empathy.",
+  intimacyLevel: "Moderate – emotional depth builds gradually."
+},
+"Cancer-Cancer": {
+  overview: "A profoundly emotional and nurturing connection.",
+  strengths: "Deep empathy, loyalty, and home-focused harmony.",
+  challenges: "Risk of emotional overload or mutual moodiness.",
+  advice: "Set boundaries and share self-care routines.",
+  compatibilityScore: 85,
+  elementHarmony: "Water + Water",
+  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Emotional support and comforting closeness"
+  },
+  communicationStyle: "Intuitive and sensitive—sometimes too inward.",
+  intimacyLevel: "Very high – soulful emotional intimacy."
+},
+"Cancer-Leo": {
+  overview: "Warm-hearted Leo meets protective Cancer for a cozy match.",
+  strengths: "Leo brings brightness; Cancer brings care and security.",
+  challenges: "Leo’s pride vs. Cancer’s sensitivity can collide.",
+  advice: "Let Leo shine; let Cancer nurture in return.",
+  compatibilityScore: 70,
+  elementHarmony: "Water (Cancer) + Fire (Leo)",
+  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Leo)"],
+  loveLanguageTips: {
+    Cancer: "Security and heartfelt attention",
+    Leo: "Verbal praise and loyalty"
+  },
+  communicationStyle: "Leo is expressive; Cancer listens deeply—balance is key.",
+  intimacyLevel: "High – affectionate and emotionally secure."
+},
+"Cancer-Virgo": {
+  overview: "Emotion meets practicality in this nurturing match.",
+  strengths: "Virgo brings structure; Cancer brings warmth and protection.",
+  challenges: "Virgo’s critique vs. Cancer’s feelings can cause upset.",
+  advice: "Virgo should be gentle; Cancer should trust practicality.",
+  compatibilityScore: 78,
+  elementHarmony: "Water (Cancer) + Earth (Virgo)",
+  famousCouples: ["Beyoncé (Virgo) & Jay-Z (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Acts of care and assurance",
+    Virgo: "Helpful gestures and attentive listening"
+  },
+  communicationStyle: "Clear and caring—great for supportive dialogue.",
+  intimacyLevel: "High – sensitive and classically comforting."
+},
+"Cancer-Libra": {
+  overview: "Emotion balanced by grace and harmony.",
+  strengths: "Libra brings diplomacy; Cancer brings depth and intuition.",
+  challenges: "Libra’s indecision vs. Cancer’s emotional clarity.",
+  advice: "Make decisions together and validate each emotion.",
+  compatibilityScore: 68,
+  elementHarmony: "Water (Cancer) + Air (Libra)",
+  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Emotional connection and caring rituals",
+    Libra: "Quality time and harmonious ambiance"
+  },
+  communicationStyle: "Balanced and receptive—ideal for gentle talk.",
+  intimacyLevel: "Moderate – affectionate with thoughtful design."
+},
+"Cancer-Scorpio": {
+  overview: "One of the most powerful and transformative pairings.",
+  strengths: "Deep emotional intensity, loyalty, and mutual understanding.",
+  challenges: "Risk of emotional turbulence and control games.",
+  advice: "Ensure openness and clear emotional sharing.",
+  compatibilityScore: 88,
+  elementHarmony: "Water + Water",
+  famousCouples: ["Steven Spielberg (Cancer) & Kate Capshaw (Scorpio)"],
+  loveLanguageTips: {
+    Cancer: "Safety and consistent affection",
+    Scorpio: "Emotional truth and physical intensity"
+  },
+  communicationStyle: "Passionate and intuitive—highly expressive.",
+  intimacyLevel: "Very high – profound vulnerability and connection."
+},
+"Cancer-Sagittarius": {
+  overview: "Emotion vs. freedom—cautious vs. adventurous.",
+  strengths: "Sagittarius lifts Cancer’s spirits; Cancer softens Sagittarius.",
+  challenges: "Freedom-seeking Sagittarius may frustrate emotional Cancer.",
+  advice: "Sagittarius should assure security; Cancer should allow exploration.",
+  compatibilityScore: 50,
+  elementHarmony: "Water (Cancer) + Fire (Sagittarius)",
+  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Emotional reassurance and intimate consistency",
+    Sagittarius: "Shared adventures and playful humor"
+  },
+  communicationStyle: "Direct vs. sensitive—balance bluntness with empathy.",
+  intimacyLevel: "Moderate – grows when trust is nurtured."
+},
+"Cancer-Capricorn": {
+  overview: "Opposites that deeply complement—emotion meets ambition.",
+  strengths: "Cancer offers care; Capricorn offers stability and focus.",
+  challenges: "Capricorn’s reserve vs. Cancer’s emotional flow.",
+  advice: "Balance work and devotion with emotional check-ins.",
+  compatibilityScore: 82,
+  elementHarmony: "Water (Cancer) + Earth (Capricorn)",
+  famousCouples: ["Bill Gates (Capricorn) & Melinda Gates (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Emotional warmth and home comfort",
+    Capricorn: "Acts of service and reliable support"
+  },
+  communicationStyle: "Practical and caring—mix strategy and sentiment.",
+  intimacyLevel: "High – dependable and emotionally rich."
+},
+"Cancer-Aquarius": {
+  overview: "Sensitive nurturer meets independent idealist.",
+  strengths: "Aquarius adds perspective; Cancer adds emotional depth.",
+  challenges: "Aquarius may seem distant to emotional Cancer.",
+  advice: "Aquarius should prioritize emotional check-ins; Cancer should allow space.",
+  compatibilityScore: 55,
+  elementHarmony: "Water (Cancer) + Air (Aquarius)",
+  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Cancer)"],
+  loveLanguageTips: {
+    Cancer: "Emotional closeness and nurturing acts",
+    Aquarius: "Intellectual connection and shared ideals"
+  },
+  communicationStyle: "Balanced mix of thoughtfulness and thoughtful care.",
+  intimacyLevel: "Moderate – emotionally grounding when open."
+},
+"Cancer-Pisces": {
+  overview: "A beautifully empathetic and intuitive water pairing.",
+  strengths: "Shared depth of emotion and spiritual alignment.",
+  challenges: "May retreat into emotional bubble; risk of co-dependence.",
+  advice: "Balance emotional togetherness with healthy boundaries.",
+  compatibilityScore: 90,
+  elementHarmony: "Water + Water",
+  famousCouples: ["Jon Bon Jovi (Cancer) & Dorothea Hurley (Pisces)"],
+  loveLanguageTips: {
+    Cancer: "Emotional reassurance and caring presence",
+    Pisces: "Intuitive understanding and soulful support"
+  },
+  communicationStyle: "Dreamy, empathetic, and fluid.",
+  intimacyLevel: "Very high – deeply bonding and soulful."
+
     },
     "Leo-Virgo": {
       overview: "Fire and earth in balance.",
