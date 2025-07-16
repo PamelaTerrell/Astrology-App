@@ -11,7 +11,9 @@ export default function NavBar() {
   return (
     <>
       <nav className="navbar">
-        <div className="nav-brand">🌙 Cosmic Zodiac Astrology</div>
+        <Link href="/" legacyBehavior>
+          <a className="nav-brand">🌙 Cosmic Zodiac Astrology</a>
+        </Link>
 
         <button
           aria-label="Toggle menu"
@@ -31,7 +33,7 @@ export default function NavBar() {
             <Link href="/compatibility">Compatibility</Link>
           </li>
           <li>
-            <Link href="/astrology-2025">2025 Highlights</Link> {/* New Link */}
+            <Link href="/astrology-2025">2025 Highlights</Link>
           </li>
         </ul>
       </nav>
@@ -57,6 +59,12 @@ export default function NavBar() {
           color: #f4c430;
           text-shadow: 1px 1px 3px silver;
           user-select: none;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .nav-brand:hover {
+          color: #fff4a3;
         }
 
         .nav-links {
