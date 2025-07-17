@@ -15,18 +15,30 @@ export default function HomePage() {
   }, []);
 
   const horoscopes = {
-    Aries: "Today is a great day for new beginnings!",
-    Taurus: "Be patient, your hard work will pay off soon.",
-    Gemini: "Communication is key today, so speak your mind.",
-    Cancer: "Stay grounded today, things will balance out soon.",
-    Leo: "Your confidence will be your strength today.",
-    Virgo: "Look closely at details, you will find a solution.",
-    Libra: "Focus on harmony, peace will come your way.",
-    Scorpio: "A good day to reflect and dive deep into your thoughts.",
-    Sagittarius: "Adventure awaits, stay open to new opportunities.",
-    Capricorn: "Hard work pays off, stay focused on your goals.",
-    Aquarius: "Your creativity will lead to exciting breakthroughs.",
-    Pisces: "Trust your intuition, it will guide you well.",
+    Aries:
+      "Today is a great day for new beginnings! Embrace your bold spirit and take charge of exciting opportunities. Your energy will inspire others, so don’t hesitate to lead with confidence.",
+    Taurus:
+      "Be patient, your hard work will pay off soon. Stay grounded and trust the steady progress you’re making. Taking time to enjoy small pleasures will bring you peace and satisfaction.",
+    Gemini:
+      "Communication is key today, so speak your mind with clarity and listen with an open heart. Your curiosity can lead to fascinating new connections—be ready to explore fresh ideas.",
+    Cancer:
+      "Stay grounded today, things will balance out soon. Your emotional wisdom helps you nurture both yourself and those around you. Creating a cozy and safe space will restore your energy.",
+    Leo:
+      "Your confidence will be your strength today. Shine brightly in social settings and creative pursuits. Your enthusiasm will attract positive attention, so enjoy sharing your unique gifts.",
+    Virgo:
+      "Look closely at details, you will find a solution. Your analytical mind is sharp—trust your instincts while remembering to take breaks and breathe. Helping others will add to your fulfillment.",
+    Libra:
+      "Focus on harmony, peace will come your way. Seek balance in your relationships and surroundings. Your natural diplomacy will be a gift to those around you, helping to smooth conflicts.",
+    Scorpio:
+      "A good day to reflect and dive deep into your thoughts. Embrace transformation and let go of what no longer serves you. Emotional honesty will open the door to meaningful breakthroughs.",
+    Sagittarius:
+      "Adventure awaits, stay open to new opportunities. Your optimism is contagious—explore with an open heart and mind. Whether through travel or learning, exciting growth is ahead.",
+    Capricorn:
+      "Hard work pays off, stay focused on your goals. Your discipline will build strong foundations for future success. Take moments to celebrate your progress and recharge your motivation.",
+    Aquarius:
+      "Your creativity will lead to exciting breakthroughs. Think outside the box and trust your unique perspective. Connecting with like-minded people will spark new ideas and inspiration.",
+    Pisces:
+      "Trust your intuition, it will guide you well. Your empathy and imagination are your strengths—use them to navigate challenges with grace. Quiet moments of reflection will nurture your spirit.",
   };
 
   const getZodiacSign = (date) => {
@@ -64,17 +76,30 @@ export default function HomePage() {
       <main>
         <h1>Cosmic Zodiac Astrology</h1>
         <form onSubmit={handleSubmit}>
-          <label>Enter your birthdate:</label><br />
+          <label htmlFor="birthdate">Enter your birthdate:</label>
+          <br />
           <input
             type="date"
+            id="birthdate"
             value={birthDate}
             onChange={(e) => setBirthDate(e.target.value)}
             required
           />
           <button type="submit">Get My Zodiac Sign</button>
         </form>
+
         {zodiac && <h2>Your Zodiac Sign: {zodiac}</h2>}
-        {dailyHoroscope && <p>Your Horoscope: {dailyHoroscope}</p>}
+
+        {dailyHoroscope && (
+          <div className="horoscope-container" aria-live="polite" role="region">
+            <p>{dailyHoroscope}</p>
+          </div>
+        )}
+
+<p className="click-instruction" aria-live="polite" role="note">
+  ✨ Click your zodiac sign below to reveal more details! ✨
+</p>
+
 
         <div className="zodiac-grid">
           {[
@@ -92,29 +117,127 @@ export default function HomePage() {
             "pisces",
           ].map((sign) => (
             <Link key={sign} href={`/${sign}`}>
-              <Image
-                src={`/${sign}.jpg`}
-                alt={sign}
-                width={150}
-                height={150}
-              />
+              <Image src={`/${sign}.jpg`} alt={sign} width={150} height={150} />
             </Link>
           ))}
         </div>
+
         <style jsx>{`
-  .zodiac-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px; /* Add a gap between items */
+          main {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 1rem;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #eee;
+            background: transparent;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+          }
+
+          h1 {
+            text-align: center;
+            color: #c0c0ff;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 6px #99f;
+          }
+
+          form {
+            margin-bottom: 1.5rem;
+            text-align: center;
+          }
+
+          label {
+            font-weight: 600;
+          }
+
+          input[type="date"] {
+            padding: 0.6rem;
+            margin: 0.5rem 0 1rem;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background: #22223c;
+            color: #eee;
+            width: 100%;
+            max-width: 250px;
+          }
+
+          button {
+            padding: 0.8rem 1.5rem;
+            background: #8888ff;
+            color: #1a1a2e;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+          }
+
+          button:hover:not(:disabled) {
+            background: #aaaaff;
+            box-shadow: 0 0 10px rgba(180, 180, 255, 0.6);
+          }
+
+          button:disabled {
+            background: #555;
+            cursor: not-allowed;
+          }
+
+          h2 {
+            text-align: center;
+            margin-top: 1rem;
+            color: #d0d0ff;
+            text-shadow: 0 0 4px #99f;
+          }
+
+          .horoscope-container {
+            margin: 1rem 20px;
+            padding: 1rem 1.5rem;
+            /* no background or box-shadow */
+            border-radius: 12px; /* optional for subtle rounding */
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #eee;
+          }
+
+          .click-instruction {
+  text-align: center;
+  color: #aabbee;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+  user-select: none;
+  font-weight: 600;
+  animation: pulseGlow 3s ease-in-out infinite;
+  text-shadow: 0 0 8px #aabbee88, 0 0 20px #8899ff66;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 8px #aabbee88, 0 0 20px #8899ff66;
+    color: #aabbee;
   }
-  .zodiac-link {
-    margin: 6px; /* margin around each image/link */
-    display: inline-block; /* to respect margin */
+  50% {
+    text-shadow: 0 0 14px #ddeeffcc, 0 0 32px #aabbffee;
+    color: #ddeeff;
   }
-`}</style>
+}
+
+
+          @media (max-width: 600px) {
+            .horoscope-container {
+              margin: 1rem 10px;
+              font-size: 1rem;
+              padding: 0.8rem 1rem;
+            }
+          }
+
+          .zodiac-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+          }
+        `}</style>
       </main>
-      
     </>
   );
 }
