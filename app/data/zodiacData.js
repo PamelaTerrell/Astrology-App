@@ -15,8 +15,24 @@ const zodiacSigns = [
     "Pisces"
   ];
   
-  // This is your manually defined compatibility data.
+ 
   const existingCompatibility = {
+
+    "Aries-Aries": {
+  overview: "A fiery, action-packed connection between two passionate leaders.",
+  strengths: "Shared ambition, adventure, and drive.",
+  challenges: "Ego clashes and impulsive reactions.",
+  advice: "Take turns leading and learn the art of compromise.",
+  compatibilityScore: 70,
+  elementHarmony: "Fire (Aries) + Fire (Aries)",
+  famousCouples: ["Maya Angelou (Aries) & Guy Johnson (Aries - son)"],
+  loveLanguageTips: {
+    Aries: "Bold gestures, acts of courage, and spontaneous excitement"
+  },
+  communicationStyle: "Direct and assertive – conversations can be thrilling or combative.",
+  intimacyLevel: "High – strong chemistry and mutual desire keep the spark alive."
+},
+
     "Aries-Taurus": {
   overview: "A relationship built on contrast and fascination.",
   strengths: "Aries brings energy and Taurus offers stability.",
@@ -183,6 +199,21 @@ const zodiacSigns = [
   intimacyLevel: "Very high when safe space is created — can be deeply soulful and artistic."
 },
 
+  "Taurus-Taurus": {
+  overview: "A deeply sensual and steady bond between two loyal souls.",
+  strengths: "Patience, dependability, and mutual understanding.",
+  challenges: "Resistance to change and potential stubbornness.",
+  advice: "Keep things fresh and allow room for growth.",
+  compatibilityScore: 80,
+  elementHarmony: "Earth (Taurus) + Earth (Taurus)",
+  famousCouples: ["Cher (Taurus) & Sonny Bono (Taurus)"],
+  loveLanguageTips: {
+    Taurus: "Physical affection, shared meals, and consistency"
+  },
+  communicationStyle: "Measured and thoughtful – rarely rushed, but always sincere.",
+  intimacyLevel: "High – strong physical connection and trust."
+},
+
     "Taurus-Gemini": {
   overview: "Earth meets air in this curious and stimulating match.",
   strengths: "Balance between Taurus' stability and Gemini's spontaneity brings freshness and grounding.",
@@ -332,6 +363,21 @@ const zodiacSigns = [
   },
   communicationStyle: "Soft and empathetic communication; promotes harmony.",
   intimacyLevel: "High – tender and deeply soulful."
+},
+
+  "Gemini-Gemini": {
+  overview: "A whirlwind of ideas, conversation, and curiosity.",
+  strengths: "Mental stimulation and endless variety.",
+  challenges: "Difficulty staying grounded and emotionally consistent.",
+  advice: "Establish emotional depth beneath the surface fun.",
+  compatibilityScore: 78,
+  elementHarmony: "Air (Gemini) + Air (Gemini)",
+  famousCouples: ["Kanye West (Gemini) & North West (Gemini - child)"],
+  loveLanguageTips: {
+    Gemini: "Witty banter, variety, and playful surprises"
+  },
+  communicationStyle: "Quick, clever, and constantly shifting – boredom is rare.",
+  intimacyLevel: "Moderate – thrives on novelty, not routine."
 },
   
   "Gemini-Aries": {
@@ -525,6 +571,21 @@ const zodiacSigns = [
   intimacyLevel: "Emotional and spiritual connection develops gradually."
 },
 
+  "Cancer-Cancer": {
+  overview: "Two nurturing souls creating a deeply emotional and intuitive bond.",
+  strengths: "Empathy, loyalty, and shared values around family and comfort.",
+  challenges: "Emotional sensitivity may lead to miscommunication or mood swings.",
+  advice: "Maintain openness and don't retreat at the same time.",
+  compatibilityScore: 85,
+  elementHarmony: "Water (Cancer) + Water (Cancer)",
+  famousCouples: ["Princess Diana (Cancer) & Prince William (Cancer - son)"],
+  loveLanguageTips: {
+    Cancer: "Affectionate gestures, emotional reassurance, and quality time"
+  },
+  communicationStyle: "Gentle and heartfelt – silence can speak volumes.",
+  intimacyLevel: "Very high – a tender, soulful connection."
+},
+
    "Cancer-Aries": {
   overview: "Water meets fire—emotional depth contrasts bold spontaneity.",
   strengths: "Aries’ enthusiasm brings excitement, Cancer offers emotional support.",
@@ -705,6 +766,23 @@ const zodiacSigns = [
   intimacyLevel: "Very high – deeply bonding and soulful."
 
     },
+
+    "Leo-Leo": {
+  overview: "A glamorous and passionate match full of charisma and creativity.",
+  strengths: "Confidence, romance, and shared flair for drama.",
+  challenges: "Competition for attention and prideful standoffs.",
+  advice: "Celebrate each other's shine without dimming your own.",
+  compatibilityScore: 76,
+  elementHarmony: "Fire (Leo) + Fire (Leo)",
+  famousCouples: ["Jennifer Lopez (Leo) & Ben Affleck (Leo)"],
+  loveLanguageTips: {
+    Leo: "Praise, loyalty, and grand romantic gestures"
+  },
+  communicationStyle: "Bold and expressive – with a flair for performance.",
+  intimacyLevel: "High – a passionate and theatrical romance."
+},
+
+
     "Leo-Aries": {
   overview: "Two bold fire signs—their relationship is radiant, confident, and full of passion.",
   strengths: "Mutual enthusiasm, strong leadership, and loyalty fuel a dynamic partnership.",
@@ -895,6 +973,22 @@ const zodiacSigns = [
   communicationStyle: "Warm expressive vs. intuitive and poetic.",
   intimacyLevel: "High – loving, emotional, and dreamy."
 },
+
+  "Virgo-Virgo": {
+  overview: "A thoughtful and organized pairing built on mutual respect and purpose.",
+  strengths: "Dedication, intellect, and shared values.",
+  challenges: "Perfectionism and overthinking.",
+  advice: "Practice self-compassion and celebrate progress over perfection.",
+  compatibilityScore: 74,
+  elementHarmony: "Earth (Virgo) + Earth (Virgo)",
+  famousCouples: ["Beyoncé (Virgo) & Blue Ivy (Virgo - daughter)"],
+  loveLanguageTips: {
+    Virgo: "Acts of service, careful attention, and meaningful routines"
+  },
+  communicationStyle: "Clear and analytical – may be overly cautious at times.",
+  intimacyLevel: "Moderate – intimacy deepens through trust and subtlety."
+},
+
     "Virgo-Aries": {
   overview: "Practical Virgo meets spontaneous Aries—an intriguing blend of carefulness and action.",
   strengths: "Virgo’s organization complements Aries’ drive.",
@@ -1086,6 +1180,21 @@ const zodiacSigns = [
   intimacyLevel: "Very high – soulful, nurturing, and transformative."
 
     },
+
+    "Libra-Libra": {
+  overview: "A graceful and balanced relationship rooted in harmony and shared ideals.",
+  strengths: "Romantic, fair, and socially adept.",
+  challenges: "Indecisiveness and avoidance of conflict.",
+  advice: "Speak openly about needs – don't just keep the peace.",
+  compatibilityScore: 82,
+  elementHarmony: "Air (Libra) + Air (Libra)",
+  famousCouples: ["Will Smith (Libra) & Jada Pinkett Smith (Libra)"],
+  loveLanguageTips: {
+    Libra: "Words of affirmation, shared beauty, and romantic gestures"
+  },
+  communicationStyle: "Tactful and charming – sometimes avoids hard truths.",
+  intimacyLevel: "High – sensual and mentally connected."
+},
    
     "Libra-Aries": {
   overview: "Balanced lovers—optimism meets courage in an engaging dynamic.",
@@ -1276,6 +1385,21 @@ const zodiacSigns = [
   },
   communicationStyle: "Gentle and expressive—ideal for emotional depth.",
   intimacyLevel: "High – dreamy, artistic, and deeply connected."
+},
+
+  "Sagittarius-Sagittarius": {
+  overview: "An adventurous and freedom-loving duo with unstoppable energy.",
+  strengths: "Optimism, humor, and shared love for exploration.",
+  challenges: "Restlessness and commitment avoidance.",
+  advice: "Stay grounded and honor emotional depth.",
+  compatibilityScore: 77,
+  elementHarmony: "Fire (Sagittarius) + Fire (Sagittarius)",
+  famousCouples: ["Brad Pitt (Sagittarius) & Taylor Swift (Sagittarius - mutual admiration)"],
+  loveLanguageTips: {
+    Sagittarius: "Adventurous experiences and open conversation"
+  },
+  communicationStyle: "Honest and humorous – sometimes too blunt.",
+  intimacyLevel: "Moderate – thrives on spontaneity and fun."
 },
 
     "Sagittarius-Aries": {
@@ -1469,24 +1593,596 @@ const zodiacSigns = [
   intimacyLevel: "Moderate – soulful when emotionally aligned."
 
     },
-    "Capricorn-Aquarius": {
-      overview: "Tradition meets progress.",
-      strengths: "Shared determination.",
-      challenges: "Different methods.",
-      advice: "Respect differences."
-    },
-    "Capricorn-Pisces": {
-      overview: "Structure and intuition blend.",
-      strengths: "Support.",
-      challenges: "Emotional disconnect.",
-      advice: "Cultivate understanding."
-    },
-    "Aquarius-Pisces": {
-      overview: "Visionary and sensitive.",
-      strengths: "Creativity.",
-      challenges: "Practicality.",
-      advice: "Ground your dreams."
-    }
+
+      "Pisces-Pisces": {
+  overview: "A dreamy, romantic connection filled with empathy and imagination.",
+  strengths: "Compassion, creativity, and deep emotional bonding.",
+  challenges: "Escapism and lack of structure.",
+  advice: "Stay grounded and support each other’s dreams with action.",
+  compatibilityScore: 81,
+  elementHarmony: "Water (Pisces) + Water (Pisces)",
+  famousCouples: ["Rihanna (Pisces) & Erykah Badu (Pisces - artistic parallels)"],
+  loveLanguageTips: {
+    Pisces: "Emotional presence, dreamy romance, and heartfelt gestures"
+  },
+  communicationStyle: "Subtle, poetic, and intuitive – may lack clarity at times.",
+  intimacyLevel: "Very high – soulful and romantic connection."
+},
+
+    "Aquarius-Aries": {
+  overview: "An exciting match of pioneering energy and originality.",
+  strengths: "Shared enthusiasm for innovation and adventure.",
+  challenges: "Both can be stubborn and independent.",
+  advice: "Balance freedom with commitment and respect each other’s space.",
+  compatibilityScore: 70,
+  elementHarmony: "Air (Aquarius) + Fire (Aries)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Intellectual connection and unique experiences",
+    Aries: "Bold gestures and physical affection"
+  },
+  communicationStyle: "Energetic and direct – love to brainstorm and take risks.",
+  intimacyLevel: "High – adventurous and passionate."
+},
+
+"Aquarius-Taurus": {
+  overview: "A blend of stability and unconventional thinking.",
+  strengths: "Taurus provides grounding while Aquarius brings new ideas.",
+  challenges: "Taurus may resist change; Aquarius craves freedom.",
+  advice: "Find common goals and appreciate differences.",
+  compatibilityScore: 60,
+  elementHarmony: "Air (Aquarius) + Earth (Taurus)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Freedom and mental stimulation",
+    Taurus: "Physical affection and steady routines"
+  },
+  communicationStyle: "Taurus is practical; Aquarius is idealistic – they balance each other.",
+  intimacyLevel: "Moderate – needs effort to build trust."
+},
+
+"Aquarius-Gemini": {
+  overview: "A vibrant meeting of minds with endless curiosity.",
+  strengths: "Excellent communication and shared love of freedom.",
+  challenges: "May struggle with emotional depth.",
+  advice: "Work on opening up emotionally to deepen connection.",
+  compatibilityScore: 85,
+  elementHarmony: "Air (Aquarius) + Air (Gemini)",
+  famousCouples: ["Oprah Winfrey (Aquarius) & Ellen DeGeneres (Aquarius - friendship)"],
+  loveLanguageTips: {
+    Aquarius: "Unique ideas and space to be themselves",
+    Gemini: "Playful banter and mental stimulation"
+  },
+  communicationStyle: "Fast-paced and lively – great conversationalists.",
+  intimacyLevel: "High – thrives on mental and physical freedom."
+},
+
+"Aquarius-Cancer": {
+  overview: "An unusual but potentially enriching pairing.",
+  strengths: "Cancer provides emotional warmth; Aquarius offers intellectual stimulation.",
+  challenges: "Cancer seeks security; Aquarius values independence.",
+  advice: "Create space for emotional needs and freedom.",
+  compatibilityScore: 55,
+  elementHarmony: "Air (Aquarius) + Water (Cancer)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Freedom and inventive gestures",
+    Cancer: "Affection and reassurance"
+  },
+  communicationStyle: "Can be emotionally mismatched, but with effort can grow.",
+  intimacyLevel: "Moderate – needs nurturing and trust."
+},
+
+"Aquarius-Leo": {
+  overview: "A dynamic and electrifying match.",
+  strengths: "Shared love for socializing and excitement.",
+  challenges: "Leo craves attention; Aquarius values independence.",
+  advice: "Balance ego and respect individuality.",
+  compatibilityScore: 75,
+  elementHarmony: "Air (Aquarius) + Fire (Leo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Intellectual freedom and quirky surprises",
+    Leo: "Praise and grand gestures"
+  },
+  communicationStyle: "Lively and entertaining – can be both challenging and fun.",
+  intimacyLevel: "High – passionate and playful."
+},
+
+"Aquarius-Virgo": {
+  overview: "A mix of practical care and visionary ideas.",
+  strengths: "Virgo’s detail-oriented nature complements Aquarius’ big-picture thinking.",
+  challenges: "Virgo can be critical; Aquarius resists constraints.",
+  advice: "Appreciate each other’s unique approaches.",
+  compatibilityScore: 65,
+  elementHarmony: "Air (Aquarius) + Earth (Virgo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Freedom and intellectual engagement",
+    Virgo: "Acts of service and thoughtful care"
+  },
+  communicationStyle: "Balanced between logic and innovation.",
+  intimacyLevel: "Moderate – grows with patience."
+},
+
+"Aquarius-Libra": {
+  overview: "A harmonious match with shared ideals and social grace.",
+  strengths: "Strong mental connection and love for fairness.",
+  challenges: "Both can avoid conflict and suppress emotions.",
+  advice: "Practice open communication and emotional honesty.",
+  compatibilityScore: 80,
+  elementHarmony: "Air (Aquarius) + Air (Libra)",
+  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Libra)"],
+  loveLanguageTips: {
+    Aquarius: "Unique ideas and space to be authentic",
+    Libra: "Words of affirmation and shared beauty"
+  },
+  communicationStyle: "Smooth, diplomatic, and thoughtful.",
+  intimacyLevel: "High – intellectually and emotionally connected."
+},
+
+"Aquarius-Scorpio": {
+  overview: "An unconventional pairing with intense contrasts.",
+  strengths: "Innovation balanced with emotional depth.",
+  challenges: "Aquarius’ detachment vs Scorpio’s intensity.",
+  advice: "Find middle ground between independence and intimacy.",
+  compatibilityScore: 58,
+  elementHarmony: "Air (Aquarius) + Water (Scorpio)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Freedom and mental stimulation",
+    Scorpio: "Loyalty and emotional honesty"
+  },
+  communicationStyle: "Challenging but stimulating conversations.",
+  intimacyLevel: "Moderate – requires effort for emotional bonding."
+},
+
+"Aquarius-Sagittarius": {
+  overview: "An adventurous and optimistic pairing full of freedom.",
+  strengths: "Shared love of exploration and open-mindedness.",
+  challenges: "Can be restless and commitment-averse.",
+  advice: "Stay grounded and nurture emotional connection.",
+  compatibilityScore: 85,
+  elementHarmony: "Air (Aquarius) + Fire (Sagittarius)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Intellectual freedom and new experiences",
+    Sagittarius: "Adventurous activities and honesty"
+  },
+  communicationStyle: "Energetic and inspiring – loves to explore ideas.",
+  intimacyLevel: "High – thrives on freedom and excitement."
+},
+
+"Aquarius-Capricorn": {
+  overview: "A pairing of tradition and innovation.",
+  strengths: "Capricorn’s stability balances Aquarius’ vision.",
+  challenges: "Capricorn may find Aquarius unpredictable; Aquarius may see Capricorn as rigid.",
+  advice: "Respect each other’s pace and values.",
+  compatibilityScore: 65,
+  elementHarmony: "Air (Aquarius) + Earth (Capricorn)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Freedom and intellectual connection",
+    Capricorn: "Practical support and loyalty"
+  },
+  communicationStyle: "Reserved but complementary.",
+  intimacyLevel: "Moderate – grows with effort."
+},
+
+"Aquarius-Aquarius": {
+  overview: "An intellectually stimulating and unconventional match.",
+  strengths: "Innovation, independence, and shared ideals.",
+  challenges: "Emotional detachment and unpredictability.",
+  advice: "Balance logic with emotional presence.",
+  compatibilityScore: 75,
+  elementHarmony: "Air (Aquarius) + Air (Aquarius)",
+  famousCouples: ["Oprah Winfrey (Aquarius) & Ellen DeGeneres (Aquarius - friendship)"],
+  loveLanguageTips: {
+    Aquarius: "Thoughtful ideas, unique surprises, and freedom to be authentic"
+  },
+  communicationStyle: "Analytical and forward-thinking – may avoid emotional topics.",
+  intimacyLevel: "Moderate – thrives on mental and creative stimulation."
+},
+
+"Aquarius-Pisces": {
+  overview: "A blend of imagination and intellect.",
+  strengths: "Creative and empathetic connection.",
+  challenges: "Pisces’ sensitivity vs Aquarius’ detachment.",
+  advice: "Practice empathy and open emotional exchange.",
+  compatibilityScore: 70,
+  elementHarmony: "Air (Aquarius) + Water (Pisces)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Aquarius: "Mental stimulation and freedom",
+    Pisces: "Emotional presence and dreamy romance"
+  },
+  communicationStyle: "Thoughtful and intuitive with potential for growth.",
+  intimacyLevel: "Moderate – develops with mutual understanding."
+},
+
+      "Scorpio-Aries": {
+  overview: "A powerful and intense match driven by passion and willpower.",
+  strengths: "Magnetic chemistry and strong loyalty.",
+  challenges: "Power struggles and stubbornness.",
+  advice: "Balance control with trust and open communication.",
+  compatibilityScore: 68,
+  elementHarmony: "Water (Scorpio) + Fire (Aries)",
+  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio)"],
+  loveLanguageTips: {
+    Scorpio: "Deep emotional connection and loyalty",
+    Aries: "Physical touch and acts of bravery"
+  },
+  communicationStyle: "Intense and direct – can lead to dramatic moments or deep understanding.",
+  intimacyLevel: "Extremely high – sensual, transformative, and magnetic."
+},
+
+"Scorpio-Taurus": {
+  overview: "A grounding and passionate union with deep emotional roots.",
+  strengths: "Trust, loyalty, and balance of passion with stability.",
+  challenges: "Jealousy and stubbornness can test the bond.",
+  advice: "Nurture honesty and allow space for independence.",
+  compatibilityScore: 85,
+  elementHarmony: "Water (Scorpio) + Earth (Taurus)",
+  famousCouples: ["Bill Gates (Scorpio) & Melinda Gates (Taurus)"],
+  loveLanguageTips: {
+    Scorpio: "Emotional intensity and physical touch",
+    Taurus: "Physical affection and consistent routines"
+  },
+  communicationStyle: "Slow and steady, with a focus on emotional depth.",
+  intimacyLevel: "Very high – strong physical and emotional connection."
+},
+
+"Scorpio-Gemini": {
+  overview: "An intriguing mix of intensity and playfulness.",
+  strengths: "Mental stimulation and emotional passion.",
+  challenges: "Gemini’s need for variety vs Scorpio’s intensity.",
+  advice: "Practice patience and respect differing needs.",
+  compatibilityScore: 62,
+  elementHarmony: "Water (Scorpio) + Air (Gemini)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Loyalty and deep emotional bonds",
+    Gemini: "Fun conversation and spontaneity"
+  },
+  communicationStyle: "Scorpio seeks depth, Gemini craves variety – communication can be a challenge.",
+  intimacyLevel: "Moderate – chemistry builds with effort and understanding."
+},
+
+"Scorpio-Cancer": {
+  overview: "A deeply emotional and intuitive connection.",
+  strengths: "Mutual understanding and support.",
+  challenges: "Moodiness and sensitivity may lead to tension.",
+  advice: "Keep communication open and provide reassurance.",
+  compatibilityScore: 90,
+  elementHarmony: "Water (Scorpio) + Water (Cancer)",
+  famousCouples: ["Eminem (Scorpio) & Kim Scott (Cancer)"],
+  loveLanguageTips: {
+    Scorpio: "Emotional depth and loyalty",
+    Cancer: "Affection and nurturing"
+  },
+  communicationStyle: "Subtle and empathetic – feelings are often communicated without words.",
+  intimacyLevel: "Very high – soulful and emotionally fulfilling."
+},
+
+"Scorpio-Leo": {
+  overview: "A passionate and dynamic pairing full of intensity and flair.",
+  strengths: "Strong chemistry and mutual admiration.",
+  challenges: "Clashes of pride and control issues.",
+  advice: "Respect each other's space and strengths.",
+  compatibilityScore: 70,
+  elementHarmony: "Water (Scorpio) + Fire (Leo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Physical intimacy and loyalty",
+    Leo: "Admiration and grand romantic gestures"
+  },
+  communicationStyle: "Bold and intense – can be both thrilling and challenging.",
+  intimacyLevel: "High – fiery and magnetic."
+},
+
+"Scorpio-Virgo": {
+  overview: "A complementary match combining depth with practicality.",
+  strengths: "Mutual support and problem-solving.",
+  challenges: "Virgo’s critical nature vs Scorpio’s sensitivity.",
+  advice: "Embrace imperfections and communicate openly.",
+  compatibilityScore: 75,
+  elementHarmony: "Water (Scorpio) + Earth (Virgo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Emotional depth and loyalty",
+    Virgo: "Acts of service and careful attention"
+  },
+  communicationStyle: "Thoughtful and intense – can form a strong intellectual bond.",
+  intimacyLevel: "Moderate to high – connection grows with trust."
+},
+
+"Scorpio-Libra": {
+  overview: "A balancing act of intensity and harmony.",
+  strengths: "Passion paired with diplomacy.",
+  challenges: "Libra’s indecision vs Scorpio’s intensity.",
+  advice: "Practice patience and open communication.",
+  compatibilityScore: 65,
+  elementHarmony: "Water (Scorpio) + Air (Libra)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Deep emotional connection",
+    Libra: "Words of affirmation and shared experiences"
+  },
+  communicationStyle: "Dynamic conversations that need balance to avoid conflict.",
+  intimacyLevel: "Moderate – requires effort to harmonize differences."
+},
+
+"Scorpio-Scorpio": {
+  overview: "An intense and transformative connection between two deep souls.",
+  strengths: "Emotional depth, loyalty, and mystery.",
+  challenges: "Power struggles and emotional volatility.",
+  advice: "Cultivate trust and allow vulnerability to lead.",
+  compatibilityScore: 79,
+  elementHarmony: "Water (Scorpio) + Water (Scorpio)",
+  famousCouples: ["Katy Perry (Scorpio) & Julia Roberts (Scorpio - friendship)"],
+  loveLanguageTips: {
+    Scorpio: "Loyalty, emotional depth, and physical intimacy"
+  },
+  communicationStyle: "Penetrating and powerful – can be unspoken but felt deeply.",
+  intimacyLevel: "Very high – magnetic and transformative."
+},
+
+"Scorpio-Sagittarius": {
+  overview: "A passionate yet challenging mix of intensity and freedom.",
+  strengths: "Mutual fascination and adventure.",
+  challenges: "Scorpio’s depth vs Sagittarius’ need for independence.",
+  advice: "Respect boundaries and encourage honesty.",
+  compatibilityScore: 60,
+  elementHarmony: "Water (Scorpio) + Fire (Sagittarius)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Emotional loyalty",
+    Sagittarius: "Open communication and adventure"
+  },
+  communicationStyle: "Sometimes clashing but with potential for growth.",
+  intimacyLevel: "Moderate – needs balance."
+},
+
+"Scorpio-Capricorn": {
+  overview: "A strong and determined pairing focused on shared goals.",
+  strengths: "Discipline, loyalty, and ambition.",
+  challenges: "Work focus can overshadow emotional connection.",
+  advice: "Make time for intimacy and emotional openness.",
+  compatibilityScore: 85,
+  elementHarmony: "Water (Scorpio) + Earth (Capricorn)",
+  famousCouples: ["Bill Clinton (Scorpio) & Hillary Clinton (Capricorn)"],
+  loveLanguageTips: {
+    Scorpio: "Emotional depth and loyalty",
+    Capricorn: "Practical support and consistency"
+  },
+  communicationStyle: "Reserved but powerful – builds slowly but solidly.",
+  intimacyLevel: "High – deep and lasting connection."
+},
+
+"Scorpio-Aquarius": {
+  overview: "An unconventional and intense bond with contrasting energies.",
+  strengths: "Innovation and emotional depth.",
+  challenges: "Aquarius’ detachment vs Scorpio’s intensity.",
+  advice: "Find balance between independence and intimacy.",
+  compatibilityScore: 58,
+  elementHarmony: "Water (Scorpio) + Air (Aquarius)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Scorpio: "Loyalty and emotional honesty",
+    Aquarius: "Freedom and intellectual connection"
+  },
+  communicationStyle: "Unpredictable but stimulating conversations.",
+  intimacyLevel: "Moderate – requires effort to connect emotionally."
+},
+
+"Scorpio-Pisces": {
+  overview: "A deeply intuitive and spiritual connection.",
+  strengths: "Empathy, emotional understanding, and support.",
+  challenges: "Both can be overly sensitive or avoid confrontation.",
+  advice: "Practice clear communication and honesty.",
+  compatibilityScore: 88,
+  elementHarmony: "Water (Scorpio) + Water (Pisces)",
+  famousCouples: ["Eva Mendes (Pisces) & Ryan Gosling (Scorpio)"],
+  loveLanguageTips: {
+    Scorpio: "Emotional intensity and loyalty",
+    Pisces: "Dreamy romance and emotional presence"
+  },
+  communicationStyle: "Gentle and empathetic – emotions flow deeply.",
+  intimacyLevel: "Very high – soulful and healing."
+},
+
+  "Capricorn-Aries": {
+  overview: "A challenging but rewarding pairing balancing ambition and action.",
+  strengths: "Capricorn’s discipline complements Aries’ enthusiasm.",
+  challenges: "Aries’ impulsiveness vs Capricorn’s caution.",
+  advice: "Be patient and respect each other’s pace.",
+  compatibilityScore: 65,
+  elementHarmony: "Earth (Capricorn) + Fire (Aries)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Practical support and reliability",
+    Aries: "Bold gestures and spontaneity"
+  },
+  communicationStyle: "Direct but sometimes cautious.",
+  intimacyLevel: "Moderate – grows with mutual respect."
+},
+
+"Capricorn-Taurus": {
+  overview: "A grounded and stable match with shared values.",
+  strengths: "Strong commitment, loyalty, and practicality.",
+  challenges: "Both can be stubborn and resistant to change.",
+  advice: "Celebrate each other’s strengths and stay flexible.",
+  compatibilityScore: 85,
+  elementHarmony: "Earth (Capricorn) + Earth (Taurus)",
+  famousCouples: ["Michelle Obama (Capricorn) & Barack Obama (Taurus)"],
+  loveLanguageTips: {
+    Capricorn: "Acts of service and consistency",
+    Taurus: "Physical touch and steady routines"
+  },
+  communicationStyle: "Steady, thoughtful, and supportive.",
+  intimacyLevel: "High – deep, lasting connection."
+},
+
+"Capricorn-Gemini": {
+  overview: "A mix of practicality and curiosity.",
+  strengths: "Gemini brings lightness; Capricorn brings structure.",
+  challenges: "Gemini’s spontaneity clashes with Capricorn’s routine.",
+  advice: "Appreciate differences and communicate openly.",
+  compatibilityScore: 55,
+  elementHarmony: "Earth (Capricorn) + Air (Gemini)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Reliability and practical help",
+    Gemini: "Fun conversation and mental stimulation"
+  },
+  communicationStyle: "Varied – needs effort to find common ground.",
+  intimacyLevel: "Moderate – requires patience."
+},
+
+"Capricorn-Cancer": {
+  overview: "A nurturing and ambitious duo focused on security.",
+  strengths: "Mutual support, loyalty, and emotional depth.",
+  challenges: "Capricorn’s restraint vs Cancer’s sensitivity.",
+  advice: "Practice emotional openness and trust.",
+  compatibilityScore: 80,
+  elementHarmony: "Earth (Capricorn) + Water (Cancer)",
+  famousCouples: ["Denzel Washington (Capricorn) & Pauletta Washington (Cancer)"],
+  loveLanguageTips: {
+    Capricorn: "Practical support and dedication",
+    Cancer: "Affection and reassurance"
+  },
+  communicationStyle: "Warm and steady, with deep emotional bonds.",
+  intimacyLevel: "High – emotionally fulfilling and secure."
+},
+
+"Capricorn-Leo": {
+  overview: "A powerful match balancing ambition and charisma.",
+  strengths: "Mutual respect and drive for success.",
+  challenges: "Leo’s need for attention vs Capricorn’s focus on work.",
+  advice: "Make time for fun and appreciation.",
+  compatibilityScore: 70,
+  elementHarmony: "Earth (Capricorn) + Fire (Leo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Practical acts and loyalty",
+    Leo: "Praise and grand romantic gestures"
+  },
+  communicationStyle: "Determined and expressive, sometimes competing for control.",
+  intimacyLevel: "Moderate to high – grows with balance."
+},
+
+"Capricorn-Virgo": {
+  overview: "A highly compatible and practical match.",
+  strengths: "Shared values, discipline, and attention to detail.",
+  challenges: "Can be overly cautious or critical.",
+  advice: "Practice patience and open communication.",
+  compatibilityScore: 88,
+  elementHarmony: "Earth (Capricorn) + Earth (Virgo)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Acts of service and consistency",
+    Virgo: "Thoughtful care and reliability"
+  },
+  communicationStyle: "Pragmatic and supportive.",
+  intimacyLevel: "High – steady and deeply connected."
+},
+
+"Capricorn-Libra": {
+  overview: "A mix of ambition and charm.",
+  strengths: "Capricorn’s focus balances Libra’s social grace.",
+  challenges: "Libra’s indecision vs Capricorn’s drive.",
+  advice: "Support each other’s strengths and compromise.",
+  compatibilityScore: 65,
+  elementHarmony: "Earth (Capricorn) + Air (Libra)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Practical support and reliability",
+    Libra: "Words of affirmation and shared experiences"
+  },
+  communicationStyle: "Balanced but needs effort to sync.",
+  intimacyLevel: "Moderate – requires patience."
+},
+
+"Capricorn-Scorpio": {
+  overview: "A strong and determined pairing focused on shared goals.",
+  strengths: "Discipline, loyalty, and ambition.",
+  challenges: "Work focus can overshadow emotional connection.",
+  advice: "Make time for intimacy and emotional openness.",
+  compatibilityScore: 85,
+  elementHarmony: "Earth (Capricorn) + Water (Scorpio)",
+  famousCouples: ["Bill Clinton (Scorpio) & Hillary Clinton (Capricorn)"],
+  loveLanguageTips: {
+    Capricorn: "Practical support and consistency",
+    Scorpio: "Emotional depth and loyalty"
+  },
+  communicationStyle: "Reserved but powerful – builds slowly but solidly.",
+  intimacyLevel: "High – deep and lasting connection."
+},
+
+"Capricorn-Sagittarius": {
+  overview: "A mix of stability and adventure.",
+  strengths: "Sagittarius brings excitement; Capricorn offers grounding.",
+  challenges: "Sagittarius’ restlessness vs Capricorn’s need for structure.",
+  advice: "Balance freedom and responsibility.",
+  compatibilityScore: 60,
+  elementHarmony: "Earth (Capricorn) + Fire (Sagittarius)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Reliability and practical help",
+    Sagittarius: "Adventure and honesty"
+  },
+  communicationStyle: "Different rhythms require effort to align.",
+  intimacyLevel: "Moderate – needs compromise."
+},
+
+"Capricorn-Capricorn": {
+  overview: "A power couple focused on ambition, loyalty, and long-term success.",
+  strengths: "Shared goals, discipline, and mutual respect.",
+  challenges: "Workaholism and emotional restraint.",
+  advice: "Make time for joy and vulnerability.",
+  compatibilityScore: 83,
+  elementHarmony: "Earth (Capricorn) + Earth (Capricorn)",
+  famousCouples: ["Michelle Obama (Capricorn) & Blue Ivy (Capricorn - family bond)"],
+  loveLanguageTips: {
+    Capricorn: "Practical support, consistency, and acts of loyalty"
+  },
+  communicationStyle: "Reserved but direct – action often speaks louder than words.",
+  intimacyLevel: "High – deep and lasting connection develops over time."
+},
+
+"Capricorn-Aquarius": {
+  overview: "A pairing of tradition and innovation.",
+  strengths: "Capricorn’s stability balances Aquarius’ vision.",
+  challenges: "Capricorn may find Aquarius unpredictable; Aquarius may see Capricorn as rigid.",
+  advice: "Respect each other’s pace and values.",
+  compatibilityScore: 65,
+  elementHarmony: "Earth (Capricorn) + Air (Aquarius)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Practical support and loyalty",
+    Aquarius: "Freedom and intellectual connection"
+  },
+  communicationStyle: "Reserved but complementary.",
+  intimacyLevel: "Moderate – grows with effort."
+},
+
+"Capricorn-Pisces": {
+  overview: "A nurturing and dreamy connection.",
+  strengths: "Pisces’ compassion balances Capricorn’s discipline.",
+  challenges: "Pisces’ idealism vs Capricorn’s realism.",
+  advice: "Support each other’s dreams while staying grounded.",
+  compatibilityScore: 75,
+  elementHarmony: "Earth (Capricorn) + Water (Pisces)",
+  famousCouples: [],
+  loveLanguageTips: {
+    Capricorn: "Acts of service and reliability",
+    Pisces: "Emotional presence and creativity"
+  },
+  communicationStyle: "Gentle and supportive with room for growth.",
+  intimacyLevel: "Moderate to high – deepens with trust."
+},
+
+
   };
   
   
@@ -1498,17 +2194,15 @@ const zodiacSigns = [
   
   // This loop generates *all* sorted combinations
   for (let i = 0; i < zodiacSigns.length; i++) {
-    for (let j = i + 1; j < zodiacSigns.length; j++) {
+    for (let j = i; j < zodiacSigns.length; j++) {  // <-- changed from i + 1
       const sign1 = zodiacSigns[i];
       const sign2 = zodiacSigns[j];
       const baseKey = `${sign1}-${sign2}`;
   
-      // Always create a default pairing description
       compatibility[baseKey] =
         existingCompatibility[baseKey] ||
         `Compatibility information for ${sign1} and ${sign2} is not yet defined.`;
   
-      // Create relationship-specific keys if they exist
       for (const rel of relationshipTypes) {
         const relKey = `${baseKey}-${rel}`;
         if (existingCompatibility[relKey]) {
@@ -1517,6 +2211,7 @@ const zodiacSigns = [
       }
     }
   }
+  
   
   const zodiacData = {
     signs: zodiacSigns,
