@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "./components/Footer";
+import Head from 'next/head';
 
 export default function HomePage() {
   const [birthDate, setBirthDate] = useState("");

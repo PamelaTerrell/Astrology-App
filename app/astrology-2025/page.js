@@ -1,160 +1,126 @@
 "use client";
 
-export default function Highlights2025() {
+import React from "react";
+
+export default function ZodiacShadows() {
+  const shadowTraits = {
+    Aries: "Impulsive, easily angered, struggles with patience and self-control. Can bulldoze others in pursuit of goals.",
+    Taurus: "Stubborn, overly materialistic, resists change even when it's necessary. Can become possessive or emotionally stagnant.",
+    Gemini: "Two-faced, scattered energy, commitment issues. Often hides insecurity behind wit and charm.",
+    Cancer: "Moody, overly sensitive, emotionally manipulative. Tends to dwell in the past and retreat into self-pity.",
+    Leo: "Arrogant, attention-seeking, prideful to the point of delusion. Needs external validation to feel worthy.",
+    Virgo: "Hypercritical, anxious, perfectionistic to a fault. Often represses emotions under the guise of 'logic.'",
+    Libra: "Indecisive, avoids conflict to a dangerous degree. Can be superficial and passive-aggressive.",
+    Scorpio: "Jealous, secretive, obsessed with control. Tends to hold grudges and lash out when feeling vulnerable.",
+    Sagittarius: "Overindulgent, reckless, insensitive. Uses freedom as an excuse to avoid accountability.",
+    Capricorn: "Workaholic, emotionally distant, overly focused on status. May neglect relationships and inner needs.",
+    Aquarius: "Detached, cold, rebellious without cause. Struggles with intimacy and may idealize intellect over emotion.",
+    Pisces: "Escapist, overly trusting, martyr complex. Can be emotionally addictive or dependent.",
+  };
+
   return (
-    <>
-      <main className="highlights-container">
-        <h1>✨ Cosmic Highlights for 2025 ✨</h1>
+    <main className="shadow-cosmic">
+      <h1 className="shadow-title">☽ Shadow Side of the Zodiac ☾</h1>
 
-        <section className="intro">
-          <p>
-            Step into the magic of 2025 — a year of cosmic shifts, radiant energies, and powerful transformations. Whether you’re seeking love, clarity, or growth, the stars are ready to guide you on an unforgettable journey. Are you ready to unlock your destiny?
-          </p>
-        </section>
+      <p className="shadow-intro">
+        <em>Enter the realm of shadows. Each sign holds hidden struggles — truths often cloaked in light.</em>
+      </p>
 
-        <section className="elements">
-          <h2>🌟 Elements of the Zodiac</h2>
-          <p><strong>Fire Signs:</strong> Aries, Leo, Sagittarius — passionate, dynamic, and adventurous.</p>
-          <p><strong>Earth Signs:</strong> Taurus, Virgo, Capricorn — grounded, practical, and nurturing.</p>
-          <p><strong>Air Signs:</strong> Gemini, Libra, Aquarius — intellectual, social, and curious.</p>
-          <p><strong>Water Signs:</strong> Cancer, Scorpio, Pisces — intuitive, emotional, and deep.</p>
-        </section>
+      <ul className="shadow-list">
+        {Object.entries(shadowTraits).map(([sign, description]) => (
+          <li key={sign} className="shadow-item">
+            <h2>{sign}</h2>
+            <p>{description}</p>
+          </li>
+        ))}
+      </ul>
 
-        <section className="planetary-movements">
-          <h2>🌌 Key Planetary Movements in 2025</h2>
-          <ul>
-            <li>
-              <strong>Jupiter in Taurus (May 2024 – May 2025):</strong> Jupiter expands growth and abundance; in Taurus, it encourages financial stability and enjoying life comforts. Earth signs will feel this energy strongly.
-            </li>
-            <li>
-              <strong>Saturn in Pisces (March 2023 – February 2026):</strong> Saturn influence in dreamy Pisces asks all signs to get serious about their spiritual growth and emotional boundaries.
-            </li>
-            <li>
-              <strong>Mercury Retrogrades:</strong> Mercury retrogrades several times in 2025, offering chances to reflect but caution with communication and travel plans.
-            </li>
-          </ul>
-        </section>
-
-        <section className="eclipses">
-          <h2>🌒 Eclipses in 2025 and Their Impact</h2>
-          <ul>
-            <li>
-              <strong>Solar Eclipse in Aries (April 8, 2025):</strong> A powerful new beginning energy, especially for Aries and fellow fire signs. Perfect time to launch projects or assert your independence.
-            </li>
-            <li>
-              <strong>Lunar Eclipse in Scorpio (October 18, 2025):</strong> Brings deep emotional insights and transformation, especially for water signs. Time to release old emotional baggage.
-            </li>
-          </ul>
-        </section>
-
-        <section className="call-to-action">
-          <p>
-            🔮 Dive deeper into your personal chart and discover how 2025 cosmic energies can illuminate your path. Your stars are waiting — will you answer the call?
-          </p>
-          <a href="/compatibility" className="explore-link">Explore Compatibility & Insights</a>
-        </section>
-      </main>
+      <p className="shadow-outro">The stars do not judge. They reveal.</p>
 
       <style jsx>{`
-        .highlights-container {
-          max-width: 720px;
-          margin: 2rem auto;
-          padding: 1rem 1.5rem;
-          background: radial-gradient(circle at top left, #1b1b2f, #0d0d1a);
-          color: #d9b3ff;
-          font-family: 'Georgia', serif;
-          border-radius: 12px;
-          box-shadow: 0 0 25px rgba(217, 179, 255, 0.6);
+        /* You should import this font globally instead */
+        /* @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap'); */
+
+        .shadow-cosmic {
+          background: url('/stars-bg.jpg') no-repeat center center fixed;
+          background-size: cover;
+          padding: 2rem;
+          margin: 0 auto;
+          color: #e0e0e0;
+          font-family: "Georgia", serif;
+          text-shadow: 0 0 6px #000;
+        }
+
+        .shadow-title {
+          font-family: 'Cinzel Decorative', serif;
+          font-size: 2.8rem;
+          color: transparent;
+          background: linear-gradient(120deg, #8888ff, #6c63ff, #222222);
+          -webkit-background-clip: text;
+          background-clip: text;
           text-align: center;
-          user-select: none;
+          margin-bottom: 1.5rem;
+          letter-spacing: 0.1em;
+          text-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+          animation: flicker 4s infinite alternate;
         }
 
-        h1 {
-          font-size: 2.4rem;
-          color: #f4c430;
-          text-shadow: 0 0 10px #f4c430;
-          margin-bottom: 1rem;
+        @keyframes flicker {
+          0% {
+            text-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+          }
+          100% {
+            text-shadow: 0 0 12px rgba(108, 99, 255, 0.8);
+          }
         }
 
-        section {
-          margin-bottom: 2rem;
-          text-align: left;
-        }
-
-        h2 {
-          font-size: 1.8rem;
-          color: #b18aff;
-          margin-bottom: 1rem;
-          text-shadow: 0 0 6px #b18aff;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        ul {
-          padding-left: 1.25rem;
-          list-style: none;
-        }
-
-        ul li {
-          margin-bottom: 1rem;
-          position: relative;
-          padding-left: 1.8rem;
-          line-height: 1.5;
-          font-size: 1rem;
-          color: #d9b3ff;
-        }
-
-        ul li::before {
-          content: "✦";
-          position: absolute;
-          left: 0;
-          color: #f4c430;
-          font-size: 1.2rem;
-          top: 0;
-          line-height: 1;
-          text-shadow: 0 0 4px #f4c430;
-        }
-
-        p {
+        .shadow-intro,
+        .shadow-outro {
           font-size: 1.1rem;
-          margin-bottom: 1rem;
-          color: #e0cdfb;
-          line-height: 1.6;
-        }
-
-        .call-to-action {
-          background: rgba(180, 138, 255, 0.15);
-          border: 1px solid #b18aff;
-          padding: 1rem 1.5rem;
-          border-radius: 8px;
           text-align: center;
-          margin-top: 2rem;
-          box-shadow: 0 0 12px #b18aff;
-          font-weight: 600;
-          font-size: 1.15rem;
-          color: #b18aff;
-          user-select: text;
+          margin: 1rem auto 2rem;
+          max-width: 700px;
+          color: #ccc;
         }
 
-        .explore-link {
-          display: inline-block;
-          margin-top: 1rem;
-          padding: 0.5rem 1.25rem;
-          background: #f4c430;
-          color: #1b1b2f;
-          border-radius: 25px;
-          font-weight: 700;
-          text-decoration: none;
-          box-shadow: 0 0 10px #f4c430;
-          transition: background 0.3s ease;
+        .shadow-list {
+          list-style: none;
+          padding: 0;
         }
 
-        .explore-link:hover {
-          background: #ddb800;
-          box-shadow: 0 0 15px #ddb800;
+        .shadow-item {
+          background: rgba(10, 10, 20, 0.75);
+          border-left: 4px solid #6c63ff;
+          margin-bottom: 1.5rem;
+          padding: 1rem;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(108, 99, 255, 0.4);
+          transition: transform 0.3s ease;
+        }
+
+        .shadow-item:hover {
+          transform: scale(1.02);
+          box-shadow: 0 0 16px rgba(108, 99, 255, 0.7);
+        }
+
+        .shadow-item h2 {
+          margin: 0 0 0.5rem;
+          font-size: 1.4rem;
+          color: #ffffff;
+        }
+
+        .shadow-item p {
+          margin: 0;
+          font-size: 1rem;
+          color: #bbbbbb;
+        }
+
+        @media (max-width: 600px) {
+          .shadow-cosmic {
+            padding: 1rem;
+          }
         }
       `}</style>
-    </>
+    </main>
   );
 }

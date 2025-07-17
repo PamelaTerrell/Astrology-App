@@ -7,6 +7,12 @@ import ReturnHomeLink from "./components/ReturnHomeLink";
 import GoToCompatibilityLink from "./components/GoToCompatabilityLink";
 import Footer from "./components/Footer";
 
+<link
+  href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+  rel="stylesheet"
+/>
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

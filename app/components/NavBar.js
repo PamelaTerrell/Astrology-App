@@ -33,7 +33,7 @@ export default function NavBar() {
             <Link href="/compatibility">Compatibility</Link>
           </li>
           <li>
-            <Link href="/astrology-2025">2025 Highlights</Link>
+            <Link href="/astrology-2025">Your Dark Side</Link>
           </li>
         </ul>
       </nav>
