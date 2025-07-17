@@ -40,7 +40,7 @@ export default function Footer() {
         }
 
         .footer p {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           font-weight: 300;
           color: #d9b3ff;
           margin: 0.25rem 0;

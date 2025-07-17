@@ -11,8 +11,8 @@ export default function NavBar() {
   return (
     <>
       <nav className="navbar">
-        <Link href="/" legacyBehavior>
-          <a className="nav-brand">🌙 Cosmic Zodiac Astrology</a>
+        <Link href="/">
+          <span className="nav-brand">🌙 Cosmic Zodiac Astrology</span>
         </Link>
 
         <button
@@ -61,6 +61,8 @@ export default function NavBar() {
           user-select: none;
           text-decoration: none;
           transition: color 0.3s ease;
+          cursor: pointer;
+          display: inline-block;
         }
 
         .nav-brand:hover {

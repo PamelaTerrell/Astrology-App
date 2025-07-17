@@ -3,17 +3,17 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function ReturnHomeLink() {
+export default function GoToCompatibilityLink() {
   const pathname = usePathname();
 
-  // Hide the link if we're already on the homepage
-  if (pathname === "/") return null;
+  // Hide the link if we're already on the compatibility page
+  if (pathname === "/compatibility") return null;
 
   return (
     <div className="return-wrapper">
-      <div className="icon">🔮</div>
-      <Link href="/" className="return-home">
-        Return to Home
+      <div className="icon">💞</div>
+      <Link href="/compatibility" className="return-home">
+        Go to Compatibility
       </Link>
 
       <style jsx>{`
@@ -29,23 +29,25 @@ export default function ReturnHomeLink() {
           animation: glow 2s infinite ease-in-out;
         }
 
-        .return-home {
+        /* Style the <a> tag generated inside Link */
+        .return-home :global(a) {
           font-size: 0.95rem;
-          color: color: #e6e6fa !important; /* soft lavender */
+          color: #f5f5f5;
+          background-color: rgba(0, 0, 0, 0.35);
           text-decoration: none;
           font-family: "Georgia", serif;
           letter-spacing: 0.02em;
           padding: 0.6rem 1.1rem;
           border-radius: 6px;
-          background-color: rgba(0, 0, 0, 0.35);
           text-shadow: 0 0 8px #00000088;
           transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
           border: 1px solid rgba(255, 255, 255, 0.2);
           backdrop-filter: blur(6px);
           -webkit-backdrop-filter: blur(6px);
+          display: inline-block;
         }
 
-        .return-home:hover {
+        .return-home :global(a):hover {
           color: #ffffff;
           background-color: rgba(255, 255, 255, 0.15);
           transform: scale(1.05);

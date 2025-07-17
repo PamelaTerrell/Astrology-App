@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import NavBar from "./components/NavBar";
 import ReturnHomeLink from "./components/ReturnHomeLink";
+import GoToCompatibilityLink from "./components/GoToCompatabilityLink";
 import Footer from "./components/Footer";
 
 const geistSans = Geist({
@@ -31,7 +32,10 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
         {children}
+
+        <GoToCompatibilityLink />
         <ReturnHomeLink />
+        
         <Footer />
         <Analytics />
       </body>
