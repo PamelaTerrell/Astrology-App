@@ -3,8 +3,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./components/Footer";
-import Head from 'next/head';
 
 export default function HomePage() {
   const [birthDate, setBirthDate] = useState("");
@@ -97,10 +95,9 @@ export default function HomePage() {
           </div>
         )}
 
-<p className="click-instruction" aria-live="polite" role="note">
-  ✨ Click your zodiac sign below to reveal more details! ✨
-</p>
-
+        <p className="click-instruction" aria-live="polite" role="note">
+          ✨ Click your zodiac sign below to reveal more details! ✨
+        </p>
 
         <div className="zodiac-grid">
           {[
@@ -124,110 +121,116 @@ export default function HomePage() {
         </div>
 
         <style jsx>{`
-          main {
-            max-width: 700px;
-            margin: 2rem auto;
-            padding: 1rem;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            color: #eee;
+          @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap');
+
+          body {
+            margin: 0;
+            padding: 0;
             background: transparent;
-            border-radius: 16px;
-            box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+            
+            font-family: 'Quicksand', sans-serif;
+          }
+
+          main {
+            max-width: 750px;
+            margin: 3rem auto;
+            padding: 2rem;
+            border-radius: 20px;
+            background: transparent;
+            box-shadow: 0 0 20px #6655ff55, 0 0 60px #22117788 inset;
+            backdrop-filter: blur(14px);
+            color: #eeeeff;
           }
 
           h1 {
+            font-family: 'Orbitron', sans-serif;
             text-align: center;
-            color: #c0c0ff;
+            font-size: 2.2rem;
+            color: #dcdcff;
+            text-shadow: 0 0 12px #8899ff, 0 0 24px #6666cc;
             margin-bottom: 1.5rem;
-            text-shadow: 0 0 6px #99f;
           }
 
           form {
-            margin-bottom: 1.5rem;
             text-align: center;
+            margin-bottom: 2rem;
           }
 
           label {
             font-weight: 600;
+            font-size: 1.1rem;
+            color: #cddcfa;
           }
 
           input[type="date"] {
+            margin-top: 0.8rem;
             padding: 0.6rem;
-            margin: 0.5rem 0 1rem;
-            border-radius: 6px;
-            border: 1px solid #555;
-            background: #22223c;
+            font-size: 1rem;
+            background: #1e1e3f;
             color: #eee;
+            border: 1px solid #666;
+            border-radius: 10px;
             width: 100%;
-            max-width: 250px;
+            max-width: 260px;
           }
 
           button {
-            padding: 0.8rem 1.5rem;
-            background: #8888ff;
-            color: #1a1a2e;
-            font-weight: 700;
+            margin-top: 1rem;
+            padding: 0.8rem 1.4rem;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #222244;
+            background: linear-gradient(90deg, #aa99ff, #88ddff);
             cursor: pointer;
-            transition: background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px #aaaaffaa;
+            transition: all 0.3s ease-in-out;
           }
 
-          button:hover:not(:disabled) {
-            background: #aaaaff;
-            box-shadow: 0 0 10px rgba(180, 180, 255, 0.6);
-          }
-
-          button:disabled {
-            background: #555;
-            cursor: not-allowed;
+          button:hover {
+            background: linear-gradient(90deg, #ccbbff, #99eeff);
+            box-shadow: 0 0 20px #cceeff;
           }
 
           h2 {
             text-align: center;
-            margin-top: 1rem;
-            color: #d0d0ff;
-            text-shadow: 0 0 4px #99f;
+            color: #ffeeff;
+            margin-top: 1.5rem;
+            text-shadow: 0 0 8px #ddbbff, 0 0 12px #8899ff;
           }
 
           .horoscope-container {
-            margin: 1rem 20px;
+            margin: 1rem auto;
             padding: 1rem 1.5rem;
-            /* no background or box-shadow */
-            border-radius: 12px; /* optional for subtle rounding */
+            background: transparent;
+            border-radius: 12px;
+            box-shadow: 0 0 14px #8888ff22 inset;
             font-size: 1.1rem;
             line-height: 1.6;
-            color: #eee;
+            color: #eef;
+            max-width: 600px;
           }
 
           .click-instruction {
-  text-align: center;
-  color: #aabbee;
-  font-style: italic;
-  margin-bottom: 1.2rem;
-  user-select: none;
-  font-weight: 600;
-  animation: pulseGlow 3s ease-in-out infinite;
-  text-shadow: 0 0 8px #aabbee88, 0 0 20px #8899ff66;
-}
+            text-align: center;
+            font-style: italic;
+            color: #aabbee;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            animation: shimmer 3s ease-in-out infinite;
+            text-shadow: 0 0 8px #aabbee88, 0 0 20px #8899ff66;
+          }
 
-@keyframes pulseGlow {
-  0%, 100% {
-    text-shadow: 0 0 8px #aabbee88, 0 0 20px #8899ff66;
-    color: #aabbee;
-  }
-  50% {
-    text-shadow: 0 0 14px #ddeeffcc, 0 0 32px #aabbffee;
-    color: #ddeeff;
-  }
-}
-
-
-          @media (max-width: 600px) {
-            .horoscope-container {
-              margin: 1rem 10px;
-              font-size: 1rem;
-              padding: 0.8rem 1rem;
+          @keyframes shimmer {
+            0% {
+              color: #aabbee;
+            }
+            50% {
+              color: #ddeeff;
+              text-shadow: 0 0 14px #ddeeffcc, 0 0 32px #aabbffee;
+            }
+            100% {
+              color: #aabbee;
             }
           }
 
@@ -235,7 +238,27 @@ export default function HomePage() {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            gap: 16px;
+            margin-top: 1.5rem;
+          }
+
+          .zodiac-grid :global(img) {
+            border-radius: 50%;
+            border: 2px solid #8888ff44;
+            box-shadow: 0 0 10px #8899ff88, 0 0 20px #ccd;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+          }
+
+          .zodiac-grid :global(img):hover {
+            transform: scale(1.08) rotate(2deg);
+            box-shadow: 0 0 20px #bbccff, 0 0 40px #ddeeff;
+          }
+
+          @media (max-width: 600px) {
+            .horoscope-container {
+              font-size: 1rem;
+              padding: 0.8rem 1rem;
+            }
           }
         `}</style>
       </main>
