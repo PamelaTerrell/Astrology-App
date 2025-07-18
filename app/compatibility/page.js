@@ -39,6 +39,7 @@ const ZodiacCompatibility = () => {
     <>
       <div className="container">
         <h2>✨ Zodiac Compatibility ✨</h2>
+        <p className="subtitle">What do the stars say about your cosmic connection?</p>
 
         <div className="selectors">
           <div className="person">
@@ -207,6 +208,44 @@ const ZodiacCompatibility = () => {
             margin-bottom: 2rem;
             text-shadow: 0 0 6px #99f;
           }
+
+          .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  color: #e3ccff;
+  position: relative;
+  z-index: 1;
+
+  /* Magical gradient shimmer */
+  background-image: linear-gradient(90deg, #eecfff, #bfaaff, #eecfff);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+
+  /* Soft glow */
+  text-shadow:
+    0 0 6px rgba(230, 200, 255, 0.4),
+    0 0 12px rgba(200, 160, 255, 0.3),
+    0 0 18px rgba(180, 120, 255, 0.2);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
 
           .selectors {
             display: flex;
