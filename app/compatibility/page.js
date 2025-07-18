@@ -195,7 +195,7 @@ const ZodiacCompatibility = () => {
             max-width: 700px;
             margin: 3rem auto;
             padding: 2rem;
-            background: radial-gradient(circle at center, #1a1a2e, #0f0f1c);
+            background: transparent;
             border-radius: 16px;
             box-shadow: 0 0 30px rgba(150, 150, 255, 0.2);
             color: #ddd;
