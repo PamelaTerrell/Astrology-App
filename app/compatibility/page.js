@@ -187,7 +187,7 @@ const ZodiacCompatibility = () => {
           )
         )}
 
-        
+      
 
         <style jsx>{`
           .container {
@@ -203,7 +203,7 @@ const ZodiacCompatibility = () => {
 
           h2 {
             text-align: center;
-            color: #c0c0ff;
+            color: #ffffff;
             margin-bottom: 2rem;
             text-shadow: 0 0 6px #99f;
           }
@@ -229,7 +229,8 @@ const ZodiacCompatibility = () => {
           }
 
           select {
-            width: 100%;
+            margin: 0;
+            width: 90%;
             padding: 0.65rem;
             margin-bottom: 0.75rem;
             border-radius: 6px;
