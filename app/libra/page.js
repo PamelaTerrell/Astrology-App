@@ -5,7 +5,7 @@ export default function LibraPage() {
         <p><strong>Date Range:</strong> September 23 – October 22</p>
         <p><strong>Element:</strong> Air</p>
         <p><strong>Ruling Planet:</strong> Venus</p>
-        <p><strong>Symbol:</strong> The scales</p>
+        <p><strong>Symbol:</strong> The Scales</p>
         <p><strong>Traits:</strong> Diplomatic, charming, fair-minded, social, idealistic, balanced</p>
         
         <h2>Personality Overview</h2>

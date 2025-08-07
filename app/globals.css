@@ -1,5 +1,6 @@
 /* General Reset */
 * {
+  color: turquoise;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,6 +52,7 @@ body {
 /* App container */
 .App {
   text-align: center;
+  
   padding: 50px 20px;
   background-color: transparent;
   min-height: 100vh;

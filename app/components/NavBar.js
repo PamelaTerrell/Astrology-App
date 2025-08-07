@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link"; // 
+import Link from "next/link";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,9 @@ export default function NavBar() {
   return (
     <>
       <nav className="navbar">
-        <div className="nav-brand">🌙 Cosmic Zodiac Astrology</div>
+        <Link href="/">
+          <span className="nav-brand">🌙 Cosmic Zodiac Astrology</span>
+        </Link>
 
         <button
           aria-label="Toggle menu"
@@ -30,11 +32,12 @@ export default function NavBar() {
           <li>
             <Link href="/compatibility">Compatibility</Link>
           </li>
-          
+          <li>
+            <Link href="/astrology-2025">Your Dark Side</Link>
+          </li>
         </ul>
       </nav>
 
-      
       <style jsx>{`
         .navbar {
           display: flex;
@@ -56,6 +59,14 @@ export default function NavBar() {
           color: #f4c430;
           text-shadow: 1px 1px 3px silver;
           user-select: none;
+          text-decoration: none;
+          transition: color 0.3s ease;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .nav-brand:hover {
+          color: #fff4a3;
         }
 
         .nav-links {

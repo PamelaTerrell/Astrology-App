@@ -2,7 +2,16 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-import NavBar from "./components/NavBar";  // Adjust path if needed
+import NavBar from "./components/NavBar";
+import ReturnHomeLink from "./components/ReturnHomeLink";
+import GoToCompatibilityLink from "./components/GoToCompatabilityLink";
+import Footer from "./components/Footer";
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+  rel="stylesheet"
+/>
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +27,9 @@ export const metadata = {
   title: "Cosmic Zodiac Astrology",
   description:
     "Discover your zodiac sign, explore astrology insights, and find your perfect compatibility matches.",
+  icons: {
+    icon: "/star.png", // 👈 Add this line
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +38,11 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
         {children}
+
+        <GoToCompatibilityLink />
+        <ReturnHomeLink />
+        
+        <Footer />
         <Analytics />
       </body>
     </html>
