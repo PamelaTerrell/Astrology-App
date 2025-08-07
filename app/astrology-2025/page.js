@@ -4,19 +4,31 @@ import React from "react";
 
 export default function ZodiacShadows() {
   const shadowTraits = {
-    Aries: "Impulsive, easily angered, struggles with patience and self-control. Can bulldoze others in pursuit of goals.",
-    Taurus: "Stubborn, overly materialistic, resists change even when it's necessary. Can become possessive or emotionally stagnant.",
-    Gemini: "Two-faced, scattered energy, commitment issues. Often hides insecurity behind wit and charm.",
-    Cancer: "Moody, overly sensitive, emotionally manipulative. Tends to dwell in the past and retreat into self-pity.",
-    Leo: "Arrogant, attention-seeking, prideful to the point of delusion. Needs external validation to feel worthy.",
-    Virgo: "Hypercritical, anxious, perfectionistic to a fault. Often represses emotions under the guise of 'logic.'",
-    Libra: "Indecisive, avoids conflict to a dangerous degree. Can be superficial and passive-aggressive.",
-    Scorpio: "Jealous, secretive, obsessed with control. Tends to hold grudges and lash out when feeling vulnerable.",
-    Sagittarius: "Overindulgent, reckless, insensitive. Uses freedom as an excuse to avoid accountability.",
-    Capricorn: "Workaholic, emotionally distant, overly focused on status. May neglect relationships and inner needs.",
-    Aquarius: "Detached, cold, rebellious without cause. Struggles with intimacy and may idealize intellect over emotion.",
-    Pisces: "Escapist, overly trusting, martyr complex. Can be emotionally addictive or dependent.",
-  };
+  Aries: "Impulsive and hot-headed, Aries may act before thinking, often bulldozing others in their drive to win. Struggles with patience and self-regulation can lead to burnout and fractured relationships. Anger may mask vulnerability or fear of failure.",
+  
+  Taurus: "Deeply resistant to change, Taurus can become emotionally stagnant, clinging to routines or possessions out of fear. Stubbornness can morph into quiet defiance, while possessiveness may reflect a hidden fear of abandonment or instability.",
+  
+  Gemini: "Gemini's wit can become a mask for inner insecurity. Their need for variety may turn into a pattern of emotional inconsistency or deception. The shadow side speaks in half-truths, distracting others—and themselves—from deeper emotional work.",
+  
+  Cancer: "Deeply sensitive, Cancer may retreat into passive-aggression or emotional manipulation when hurt. They can become consumed by nostalgia or wounds from the past, using guilt or caretaking as a way to control others emotionally.",
+  
+  Leo: "Leo's need to be seen can spiral into arrogance or performative self-worth. When validation isn’t received, pride may become a brittle shield. Beneath the grandeur may lie a deep fear of being ordinary or unseen.",
+  
+  Virgo: "Virgo’s desire for improvement can become a harsh inner critic that shames rather than guides. They may repress emotions in favor of appearing composed, or obsess over details to avoid confronting deeper chaos within.",
+  
+  Libra: "Conflict-avoidant to a fault, Libra may lose themselves in the pursuit of peace. Their charm can become manipulation, and their fairness a mask for indecision. The shadow emerges when they prioritize appearances over authenticity.",
+  
+  Scorpio: "Scorpio's intensity can turn inward as self-destruction or outward as vindictiveness. Their need for control may breed secrecy, suspicion, or obsession. Emotional depth becomes a weapon when vulnerability feels unsafe.",
+  
+  Sagittarius: "Restless and pleasure-seeking, Sagittarius may run from intimacy, using philosophy or humor to avoid emotional discomfort. Their freedom-loving nature can mask a refusal to be held accountable or emotionally present.",
+  
+  Capricorn: "Driven to achieve, Capricorn may neglect emotional needs in favor of control and status. They can appear cold or calculating, suppressing vulnerability and overidentifying with roles, titles, or societal expectations.",
+  
+  Aquarius: "Intellectual and idealistic, Aquarius may detach from emotion to maintain control. Their rebellion can lack direction, and their vision for the future may excuse a lack of empathy in the present. Intimacy often feels like a threat.",
+  
+  Pisces: "Dreamy and empathetic, Pisces may lose themselves in others or in fantasy. Their shadow emerges as avoidance, codependency, or emotional martyrdom. Boundaries blur, and pain becomes a form of identity or control."
+};
+
 
   return (
     <main className="shadow-cosmic">
