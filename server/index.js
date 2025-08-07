@@ -22,19 +22,31 @@ app.post('/api/daily-horoscope', (req, res) => {
 
   // You can now just send a sample horoscope or static data for now.
   const horoscopes = {
-    Aries: "Today is a great day for taking risks and stepping outside your comfort zone.",
-    Taurus: "A day for focusing on family and taking care of loved ones.",
-    Gemini: "Stay curious and open-minded. New opportunities could present themselves.",
-    Cancer: "A good day to spend time reflecting on personal goals and growth.",
-    Leo: "Your leadership skills will be in high demand today. Take charge!",
-    Virgo: "Focus on work and organization today. Clear up any clutter around you.",
-    Libra: "Balance is key today, both in personal and professional life.",
-    Scorpio: "Trust your intuition today, it will guide you to the right decisions.",
-    Sagittarius: "Adventure calls! Try something new and embrace the unknown.",
-    Capricorn: "Focus on long-term goals. Hard work today will pay off later.",
-    Aquarius: "Today is perfect for deep thinking and problem-solving.",
-    Pisces: "Let your creativity flow today. Artistic endeavors will be rewarding.",
-  };
+  Aries: "Today is a great day for taking bold risks and stepping outside your comfort zone. Your natural courage will draw others to you — don't be afraid to lead the charge and inspire those around you. A spark of excitement could ignite something new.",
+  
+  Taurus: "Focus on grounding yourself through comfort and connection. Spend quality time with loved ones or nurture your space. Practical steps taken today can bring you long-term peace, especially in matters of the heart and home.",
+  
+  Gemini: "Your curiosity is a superpower today. Expect stimulating conversations, unexpected news, or a chance to explore something you've been wondering about. Stay flexible — your quick wit will help you adapt beautifully.",
+  
+  Cancer: "This is a powerful day for reflection and emotional clarity. Take time to check in with your inner world. Old wounds may surface, but so will insights that heal. Connect with people who feel like home and honor your need for comfort.",
+  
+  Leo: "You’re radiating charisma and confidence. Step into the spotlight and use your voice to motivate and uplift others. Recognition or appreciation may come your way — just be sure to lead with both heart and humility.",
+  
+  Virgo: "Today is ideal for tackling details and organizing chaos — both around you and within. Simplify your routines and tie up loose ends. Helping someone else find clarity may also illuminate your own path.",
+  
+  Libra: "Seek harmony in all things today. Whether you're resolving a conflict or beautifying your space, your diplomacy and sense of fairness will serve you well. Make space for both giving and receiving in your relationships.",
+  
+  Scorpio: "Your intuition is razor-sharp today — trust it. You may uncover hidden truths or feel drawn to dig beneath the surface of a situation. Guard your energy, but don’t be afraid to go deep. Vulnerability can be a strength.",
+  
+  Sagittarius: "Wanderlust may be calling — even a small adventure can bring big inspiration. Feed your spirit with learning, laughter, or something wildly unfamiliar. Embrace spontaneity and let your enthusiasm light the way.",
+  
+  Capricorn: "Put in the work, and you’ll see results — maybe not today, but definitely down the line. This is a time for building foundations, handling responsibilities, and keeping your eye on the long game. Progress is happening, even if it’s quiet.",
+  
+  Aquarius: "You’re tapped into brilliant insights today. Use your unique perspective to solve problems or imagine a better way forward. Collaboration with like-minded thinkers could spark innovation — or a breakthrough idea.",
+  
+  Pisces: "Let your imagination lead today. Whether you're creating art, dreaming big, or simply tuning into your emotions, there's magic in your sensitivity. Don’t underestimate how healing your presence can be to others — and yourself."
+};
+
 
   // If zodiac sign is valid, send a horoscope
   if (horoscopes[zodiac]) {
