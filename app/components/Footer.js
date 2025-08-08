@@ -24,34 +24,8 @@ export default function Footer() {
           >
             Alexa
           </a>{" "}
-          via{" "}
-          <a
-            href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=759373"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pixabay
-          </a>
-          . Astrology icon magic by{" "}
-          <a
-            href="https://www.flaticon.com/authors/monkik"
-            title="monkik"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            monkik
-          </a>{" "}
-          from{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/astrology"
-            title="astrology icons"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Flaticon
-          </a>
-          .
         </p>
+         
       </footer>
 
       <style jsx>{`
