@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import NavBar from "./components/NavBar";
 import ReturnHomeLink from "./components/ReturnHomeLink";
 import GoToCompatibilityLink from "./components/GoToCompatabilityLink";
+import GoToDarkSideLink from "./components/GoToDarkSide";
 import Footer from "./components/Footer";
 
 const geistSans = Geist({
@@ -82,6 +83,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <GoToCompatibilityLink />
+        <GoToDarkSideLink />
         <ReturnHomeLink />
         <Footer />
         <Analytics />
