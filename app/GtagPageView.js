@@ -1,28 +1,29 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function GtagPageView() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const isFirstLoad = useRef(true); // skip the initial auto page_view that GA sends
+  const first = useRef(true);
 
   useEffect(() => {
-    // Skip the very first render; GA will send the initial page_view automatically.
-    if (isFirstLoad.current) {
-      isFirstLoad.current = false;
+    // Skip initial render since GA already sent a page_view via gtag('config', ...)
+    if (first.current) {
+      first.current = false;
       return;
     }
     if (!window.gtag) return;
 
-    const path = pathname + (searchParams.toString() ? `?${searchParams}` : "");
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const path = pathname + (search || "");
+
     window.gtag("event", "page_view", {
       page_path: path,
-      page_location: window.location.href,
-      page_title: document.title,
+      page_location: typeof window !== "undefined" ? window.location.href : "",
+      page_title: typeof document !== "undefined" ? document.title : "",
     });
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return null;
 }

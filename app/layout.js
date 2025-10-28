@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import { Suspense } from "react";
 import GtagPageView from "./GtagPageView";
 
 import NavBar from "./components/NavBar";
@@ -88,7 +89,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
 
-        {/* ✅ Google Tag (gtag.js) - App Router version */}
+        {/* Google Tag (gtag.js) */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-LFMS2CMGN5"
@@ -106,7 +107,11 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <GtagPageView />
+
+        {/* Route-change page_view tracking */}
+        <Suspense fallback={null}>
+          <GtagPageView />
+        </Suspense>
       </body>
     </html>
   );
