@@ -86,8 +86,28 @@ export default function RootLayout({ children }) {
         <GoToDarkSideLink />
         <ReturnHomeLink />
         <Footer />
-        <Analytics />
+                <Analytics />
+
+        {/* --- Google Tag (gtag.js) --- */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-LFMS2CMGN5"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LFMS2CMGN5', { send_page_view: false });
+            `,
+          }}
+        />
+        <GtagPageView />
       </body>
     </html>
   );
 }
+
