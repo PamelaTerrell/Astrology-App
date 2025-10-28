@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
+import GtagPageView from "./GtagPageView";
 
 import NavBar from "./components/NavBar";
 import ReturnHomeLink from "./components/ReturnHomeLink";
@@ -42,9 +44,7 @@ export const metadata = {
   creator: "Pamela J. Terrell",
   publisher: "Pamela J. Terrell",
   metadataBase: new URL("https://cosmiczodiacastrology.com"),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   icons: {
     icon: "/fav.png",
     shortcut: "/fav.png",
@@ -71,8 +71,8 @@ export const metadata = {
     title: "Cosmic Zodiac Astrology",
     description: "Explore horoscopes, compatibility, and your astrological destiny.",
     images: ["/OG.png"],
-    site: "@YourTwitterHandle", // optional
-    creator: "@YourTwitterHandle", // optional
+    site: "@YourTwitterHandle",
+    creator: "@YourTwitterHandle",
   },
 };
 
@@ -86,9 +86,9 @@ export default function RootLayout({ children }) {
         <GoToDarkSideLink />
         <ReturnHomeLink />
         <Footer />
-                <Analytics />
+        <Analytics />
 
-        {/* --- Google Tag (gtag.js) --- */}
+        {/* ✅ Google Tag (gtag.js) - App Router version */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-LFMS2CMGN5"
@@ -101,7 +101,8 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-LFMS2CMGN5', { send_page_view: false });
+              gtag('config', 'G-LFMS2CMGN5'); // automatic first page_view
+              console.log('[GA4] initialized');
             `,
           }}
         />
@@ -110,4 +111,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
