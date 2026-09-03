@@ -25,7 +25,6 @@ const zodiacSigns = [
   advice: "Take turns leading and learn the art of compromise.",
   compatibilityScore: 70,
   elementHarmony: "Fire (Aries) + Fire (Aries)",
-  famousCouples: ["Maya Angelou (Aries) & Guy Johnson (Aries - son)"],
   loveLanguageTips: {
     Aries: "Bold gestures, acts of courage, and spontaneous excitement"
   },
@@ -40,7 +39,6 @@ const zodiacSigns = [
   advice: "Practice patience and celebrate your differences.",
   compatibilityScore: 72,
   elementHarmony: "Fire (Aries) + Earth (Taurus)",
-  famousCouples: ["Robert Pattinson (Taurus) & Kristen Stewart (Aries)"],
   loveLanguageTips: {
     Aries: "Words of affirmation and spontaneous acts of love",
     Taurus: "Physical touch and steady routines"
@@ -55,7 +53,6 @@ const zodiacSigns = [
   advice: "Keep communication open and flexible.",
   compatibilityScore: 84,
   elementHarmony: "Fire (Aries) + Air (Gemini)",
-  famousCouples: ["Marilyn Monroe (Gemini) & Arthur Miller (Aries)"],
   loveLanguageTips: {
     Aries: "Bold gestures and vocal admiration",
     Gemini: "Playful banter and shared activities"
@@ -70,7 +67,6 @@ const zodiacSigns = [
   advice: "Balance independence with nurturing.",
   compatibilityScore: 65,
   elementHarmony: "Fire (Aries) + Water (Cancer)",
-  famousCouples: ["Ariana Grande (Cancer) & Pete Davidson (Aries)"],
   loveLanguageTips: {
     Aries: "Acts of courage and excitement",
     Cancer: "Emotional reassurance and cozy moments"
@@ -85,7 +81,6 @@ const zodiacSigns = [
   advice: "Channel energy into shared goals and practice mutual admiration.",
   compatibilityScore: 88,
   elementHarmony: "Fire (Aries) + Fire (Leo)",
-  famousCouples: ["Sarah Jessica Parker (Aries) & Matthew Broderick (Leo)"],
   loveLanguageTips: {
     Aries: "Words of praise and active adventure",
     Leo: "Admiration and grand romantic gestures"
@@ -100,7 +95,6 @@ const zodiacSigns = [
   advice: "Embrace differences and use them to balance each other.",
   compatibilityScore: 60,
   elementHarmony: "Fire (Aries) + Earth (Virgo)",
-  famousCouples: ["Keanu Reeves (Virgo) & Diane Keaton (Aries – rumored past)"],
   loveLanguageTips: {
     Aries: "Direct affection and spontaneity",
     Virgo: "Acts of service and subtle reassurance"
@@ -115,7 +109,6 @@ const zodiacSigns = [
   advice: "Celebrate differences and learn to meet halfway without compromising identity.",
   compatibilityScore: 75,
   elementHarmony: "Fire (Aries) + Air (Libra)",
-  famousCouples: ["Hugh Hefner (Aries) & Crystal Harris (Libra)"],
   loveLanguageTips: {
     Aries: "Excitement and physical affection",
     Libra: "Words of affirmation and shared experiences"
@@ -130,7 +123,6 @@ const zodiacSigns = [
   advice: "Cultivate emotional honesty and practice vulnerability to build deep trust.",
   compatibilityScore: 68,
   elementHarmony: "Fire (Aries) + Water (Scorpio)",
-  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio)"],
   loveLanguageTips: {
     Aries: "Physical touch and acts of bravery",
     Scorpio: "Deep emotional connection and loyalty"
@@ -145,7 +137,6 @@ const zodiacSigns = [
   advice: "Maintain focus and build emotional depth alongside your adventures.",
   compatibilityScore: 88,
   elementHarmony: "Fire (Aries) + Fire (Sagittarius)",
-  famousCouples: ["Jay-Z (Sagittarius) & Mariah Carey (Aries, rumored past)"],
   loveLanguageTips: {
     Aries: "Passionate action and excitement",
     Sagittarius: "Freedom, laughter, and shared adventure"
@@ -160,7 +151,6 @@ const zodiacSigns = [
   advice: "Respect each other and learn from your complementary traits.",
   compatibilityScore: 61,
   elementHarmony: "Fire (Aries) + Earth (Capricorn)",
-  famousCouples: ["Kristen Stewart (Aries) & St. Vincent (Capricorn)"],
   loveLanguageTips: {
     Aries: "Initiation, thrill, and acts of courage",
     Capricorn: "Consistency, support, and long-term investment"
@@ -175,7 +165,6 @@ const zodiacSigns = [
   advice: "Give each other room to be authentic while staying emotionally present.",
   compatibilityScore: 80,
   elementHarmony: "Fire (Aries) + Air (Aquarius)",
-  famousCouples: ["Ellen Page (Aquarius) & Samantha Thomas (Aries, former couple)"],
   loveLanguageTips: {
     Aries: "Adventurous gestures and fierce loyalty",
     Aquarius: "Intellectual banter, acts of friendship, and freedom to explore"
@@ -190,7 +179,6 @@ const zodiacSigns = [
   advice: "Cultivate patience and learn to listen beyond words. Let softness and strength coexist.",
   compatibilityScore: 58,
   elementHarmony: "Fire (Aries) + Water (Pisces)",
-  famousCouples: ["Jessica Chastain (Aries) & Gian Luca Passi de Preposulo (Pisces)"],
   loveLanguageTips: {
     Aries: "Bold declarations, quick action, and protection",
     Pisces: "Tender words, spiritual closeness, emotional intimacy"
@@ -206,7 +194,6 @@ const zodiacSigns = [
   advice: "Keep things fresh and allow room for growth.",
   compatibilityScore: 80,
   elementHarmony: "Earth (Taurus) + Earth (Taurus)",
-  famousCouples: ["Cher (Taurus) & Sonny Bono (Taurus)"],
   loveLanguageTips: {
     Taurus: "Physical affection, shared meals, and consistency"
   },
@@ -221,7 +208,6 @@ const zodiacSigns = [
   advice: "Practice flexibility and compromise to appreciate both stability and variety.",
   compatibilityScore: 58,
   elementHarmony: "Earth (Taurus) + Air (Gemini)",
-  famousCouples: ["Adele (Gemini) & Simon Konecki (Taurus)"],
   loveLanguageTips: {
     Taurus: "Physical touch and thoughtful gestures",
     Gemini: "Words of affirmation and playful communication"
@@ -236,7 +222,6 @@ const zodiacSigns = [
   advice: "Maintain healthy boundaries to foster individual independence within the relationship.",
   compatibilityScore: 80,
   elementHarmony: "Earth (Taurus) + Water (Cancer)",
-  famousCouples: ["Prince William (Cancer) & Kate Middleton (Taurus)"],
   loveLanguageTips: {
     Taurus: "Consistent acts of service and physical affection",
     Cancer: "Emotional support and cozy quality time"
@@ -251,7 +236,6 @@ const zodiacSigns = [
   advice: "Honor each other's need for admiration while respecting boundaries.",
   compatibilityScore: 72,
   elementHarmony: "Earth (Taurus) + Fire (Leo)",
-  famousCouples: ["Barbra Streisand (Leo) & James Brolin (Taurus)"],
   loveLanguageTips: {
     Taurus: "Physical touch and steady reassurance",
     Leo: "Grand romantic gestures and verbal praise"
@@ -266,7 +250,6 @@ const zodiacSigns = [
   advice: "Embrace small adventures and openness to new experiences.",
   compatibilityScore: 85,
   elementHarmony: "Earth (Taurus) + Earth (Virgo)",
-  famousCouples: ["Beyoncé (Virgo) & Jay-Z (Taurus)"],
   loveLanguageTips: {
     Taurus: "Acts of service and affectionate touch",
     Virgo: "Thoughtful help and attentive listening"
@@ -281,7 +264,6 @@ const zodiacSigns = [
   advice: "Balance time spent between social activities and quiet, intimate moments.",
   compatibilityScore: 70,
   elementHarmony: "Earth (Taurus) + Air (Libra)",
-  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Taurus)"],
   loveLanguageTips: {
     Taurus: "Consistent physical affection and reliability",
     Libra: "Words of affirmation and shared experiences"
@@ -296,7 +278,6 @@ const zodiacSigns = [
   advice: "Build trust through open communication and honesty.",
   compatibilityScore: 78,
   elementHarmony: "Earth (Taurus) + Water (Scorpio)",
-  famousCouples: ["Bill Gates (Taurus) & Melinda Gates (Scorpio)"],
   loveLanguageTips: {
     Taurus: "Physical touch and consistent support",
     Scorpio: "Emotional depth and loyalty"
@@ -311,7 +292,6 @@ const zodiacSigns = [
   advice: "Give each other space and embrace learning from differences.",
   compatibilityScore: 52,
   elementHarmony: "Earth (Taurus) + Fire (Sagittarius)",
-  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Taurus)"],
   loveLanguageTips: {
     Taurus: "Reliable presence and gentle touch",
     Sagittarius: "Fun, laughter, and shared explorations"
@@ -326,7 +306,6 @@ const zodiacSigns = [
   advice: "Make time to nurture emotional intimacy alongside goals.",
   compatibilityScore: 90,
   elementHarmony: "Earth (Taurus) + Earth (Capricorn)",
-  famousCouples: ["Dwayne Johnson (Taurus) & Lauren Hashian (Capricorn)"],
   loveLanguageTips: {
     Taurus: "Consistent affection and reliability",
     Capricorn: "Acts of service and long-term commitment"
@@ -341,7 +320,6 @@ const zodiacSigns = [
   advice: "Be open to learning and celebrate differences.",
   compatibilityScore: 55,
   elementHarmony: "Earth (Taurus) + Air (Aquarius)",
-  famousCouples: ["Alicia Keys (Aquarius) & Swizz Beatz (Taurus)"],
   loveLanguageTips: {
     Taurus: "Physical reassurance and nurturing",
     Aquarius: "Intellectual connection and personal freedom"
@@ -356,28 +334,12 @@ const zodiacSigns = [
   advice: "Support each other's dreams while staying grounded in reality.",
   compatibilityScore: 77,
   elementHarmony: "Earth (Taurus) + Water (Pisces)",
-  famousCouples: ["Queen Elizabeth II (Pisces) & Prince Philip (Taurus)"],
   loveLanguageTips: {
     Taurus: "Steady presence and physical affection",
     Pisces: "Emotional intimacy and spiritual closeness"
   },
   communicationStyle: "Soft and empathetic communication; promotes harmony.",
   intimacyLevel: "High – tender and deeply soulful."
-},
-
-  "Gemini-Gemini": {
-  overview: "A whirlwind of ideas, conversation, and curiosity.",
-  strengths: "Mental stimulation and endless variety.",
-  challenges: "Difficulty staying grounded and emotionally consistent.",
-  advice: "Establish emotional depth beneath the surface fun.",
-  compatibilityScore: 78,
-  elementHarmony: "Air (Gemini) + Air (Gemini)",
-  famousCouples: ["Kanye West (Gemini) & North West (Gemini - child)"],
-  loveLanguageTips: {
-    Gemini: "Witty banter, variety, and playful surprises"
-  },
-  communicationStyle: "Quick, clever, and constantly shifting – boredom is rare.",
-  intimacyLevel: "Moderate – thrives on novelty, not routine."
 },
   
   "Gemini-Aries": {
@@ -387,7 +349,6 @@ const zodiacSigns = [
   advice: "Practice patience and listen actively to balance excitement with understanding.",
   compatibilityScore: 75,
   elementHarmony: "Air (Gemini) + Fire (Aries)",
-  famousCouples: ["Angelina Jolie (Gemini) & Brad Pitt (Aries)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and playful banter",
     Aries: "Physical touch and acts of service"
@@ -403,7 +364,6 @@ const zodiacSigns = [
   advice: "Practice flexibility and compromise to appreciate both stability and variety.",
   compatibilityScore: 58,
   elementHarmony: "Air (Gemini) + Earth (Taurus)",
-  famousCouples: ["Adele (Gemini) & Simon Konecki (Taurus)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and playful communication",
     Taurus: "Physical touch and thoughtful gestures"
@@ -419,7 +379,6 @@ const zodiacSigns = [
   advice: "Focus on grounding your bond with trust and reliability.",
   compatibilityScore: 70,
   elementHarmony: "Air + Air",
-  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Gemini)"],
   loveLanguageTips: {
     Gemini: "Quality time and verbal affirmations"
   },
@@ -434,7 +393,6 @@ const zodiacSigns = [
   advice: "Communicate openly and respect each other's needs.",
   compatibilityScore: 52,
   elementHarmony: "Air (Gemini) + Water (Cancer)",
-  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Cancer)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and playful teasing",
     Cancer: "Acts of service and physical touch"
@@ -450,7 +408,6 @@ const zodiacSigns = [
   advice: "Celebrate each other's successes and share the spotlight.",
   compatibilityScore: 78,
   elementHarmony: "Air (Gemini) + Fire (Leo)",
-  famousCouples: ["Johnny Depp (Gemini) & Amber Heard (Leo)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and shared adventures",
     Leo: "Gifts and quality time"
@@ -466,7 +423,6 @@ const zodiacSigns = [
   advice: "Offer patience and kindness, and embrace differences.",
   compatibilityScore: 60,
   elementHarmony: "Air (Gemini) + Earth (Virgo)",
-  famousCouples: ["Paul Rudd (Gemini) & Julie Yaeger (Virgo)"],
   loveLanguageTips: {
     Gemini: "Quality time and playful communication",
     Virgo: "Acts of service and thoughtful words"
@@ -482,7 +438,6 @@ const zodiacSigns = [
   advice: "Make decisions together and express honest opinions.",
   compatibilityScore: 82,
   elementHarmony: "Air + Air",
-  famousCouples: ["John F. Kennedy Jr. (Gemini) & Carolyn Bessette (Libra)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and spontaneity",
     Libra: "Quality time and physical touch"
@@ -498,7 +453,6 @@ const zodiacSigns = [
   advice: "Build honesty and respect boundaries.",
   compatibilityScore: 48,
   elementHarmony: "Air (Gemini) + Water (Scorpio)",
-  famousCouples: ["Katy Perry (Gemini) & Russell Brand (Scorpio)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and lightheartedness",
     Scorpio: "Physical touch and quality time"
@@ -514,7 +468,6 @@ const zodiacSigns = [
   advice: "Balance independence with connection.",
   compatibilityScore: 85,
   elementHarmony: "Air (Gemini) + Fire (Sagittarius)",
-  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Gemini)"],
   loveLanguageTips: {
     Gemini: "Quality time and verbal communication",
     Sagittarius: "Acts of service and adventure"
@@ -530,7 +483,6 @@ const zodiacSigns = [
   advice: "Respect each other’s differences and find common goals.",
   compatibilityScore: 55,
   elementHarmony: "Air (Gemini) + Earth (Capricorn)",
-  famousCouples: ["Mary-Kate Olsen (Gemini) & Olivier Sarkozy (Capricorn)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and shared fun",
     Capricorn: "Acts of service and quality time"
@@ -546,7 +498,6 @@ const zodiacSigns = [
   advice: "Open up emotionally and maintain intellectual connection.",
   compatibilityScore: 80,
   elementHarmony: "Air + Air",
-  famousCouples: ["Morgan Freeman (Gemini) & Myrna Colley-Lee (Aquarius)"],
   loveLanguageTips: {
     Gemini: "Quality time and verbal wit",
     Aquarius: "Acts of service and shared causes"
@@ -562,28 +513,12 @@ const zodiacSigns = [
   advice: "Practice patience and empathy in communication.",
   compatibilityScore: 50,
   elementHarmony: "Air (Gemini) + Water (Pisces)",
-  famousCouples: ["Bob Dylan (Gemini) & Joan Baez (Pisces)"],
   loveLanguageTips: {
     Gemini: "Words of affirmation and lively conversation",
     Pisces: "Physical touch and quality time"
   },
   communicationStyle: "Gemini is rational and quick; Pisces is intuitive and sensitive.",
   intimacyLevel: "Emotional and spiritual connection develops gradually."
-},
-
-  "Cancer-Cancer": {
-  overview: "Two nurturing souls creating a deeply emotional and intuitive bond.",
-  strengths: "Empathy, loyalty, and shared values around family and comfort.",
-  challenges: "Emotional sensitivity may lead to miscommunication or mood swings.",
-  advice: "Maintain openness and don't retreat at the same time.",
-  compatibilityScore: 85,
-  elementHarmony: "Water (Cancer) + Water (Cancer)",
-  famousCouples: ["Princess Diana (Cancer) & Prince William (Cancer - son)"],
-  loveLanguageTips: {
-    Cancer: "Affectionate gestures, emotional reassurance, and quality time"
-  },
-  communicationStyle: "Gentle and heartfelt – silence can speak volumes.",
-  intimacyLevel: "Very high – a tender, soulful connection."
 },
 
    "Cancer-Aries": {
@@ -593,7 +528,6 @@ const zodiacSigns = [
   advice: "Bridge energy and sensitivity by honoring each other's paces.",
   compatibilityScore: 65,
   elementHarmony: "Water (Cancer) + Fire (Aries)",
-  famousCouples: ["Ariana Grande (Cancer) & Pete Davidson (Aries)"],
   loveLanguageTips: {
     Cancer: "Quality time and emotional affirmation",
     Aries: "Action and protective gestures"
@@ -608,7 +542,6 @@ const zodiacSigns = [
   advice: "Encourage new experiences together to avoid stagnation.",
   compatibilityScore: 80,
   elementHarmony: "Water (Cancer) + Earth (Taurus)",
-  famousCouples: ["Prince William (Cancer) & Kate Middleton (Taurus)"],
   loveLanguageTips: {
     Cancer: "Emotional reassurance and cozy intimacy",
     Taurus: "Physical touch and caring acts"
@@ -623,7 +556,6 @@ const zodiacSigns = [
   advice: "Gemini should nurture stability; Cancer should lighten up.",
   compatibilityScore: 52,
   elementHarmony: "Water (Cancer) + Air (Gemini)",
-  famousCouples: ["Kanye West (Gemini) & Kim Kardashian (Cancer)"],
   loveLanguageTips: {
     Cancer: "Caring words and supportive gestures",
     Gemini: "Fun conversation and mental stimulation"
@@ -638,7 +570,6 @@ const zodiacSigns = [
   advice: "Set boundaries and share self-care routines.",
   compatibilityScore: 85,
   elementHarmony: "Water + Water",
-  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Cancer)"],
   loveLanguageTips: {
     Cancer: "Emotional support and comforting closeness"
   },
@@ -652,7 +583,6 @@ const zodiacSigns = [
   advice: "Let Leo shine; let Cancer nurture in return.",
   compatibilityScore: 70,
   elementHarmony: "Water (Cancer) + Fire (Leo)",
-  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Leo)"],
   loveLanguageTips: {
     Cancer: "Security and heartfelt attention",
     Leo: "Verbal praise and loyalty"
@@ -667,7 +597,6 @@ const zodiacSigns = [
   advice: "Virgo should be gentle; Cancer should trust practicality.",
   compatibilityScore: 78,
   elementHarmony: "Water (Cancer) + Earth (Virgo)",
-  famousCouples: ["Beyoncé (Virgo) & Jay-Z (Cancer)"],
   loveLanguageTips: {
     Cancer: "Acts of care and assurance",
     Virgo: "Helpful gestures and attentive listening"
@@ -682,7 +611,6 @@ const zodiacSigns = [
   advice: "Make decisions together and validate each emotion.",
   compatibilityScore: 68,
   elementHarmony: "Water (Cancer) + Air (Libra)",
-  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Cancer)"],
   loveLanguageTips: {
     Cancer: "Emotional connection and caring rituals",
     Libra: "Quality time and harmonious ambiance"
@@ -697,7 +625,6 @@ const zodiacSigns = [
   advice: "Ensure openness and clear emotional sharing.",
   compatibilityScore: 88,
   elementHarmony: "Water + Water",
-  famousCouples: ["Steven Spielberg (Cancer) & Kate Capshaw (Scorpio)"],
   loveLanguageTips: {
     Cancer: "Safety and consistent affection",
     Scorpio: "Emotional truth and physical intensity"
@@ -712,7 +639,6 @@ const zodiacSigns = [
   advice: "Sagittarius should assure security; Cancer should allow exploration.",
   compatibilityScore: 50,
   elementHarmony: "Water (Cancer) + Fire (Sagittarius)",
-  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Cancer)"],
   loveLanguageTips: {
     Cancer: "Emotional reassurance and intimate consistency",
     Sagittarius: "Shared adventures and playful humor"
@@ -727,7 +653,6 @@ const zodiacSigns = [
   advice: "Balance work and devotion with emotional check-ins.",
   compatibilityScore: 82,
   elementHarmony: "Water (Cancer) + Earth (Capricorn)",
-  famousCouples: ["Bill Gates (Capricorn) & Melinda Gates (Cancer)"],
   loveLanguageTips: {
     Cancer: "Emotional warmth and home comfort",
     Capricorn: "Acts of service and reliable support"
@@ -742,7 +667,6 @@ const zodiacSigns = [
   advice: "Aquarius should prioritize emotional check-ins; Cancer should allow space.",
   compatibilityScore: 55,
   elementHarmony: "Water (Cancer) + Air (Aquarius)",
-  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Cancer)"],
   loveLanguageTips: {
     Cancer: "Emotional closeness and nurturing acts",
     Aquarius: "Intellectual connection and shared ideals"
@@ -757,7 +681,6 @@ const zodiacSigns = [
   advice: "Balance emotional togetherness with healthy boundaries.",
   compatibilityScore: 90,
   elementHarmony: "Water + Water",
-  famousCouples: ["Jon Bon Jovi (Cancer) & Dorothea Hurley (Pisces)"],
   loveLanguageTips: {
     Cancer: "Emotional reassurance and caring presence",
     Pisces: "Intuitive understanding and soulful support"
@@ -767,21 +690,6 @@ const zodiacSigns = [
 
     },
 
-    "Leo-Leo": {
-  overview: "A glamorous and passionate match full of charisma and creativity.",
-  strengths: "Confidence, romance, and shared flair for drama.",
-  challenges: "Competition for attention and prideful standoffs.",
-  advice: "Celebrate each other's shine without dimming your own.",
-  compatibilityScore: 76,
-  elementHarmony: "Fire (Leo) + Fire (Leo)",
-  famousCouples: ["Jennifer Lopez (Leo) & Ben Affleck (Leo)"],
-  loveLanguageTips: {
-    Leo: "Praise, loyalty, and grand romantic gestures"
-  },
-  communicationStyle: "Bold and expressive – with a flair for performance.",
-  intimacyLevel: "High – a passionate and theatrical romance."
-},
-
 
     "Leo-Aries": {
   overview: "Two bold fire signs—their relationship is radiant, confident, and full of passion.",
@@ -790,7 +698,6 @@ const zodiacSigns = [
   advice: "Celebrate each other's wins and share the spotlight to avoid power struggles.",
   compatibilityScore: 88,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Jennifer Lawrence (Leo) & Cooke Maroney (Aries)"],
   loveLanguageTips: {
     Leo: "Grand romantic gestures and verbal praise",
     Aries: "Passionate action and protective support"
@@ -806,7 +713,6 @@ const zodiacSigns = [
   advice: "Balance indulgence with responsibility, and appreciate each other’s rhythms.",
   compatibilityScore: 72,
   elementHarmony: "Fire (Leo) + Earth (Taurus)",
-  famousCouples: ["Julia Roberts (Leo) & Daniel Moder (Taurus)"],
   loveLanguageTips: {
     Leo: "Appreciative words, attention, and lavish gifts",
     Taurus: "Physical comfort and consistent devotion"
@@ -822,7 +728,6 @@ const zodiacSigns = [
   advice: "Rotate focus and share the limelight graciously.",
   compatibilityScore: 78,
   elementHarmony: "Fire (Leo) + Air (Gemini)",
-  famousCouples: ["Johnny Depp (Gemini) & Amber Heard (Leo)"],
   loveLanguageTips: {
     Leo: "Acts of admiration and grand romantic surprises",
     Gemini: "Quality time and witty communication"
@@ -838,7 +743,6 @@ const zodiacSigns = [
   advice: "Leo should nurture with sensitivity; Cancer should embrace Leo’s vibrance.",
   compatibilityScore: 70,
   elementHarmony: "Fire (Leo) + Water (Cancer)",
-  famousCouples: ["Tom Hanks (Cancer) & Rita Wilson (Leo)"],
   loveLanguageTips: {
     Leo: "Verbal praise and attention",
     Cancer: "Emotional closeness and shared traditions"
@@ -854,7 +758,6 @@ const zodiacSigns = [
   advice: "Share the spotlight and celebrate each other consistently.",
   compatibilityScore: 85,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Bill Clinton (Leo) & Hillary Clinton (Leo)"],
   loveLanguageTips: {
     Leo: "Public displays of affection and verbal appreciation"
   },
@@ -869,7 +772,6 @@ const zodiacSigns = [
   advice: "Virgo should praise; Leo should honor Virgo’s careful contributions.",
   compatibilityScore: 65,
   elementHarmony: "Fire (Leo) + Earth (Virgo)",
-  famousCouples: ["Justin Bieber (Virgo) & Hailey Bieber (Leo)"],
   loveLanguageTips: {
     Leo: "Acts of love and admiration",
     Virgo: "Helpful gestures and calm reassurance"
@@ -885,7 +787,6 @@ const zodiacSigns = [
   advice: "Speak truths with love, and make decisions together.",
   compatibilityScore: 82,
   elementHarmony: "Fire (Leo) + Air (Libra)",
-  famousCouples: ["Blake Lively (Leo) & Ryan Reynolds (Libra)"],
   loveLanguageTips: {
     Leo: "Romantic surprises and verbal praise",
     Libra: "Quality time and aesthetic experiences"
@@ -901,7 +802,6 @@ const zodiacSigns = [
   advice: "Cultivate trust and allow vulnerability to deepen your bond.",
   compatibilityScore: 80,
   elementHarmony: "Fire (Leo) + Water (Scorpio)",
-  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio/Leo?)"],
   loveLanguageTips: {
     Leo: "Attention and dramatic gestures",
     Scorpio: "Emotional depth and physical intimacy"
@@ -917,7 +817,6 @@ const zodiacSigns = [
   advice: "Set shared visions but commit to daily rituals together.",
   compatibilityScore: 90,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo)"],
   loveLanguageTips: {
     Leo: "Grand romance and praise",
     Sagittarius: "Adventure, humor, and freedom"
@@ -933,7 +832,6 @@ const zodiacSigns = [
   advice: "Leo should respect structure; Capricorn should allow celebration.",
   compatibilityScore: 75,
   elementHarmony: "Fire (Leo) + Earth (Capricorn)",
-  famousCouples: ["Davide Gramicci (Leo) & Others"],
   loveLanguageTips: {
     Leo: "Praise and attention",
     Capricorn: "Consistency and practical support"
@@ -949,7 +847,6 @@ const zodiacSigns = [
   advice: "Celebrate individuality and coordinate public humility.",
   compatibilityScore: 80,
   elementHarmony: "Fire (Leo) + Air (Aquarius)",
-  famousCouples: ["Jennifer Aniston (Aquarius) & Brad Pitt (Leo)"],
   loveLanguageTips: {
     Leo: "Public praise and thoughtful gestures",
     Aquarius: "Intellectual connection and shared ideals"
@@ -965,28 +862,12 @@ const zodiacSigns = [
   advice: "Leo should lead with gentleness; Pisces should articulate needs.",
   compatibilityScore: 68,
   elementHarmony: "Fire (Leo) + Water (Pisces)",
-  famousCouples: ["Celine Dion (Leo) & René Angélil (Pisces)"],
   loveLanguageTips: {
     Leo: "Affirmations and grand gestures",
     Pisces: "Emotional connection and imaginative love"
   },
   communicationStyle: "Warm expressive vs. intuitive and poetic.",
   intimacyLevel: "High – loving, emotional, and dreamy."
-},
-
-  "Virgo-Virgo": {
-  overview: "A thoughtful and organized pairing built on mutual respect and purpose.",
-  strengths: "Dedication, intellect, and shared values.",
-  challenges: "Perfectionism and overthinking.",
-  advice: "Practice self-compassion and celebrate progress over perfection.",
-  compatibilityScore: 74,
-  elementHarmony: "Earth (Virgo) + Earth (Virgo)",
-  famousCouples: ["Beyoncé (Virgo) & Blue Ivy (Virgo - daughter)"],
-  loveLanguageTips: {
-    Virgo: "Acts of service, careful attention, and meaningful routines"
-  },
-  communicationStyle: "Clear and analytical – may be overly cautious at times.",
-  intimacyLevel: "Moderate – intimacy deepens through trust and subtlety."
 },
 
     "Virgo-Aries": {
@@ -996,7 +877,6 @@ const zodiacSigns = [
   advice: "Practice patience and planning to balance action with analysis.",
   compatibilityScore: 60,
   elementHarmony: "Earth (Virgo) + Fire (Aries)",
-  famousCouples: ["Serena Williams (Virgo) & Alexis Ohanian (Aries)"],
   loveLanguageTips: {
     Virgo: "Acts of service and thoughtful consistency",
     Aries: "Physical affection and adventurous support"
@@ -1012,7 +892,6 @@ const zodiacSigns = [
   advice: "Introduce variety through shared small adventures.",
   compatibilityScore: 85,
   elementHarmony: "Earth + Earth",
-  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Taurus)"],
   loveLanguageTips: {
     Virgo: "Organized help and stability",
     Taurus: "Physical comfort and reliable affection"
@@ -1028,7 +907,6 @@ const zodiacSigns = [
   advice: "Balance detailed planning with spontaneous fun.",
   compatibilityScore: 60,
   elementHarmony: "Earth + Air",
-  famousCouples: ["Paul Rudd (Gemini) & Julie Yaeger (Virgo)"],
   loveLanguageTips: {
     Virgo: "Thoughtful acts and consistent reassurance",
     Gemini: "Playful banter and shared learning"
@@ -1044,7 +922,6 @@ const zodiacSigns = [
   advice: "Communicate needs kindly and validate each other’s efforts.",
   compatibilityScore: 78,
   elementHarmony: "Earth + Water",
-  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Cancer)"],
   loveLanguageTips: {
     Virgo: "Helping hands and attentive listening",
     Cancer: "Emotional closeness and nurturing rituals"
@@ -1060,7 +937,6 @@ const zodiacSigns = [
   advice: "Leo should show appreciation; Virgo should celebrate spontaneity.",
   compatibilityScore: 65,
   elementHarmony: "Earth + Fire",
-  famousCouples: ["Justin Bieber (Virgo) & Hailey Bieber (Leo)"],
   loveLanguageTips: {
     Virgo: "Supportive actions and reliability",
     Leo: "Praise and romantic attention"
@@ -1076,7 +952,6 @@ const zodiacSigns = [
   advice: "Focus on compassion and occasional spontaneity.",
   compatibilityScore: 80,
   elementHarmony: "Earth + Earth",
-  famousCouples: ["Zendaya (Virgo) & Tom Holland (Virgo) — rumored"],
   loveLanguageTips: {
     Virgo: "Thoughtful actions and unwavering support"
   },
@@ -1091,7 +966,6 @@ const zodiacSigns = [
   advice: "Encourage thoughtful compromise and make decisions together.",
   compatibilityScore: 70,
   elementHarmony: "Earth + Air",
-  famousCouples: ["Alicia Silverstone (Libra) & Christopher Jarecki (Virgo)"],
   loveLanguageTips: {
     Virgo: "Helpful gestures and clear communication",
     Libra: "Quality time and peaceful collaboration"
@@ -1107,7 +981,6 @@ const zodiacSigns = [
   advice: "Use trust-building and open sharing to manage depth.",
   compatibilityScore: 82,
   elementHarmony: "Earth + Water",
-  famousCouples: ["Keira Knightley (Virgo) & James Righton (Scorpio)"],
   loveLanguageTips: {
     Virgo: "Quiet support and consistent effort",
     Scorpio: "Emotional candor and physical intimacy"
@@ -1123,7 +996,6 @@ const zodiacSigns = [
   advice: "Respect each other’s pace and share learning experiences.",
   compatibilityScore: 55,
   elementHarmony: "Earth + Fire",
-  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Virgo) — past"],
   loveLanguageTips: {
     Virgo: "Thoughtful routines and organized care",
     Sagittarius: "Adventures and shared laughter"
@@ -1139,7 +1011,6 @@ const zodiacSigns = [
   advice: "Schedule love time alongside goals.",
   compatibilityScore: 88,
   elementHarmony: "Earth + Earth",
-  famousCouples: ["Beyoncé (Virgo) & Jay‑Z (Capricorn) — alternate chart views"],
   loveLanguageTips: {
     Virgo: "Practical actions and emotional safety",
     Capricorn: "Dependable support and discipline"
@@ -1155,7 +1026,6 @@ const zodiacSigns = [
   advice: "Combine structure with vision; respect each style.",
   compatibilityScore: 75,
   elementHarmony: "Earth + Air",
-  famousCouples: ["Alicia Keys (Aquarius) & Swizz Beatz (Virgo)"],
   loveLanguageTips: {
     Virgo: "Helpful support and clear communication",
     Aquarius: "Intellectual freedom and shared causes"
@@ -1171,7 +1041,6 @@ const zodiacSigns = [
   advice: "Cultivate empathy and celebrate each other's gifts.",
   compatibilityScore: 90,
   elementHarmony: "Earth + Water",
-  famousCouples: ["Zendaya (Virgo) & Tom Holland (Pisces) — rumored"],
   loveLanguageTips: {
     Virgo: "Acts of service and stable support",
     Pisces: "Emotional openness and spiritual connection"
@@ -1180,21 +1049,6 @@ const zodiacSigns = [
   intimacyLevel: "Very high – soulful, nurturing, and transformative."
 
     },
-
-    "Libra-Libra": {
-  overview: "A graceful and balanced relationship rooted in harmony and shared ideals.",
-  strengths: "Romantic, fair, and socially adept.",
-  challenges: "Indecisiveness and avoidance of conflict.",
-  advice: "Speak openly about needs – don't just keep the peace.",
-  compatibilityScore: 82,
-  elementHarmony: "Air (Libra) + Air (Libra)",
-  famousCouples: ["Will Smith (Libra) & Jada Pinkett Smith (Libra)"],
-  loveLanguageTips: {
-    Libra: "Words of affirmation, shared beauty, and romantic gestures"
-  },
-  communicationStyle: "Tactful and charming – sometimes avoids hard truths.",
-  intimacyLevel: "High – sensual and mentally connected."
-},
    
     "Libra-Aries": {
   overview: "Balanced lovers—optimism meets courage in an engaging dynamic.",
@@ -1203,7 +1057,6 @@ const zodiacSigns = [
   advice: "Aries should practice patience; Libra should be proactive.",
   compatibilityScore: 75,
   elementHarmony: "Air (Libra) + Fire (Aries)",
-  famousCouples: ["Hugh Hefner (Aries) & Crystal Harris (Libra)"],
   loveLanguageTips: {
     Libra: "Quality time and peaceful cooperation",
     Aries: "Bold action and enthusiastic praise"
@@ -1219,7 +1072,6 @@ const zodiacSigns = [
   advice: "Combine stability with cultural experiences.",
   compatibilityScore: 70,
   elementHarmony: "Air (Libra) + Earth (Taurus)",
-  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Taurus)"],
   loveLanguageTips: {
     Libra: "Finessed compliments and aesthetic endeavors",
     Taurus: "Physical touch and heartfelt devotion"
@@ -1235,7 +1087,6 @@ const zodiacSigns = [
   advice: "Set mutual goals to keep the dynamic moving forward.",
   compatibilityScore: 82,
   elementHarmony: "Air + Air",
-  famousCouples: ["John F. Kennedy Jr. (Gemini) & Carolyn Bessette (Libra)"],
   loveLanguageTips: {
     Libra: "Quality time and mutual admiration",
     Gemini: "Witty conversation and shared adventures"
@@ -1251,7 +1102,6 @@ const zodiacSigns = [
   advice: "Alternate between socializing and quiet bonding time.",
   compatibilityScore: 68,
   elementHarmony: "Air (Libra) + Water (Cancer)",
-  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Cancer)"],
   loveLanguageTips: {
     Libra: "Quality time and romantic creativity",
     Cancer: "Emotional closeness and caring routines"
@@ -1267,7 +1117,6 @@ const zodiacSigns = [
   advice: "Be honest with love and gentleness.",
   compatibilityScore: 82,
   elementHarmony: "Air (Libra) + Fire (Leo)",
-  famousCouples: ["Blake Lively (Leo) & Ryan Reynolds (Libra)"],
   loveLanguageTips: {
     Libra: "Quality time and artistic experiences",
     Leo: "Public praise and loyal displays"
@@ -1283,7 +1132,6 @@ const zodiacSigns = [
   advice: "Merge thoughtful logistics with social structure.",
   compatibilityScore: 70,
   elementHarmony: "Air (Libra) + Earth (Virgo)",
-  famousCouples: ["Alicia Silverstone (Libra) & Christopher Jarecki (Virgo)"],
   loveLanguageTips: {
     Libra: "Quality time and shared experiences",
     Virgo: "Helpful gestures and consistent dependability"
@@ -1299,7 +1147,6 @@ const zodiacSigns = [
   advice: "Set clear priorities while maintaining balance.",
   compatibilityScore: 85,
   elementHarmony: "Air + Air",
-  famousCouples: ["Eddie Murphy (Libra) & Nicole Mitchell Murphy (Libra)"],
   loveLanguageTips: {
     Libra: "Collaboration and shared aesthetics"
   },
@@ -1314,7 +1161,6 @@ const zodiacSigns = [
   advice: "Scorpio should soften; Libra should engage deeply.",
   compatibilityScore: 65,
   elementHarmony: "Air (Libra) + Water (Scorpio)",
-  famousCouples: ["Serena Williams (Libra) & Alexis Ohanian (Scorpio)"],
   loveLanguageTips: {
     Libra: "Quality time and affectionate words",
     Scorpio: "Emotional truth and sensuality"
@@ -1330,7 +1176,6 @@ const zodiacSigns = [
   advice: "Speak honestly and plan thoughtfully.",
   compatibilityScore: 80,
   elementHarmony: "Air (Libra) + Fire (Sagittarius)",
-  famousCouples: ["Katie Holmes (Sagittarius) & Tom Cruise (Libra)"],
   loveLanguageTips: {
     Libra: "Cultural experiences and affection",
     Sagittarius: "Adventure and playful humor"
@@ -1346,7 +1191,6 @@ const zodiacSigns = [
   advice: "Combine practicality with cordiality in decisions.",
   compatibilityScore: 75,
   elementHarmony: "Air (Libra) + Earth (Capricorn)",
-  famousCouples: ["Michelle Obama (Libra) & Barack Obama (Capricorn)"],
   loveLanguageTips: {
     Libra: "Quality time and beautiful moments",
     Capricorn: "Acts of service and consistent reliability"
@@ -1362,7 +1206,6 @@ const zodiacSigns = [
   advice: "Prioritize emotional connection as well as mental rapport.",
   compatibilityScore: 85,
   elementHarmony: "Air + Air",
-  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Libra)"],
   loveLanguageTips: {
     Libra: "Collaborative time and shared adventures",
     Aquarius: "Idea exchanges and personal autonomy"
@@ -1378,28 +1221,12 @@ const zodiacSigns = [
   advice: "Share emotional support while exploring creativity.",
   compatibilityScore: 82,
   elementHarmony: "Air (Libra) + Water (Pisces)",
-  famousCouples: ["Céline Dion (Leo/Pisces) & René Angélil (Pisces)"], // example
   loveLanguageTips: {
     Libra: "Quality time and thoughtful harmony",
     Pisces: "Emotional reassurance and gentle physical touch"
   },
   communicationStyle: "Gentle and expressive—ideal for emotional depth.",
   intimacyLevel: "High – dreamy, artistic, and deeply connected."
-},
-
-  "Sagittarius-Sagittarius": {
-  overview: "An adventurous and freedom-loving duo with unstoppable energy.",
-  strengths: "Optimism, humor, and shared love for exploration.",
-  challenges: "Restlessness and commitment avoidance.",
-  advice: "Stay grounded and honor emotional depth.",
-  compatibilityScore: 77,
-  elementHarmony: "Fire (Sagittarius) + Fire (Sagittarius)",
-  famousCouples: ["Brad Pitt (Sagittarius) & Taylor Swift (Sagittarius - mutual admiration)"],
-  loveLanguageTips: {
-    Sagittarius: "Adventurous experiences and open conversation"
-  },
-  communicationStyle: "Honest and humorous – sometimes too blunt.",
-  intimacyLevel: "Moderate – thrives on spontaneity and fun."
 },
 
     "Sagittarius-Aries": {
@@ -1409,7 +1236,6 @@ const zodiacSigns = [
   advice: "Balance excitement with occasional grounding rituals.",
   compatibilityScore: 85,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo, past)"],
   loveLanguageTips: {
     Sagittarius: "Adventure and humor",
     Aries: "Bold acts and frequent encouragement"
@@ -1425,7 +1251,6 @@ const zodiacSigns = [
   advice: "Allow space for adventure while keeping roots strong.",
   compatibilityScore: 60,
   elementHarmony: "Fire + Earth",
-  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Taurus)"],
   loveLanguageTips: {
     Sagittarius: "Laughter and experiential acts",
     Taurus: "Physical comfort and reliability"
@@ -1441,7 +1266,6 @@ const zodiacSigns = [
   advice: "Stay anchored emotionally during adventures.",
   compatibilityScore: 85,
   elementHarmony: "Fire + Air",
-  famousCouples: ["Taylor Swift (Sagittarius) & Joe Alwyn (Gemini)"],
   loveLanguageTips: {
     Sagittarius: "Adventure and playful banter",
     Gemini: "Words of affirmation and shared ideas"
@@ -1457,7 +1281,6 @@ const zodiacSigns = [
   advice: "Cultivate trust and balance between rootedness and exploration.",
   compatibilityScore: 50,
   elementHarmony: "Fire + Water",
-  famousCouples: ["Justin Bieber (Sagittarius) & Hailey Baldwin (Cancer)"],
   loveLanguageTips: {
     Sagittarius: "Adventures and humor",
     Cancer: "Emotional reassurance and bonding time"
@@ -1473,7 +1296,6 @@ const zodiacSigns = [
   advice: "Align on shared dreams and celebrate each other openly.",
   compatibilityScore: 90,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Leo)"],
   loveLanguageTips: {
     Sagittarius: "Fun adventures and shared laughter",
     Leo: "Praise, attention, and grand romance"
@@ -1489,7 +1311,6 @@ const zodiacSigns = [
   advice: "Plan adventures together with structure and spontaneity.",
   compatibilityScore: 55,
   elementHarmony: "Fire + Earth",
-  famousCouples: ["Brad Pitt (Sagittarius) & Angelina Jolie (Virgo, past)"],
   loveLanguageTips: {
     Sagittarius: "Humor and shared experiences",
     Virgo: "Acts of service and thoughtful stability"
@@ -1505,7 +1326,6 @@ const zodiacSigns = [
   advice: "Make decisions together and speak with kindness.",
   compatibilityScore: 80,
   elementHarmony: "Fire + Air",
-  famousCouples: ["Katie Holmes (Sagittarius) & Tom Cruise (Libra)"],
   loveLanguageTips: {
     Sagittarius: "Adventures and playful honesty",
     Libra: "Quality time and cultural connection"
@@ -1521,7 +1341,6 @@ const zodiacSigns = [
   advice: "Scorpio should embrace freedom; Sagittarius should offer emotional space.",
   compatibilityScore: 65,
   elementHarmony: "Fire + Water",
-  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio–Sagittarius mix)"],
   loveLanguageTips: {
     Sagittarius: "Freedom and shared exploration",
     Scorpio: "Emotional depth and quality time"
@@ -1537,7 +1356,6 @@ const zodiacSigns = [
   advice: "Create routines within adventure to maintain balance.",
   compatibilityScore: 85,
   elementHarmony: "Fire + Fire",
-  famousCouples: ["Nicki Minaj (Sagittarius) & Kenneth Petty (Sagittarius)"],
   loveLanguageTips: {
     Sagittarius: "Adventure, laughter, and free expression"
   },
@@ -1552,7 +1370,6 @@ const zodiacSigns = [
   advice: "Plan long-term with room for surprise.",
   compatibilityScore: 70,
   elementHarmony: "Fire + Earth",
-  famousCouples: ["Davide Gramicci (Sagittarius) & Others"],
   loveLanguageTips: {
     Sagittarius: "Adventure and freedom",
     Capricorn: "Stability and consistent support"
@@ -1568,7 +1385,6 @@ const zodiacSigns = [
   advice: "Prioritise emotional check-ins and shared ideals.",
   compatibilityScore: 82,
   elementHarmony: "Fire + Air",
-  famousCouples: ["Brad Pitt (Aquarius) & Jennifer Aniston (Sagittarius)"],
   loveLanguageTips: {
     Sagittarius: "Frequent adventure and witty talk",
     Aquarius: "Idea sharing and individual space"
@@ -1584,7 +1400,6 @@ const zodiacSigns = [
   advice: "Balance emotional understanding with spontaneity.",
   compatibilityScore: 60,
   elementHarmony: "Fire + Water",
-  famousCouples: ["Jon Bon Jovi (Cancer) & Dorothea Hurley (Pisces—Sagittarius mix)"],
   loveLanguageTips: {
     Sagittarius: "Adventure and playful energy",
     Pisces: "Emotional support and spiritual connection"
@@ -1601,7 +1416,6 @@ const zodiacSigns = [
   advice: "Stay grounded and support each other’s dreams with action.",
   compatibilityScore: 81,
   elementHarmony: "Water (Pisces) + Water (Pisces)",
-  famousCouples: ["Rihanna (Pisces) & Erykah Badu (Pisces - artistic parallels)"],
   loveLanguageTips: {
     Pisces: "Emotional presence, dreamy romance, and heartfelt gestures"
   },
@@ -1616,7 +1430,6 @@ const zodiacSigns = [
   advice: "Balance freedom with commitment and respect each other’s space.",
   compatibilityScore: 70,
   elementHarmony: "Air (Aquarius) + Fire (Aries)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Intellectual connection and unique experiences",
     Aries: "Bold gestures and physical affection"
@@ -1632,7 +1445,6 @@ const zodiacSigns = [
   advice: "Find common goals and appreciate differences.",
   compatibilityScore: 60,
   elementHarmony: "Air (Aquarius) + Earth (Taurus)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Freedom and mental stimulation",
     Taurus: "Physical affection and steady routines"
@@ -1648,7 +1460,6 @@ const zodiacSigns = [
   advice: "Work on opening up emotionally to deepen connection.",
   compatibilityScore: 85,
   elementHarmony: "Air (Aquarius) + Air (Gemini)",
-  famousCouples: ["Oprah Winfrey (Aquarius) & Ellen DeGeneres (Aquarius - friendship)"],
   loveLanguageTips: {
     Aquarius: "Unique ideas and space to be themselves",
     Gemini: "Playful banter and mental stimulation"
@@ -1664,7 +1475,6 @@ const zodiacSigns = [
   advice: "Create space for emotional needs and freedom.",
   compatibilityScore: 55,
   elementHarmony: "Air (Aquarius) + Water (Cancer)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Freedom and inventive gestures",
     Cancer: "Affection and reassurance"
@@ -1680,7 +1490,6 @@ const zodiacSigns = [
   advice: "Balance ego and respect individuality.",
   compatibilityScore: 75,
   elementHarmony: "Air (Aquarius) + Fire (Leo)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Intellectual freedom and quirky surprises",
     Leo: "Praise and grand gestures"
@@ -1696,7 +1505,6 @@ const zodiacSigns = [
   advice: "Appreciate each other’s unique approaches.",
   compatibilityScore: 65,
   elementHarmony: "Air (Aquarius) + Earth (Virgo)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Freedom and intellectual engagement",
     Virgo: "Acts of service and thoughtful care"
@@ -1712,7 +1520,6 @@ const zodiacSigns = [
   advice: "Practice open communication and emotional honesty.",
   compatibilityScore: 80,
   elementHarmony: "Air (Aquarius) + Air (Libra)",
-  famousCouples: ["Ellen DeGeneres (Aquarius) & Portia de Rossi (Libra)"],
   loveLanguageTips: {
     Aquarius: "Unique ideas and space to be authentic",
     Libra: "Words of affirmation and shared beauty"
@@ -1728,7 +1535,6 @@ const zodiacSigns = [
   advice: "Find middle ground between independence and intimacy.",
   compatibilityScore: 58,
   elementHarmony: "Air (Aquarius) + Water (Scorpio)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Freedom and mental stimulation",
     Scorpio: "Loyalty and emotional honesty"
@@ -1744,7 +1550,6 @@ const zodiacSigns = [
   advice: "Stay grounded and nurture emotional connection.",
   compatibilityScore: 85,
   elementHarmony: "Air (Aquarius) + Fire (Sagittarius)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Intellectual freedom and new experiences",
     Sagittarius: "Adventurous activities and honesty"
@@ -1760,7 +1565,6 @@ const zodiacSigns = [
   advice: "Respect each other’s pace and values.",
   compatibilityScore: 65,
   elementHarmony: "Air (Aquarius) + Earth (Capricorn)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Freedom and intellectual connection",
     Capricorn: "Practical support and loyalty"
@@ -1776,7 +1580,6 @@ const zodiacSigns = [
   advice: "Balance logic with emotional presence.",
   compatibilityScore: 75,
   elementHarmony: "Air (Aquarius) + Air (Aquarius)",
-  famousCouples: ["Oprah Winfrey (Aquarius) & Ellen DeGeneres (Aquarius - friendship)"],
   loveLanguageTips: {
     Aquarius: "Thoughtful ideas, unique surprises, and freedom to be authentic"
   },
@@ -1791,7 +1594,6 @@ const zodiacSigns = [
   advice: "Practice empathy and open emotional exchange.",
   compatibilityScore: 70,
   elementHarmony: "Air (Aquarius) + Water (Pisces)",
-  famousCouples: [],
   loveLanguageTips: {
     Aquarius: "Mental stimulation and freedom",
     Pisces: "Emotional presence and dreamy romance"
@@ -1807,7 +1609,6 @@ const zodiacSigns = [
   advice: "Balance control with trust and open communication.",
   compatibilityScore: 68,
   elementHarmony: "Water (Scorpio) + Fire (Aries)",
-  famousCouples: ["Robert Downey Jr. (Aries) & Susan Downey (Scorpio)"],
   loveLanguageTips: {
     Scorpio: "Deep emotional connection and loyalty",
     Aries: "Physical touch and acts of bravery"
@@ -1823,7 +1624,6 @@ const zodiacSigns = [
   advice: "Nurture honesty and allow space for independence.",
   compatibilityScore: 85,
   elementHarmony: "Water (Scorpio) + Earth (Taurus)",
-  famousCouples: ["Bill Gates (Scorpio) & Melinda Gates (Taurus)"],
   loveLanguageTips: {
     Scorpio: "Emotional intensity and physical touch",
     Taurus: "Physical affection and consistent routines"
@@ -1839,7 +1639,6 @@ const zodiacSigns = [
   advice: "Practice patience and respect differing needs.",
   compatibilityScore: 62,
   elementHarmony: "Water (Scorpio) + Air (Gemini)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Loyalty and deep emotional bonds",
     Gemini: "Fun conversation and spontaneity"
@@ -1855,7 +1654,6 @@ const zodiacSigns = [
   advice: "Keep communication open and provide reassurance.",
   compatibilityScore: 90,
   elementHarmony: "Water (Scorpio) + Water (Cancer)",
-  famousCouples: ["Eminem (Scorpio) & Kim Scott (Cancer)"],
   loveLanguageTips: {
     Scorpio: "Emotional depth and loyalty",
     Cancer: "Affection and nurturing"
@@ -1871,7 +1669,6 @@ const zodiacSigns = [
   advice: "Respect each other's space and strengths.",
   compatibilityScore: 70,
   elementHarmony: "Water (Scorpio) + Fire (Leo)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Physical intimacy and loyalty",
     Leo: "Admiration and grand romantic gestures"
@@ -1887,7 +1684,6 @@ const zodiacSigns = [
   advice: "Embrace imperfections and communicate openly.",
   compatibilityScore: 75,
   elementHarmony: "Water (Scorpio) + Earth (Virgo)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Emotional depth and loyalty",
     Virgo: "Acts of service and careful attention"
@@ -1903,7 +1699,6 @@ const zodiacSigns = [
   advice: "Practice patience and open communication.",
   compatibilityScore: 65,
   elementHarmony: "Water (Scorpio) + Air (Libra)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Deep emotional connection",
     Libra: "Words of affirmation and shared experiences"
@@ -1919,7 +1714,6 @@ const zodiacSigns = [
   advice: "Cultivate trust and allow vulnerability to lead.",
   compatibilityScore: 79,
   elementHarmony: "Water (Scorpio) + Water (Scorpio)",
-  famousCouples: ["Katy Perry (Scorpio) & Julia Roberts (Scorpio - friendship)"],
   loveLanguageTips: {
     Scorpio: "Loyalty, emotional depth, and physical intimacy"
   },
@@ -1934,7 +1728,6 @@ const zodiacSigns = [
   advice: "Respect boundaries and encourage honesty.",
   compatibilityScore: 60,
   elementHarmony: "Water (Scorpio) + Fire (Sagittarius)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Emotional loyalty",
     Sagittarius: "Open communication and adventure"
@@ -1950,7 +1743,6 @@ const zodiacSigns = [
   advice: "Make time for intimacy and emotional openness.",
   compatibilityScore: 85,
   elementHarmony: "Water (Scorpio) + Earth (Capricorn)",
-  famousCouples: ["Bill Clinton (Scorpio) & Hillary Clinton (Capricorn)"],
   loveLanguageTips: {
     Scorpio: "Emotional depth and loyalty",
     Capricorn: "Practical support and consistency"
@@ -1966,7 +1758,6 @@ const zodiacSigns = [
   advice: "Find balance between independence and intimacy.",
   compatibilityScore: 58,
   elementHarmony: "Water (Scorpio) + Air (Aquarius)",
-  famousCouples: [],
   loveLanguageTips: {
     Scorpio: "Loyalty and emotional honesty",
     Aquarius: "Freedom and intellectual connection"
@@ -1982,7 +1773,6 @@ const zodiacSigns = [
   advice: "Practice clear communication and honesty.",
   compatibilityScore: 88,
   elementHarmony: "Water (Scorpio) + Water (Pisces)",
-  famousCouples: ["Eva Mendes (Pisces) & Ryan Gosling (Scorpio)"],
   loveLanguageTips: {
     Scorpio: "Emotional intensity and loyalty",
     Pisces: "Dreamy romance and emotional presence"
@@ -1998,7 +1788,6 @@ const zodiacSigns = [
   advice: "Be patient and respect each other’s pace.",
   compatibilityScore: 65,
   elementHarmony: "Earth (Capricorn) + Fire (Aries)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Practical support and reliability",
     Aries: "Bold gestures and spontaneity"
@@ -2014,7 +1803,6 @@ const zodiacSigns = [
   advice: "Celebrate each other’s strengths and stay flexible.",
   compatibilityScore: 85,
   elementHarmony: "Earth (Capricorn) + Earth (Taurus)",
-  famousCouples: ["Michelle Obama (Capricorn) & Barack Obama (Taurus)"],
   loveLanguageTips: {
     Capricorn: "Acts of service and consistency",
     Taurus: "Physical touch and steady routines"
@@ -2030,7 +1818,6 @@ const zodiacSigns = [
   advice: "Appreciate differences and communicate openly.",
   compatibilityScore: 55,
   elementHarmony: "Earth (Capricorn) + Air (Gemini)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Reliability and practical help",
     Gemini: "Fun conversation and mental stimulation"
@@ -2046,7 +1833,6 @@ const zodiacSigns = [
   advice: "Practice emotional openness and trust.",
   compatibilityScore: 80,
   elementHarmony: "Earth (Capricorn) + Water (Cancer)",
-  famousCouples: ["Denzel Washington (Capricorn) & Pauletta Washington (Cancer)"],
   loveLanguageTips: {
     Capricorn: "Practical support and dedication",
     Cancer: "Affection and reassurance"
@@ -2062,7 +1848,6 @@ const zodiacSigns = [
   advice: "Make time for fun and appreciation.",
   compatibilityScore: 70,
   elementHarmony: "Earth (Capricorn) + Fire (Leo)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Practical acts and loyalty",
     Leo: "Praise and grand romantic gestures"
@@ -2078,7 +1863,6 @@ const zodiacSigns = [
   advice: "Practice patience and open communication.",
   compatibilityScore: 88,
   elementHarmony: "Earth (Capricorn) + Earth (Virgo)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Acts of service and consistency",
     Virgo: "Thoughtful care and reliability"
@@ -2094,7 +1878,6 @@ const zodiacSigns = [
   advice: "Support each other’s strengths and compromise.",
   compatibilityScore: 65,
   elementHarmony: "Earth (Capricorn) + Air (Libra)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Practical support and reliability",
     Libra: "Words of affirmation and shared experiences"
@@ -2110,7 +1893,6 @@ const zodiacSigns = [
   advice: "Make time for intimacy and emotional openness.",
   compatibilityScore: 85,
   elementHarmony: "Earth (Capricorn) + Water (Scorpio)",
-  famousCouples: ["Bill Clinton (Scorpio) & Hillary Clinton (Capricorn)"],
   loveLanguageTips: {
     Capricorn: "Practical support and consistency",
     Scorpio: "Emotional depth and loyalty"
@@ -2126,7 +1908,6 @@ const zodiacSigns = [
   advice: "Balance freedom and responsibility.",
   compatibilityScore: 60,
   elementHarmony: "Earth (Capricorn) + Fire (Sagittarius)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Reliability and practical help",
     Sagittarius: "Adventure and honesty"
@@ -2142,7 +1923,6 @@ const zodiacSigns = [
   advice: "Make time for joy and vulnerability.",
   compatibilityScore: 83,
   elementHarmony: "Earth (Capricorn) + Earth (Capricorn)",
-  famousCouples: ["Michelle Obama (Capricorn) & Blue Ivy (Capricorn - family bond)"],
   loveLanguageTips: {
     Capricorn: "Practical support, consistency, and acts of loyalty"
   },
@@ -2157,7 +1937,6 @@ const zodiacSigns = [
   advice: "Respect each other’s pace and values.",
   compatibilityScore: 65,
   elementHarmony: "Earth (Capricorn) + Air (Aquarius)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Practical support and loyalty",
     Aquarius: "Freedom and intellectual connection"
@@ -2173,7 +1952,6 @@ const zodiacSigns = [
   advice: "Support each other’s dreams while staying grounded.",
   compatibilityScore: 75,
   elementHarmony: "Earth (Capricorn) + Water (Pisces)",
-  famousCouples: [],
   loveLanguageTips: {
     Capricorn: "Acts of service and reliability",
     Pisces: "Emotional presence and creativity"
