@@ -1,182 +1,300 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const navigationItems = [
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "Compatibility",
+      href: "/compatibility",
+    },
+    {
+      label: "Dark Side",
+      href: "/dark-side",
+    },
+  ];
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <>
-      <nav className="navbar">
-        <Link href="/">
-          <span className="nav-brand">🌙 Cosmic Zodiac Astrology</span>
+    <header className="siteHeader">
+      <nav className="navigation" aria-label="Main navigation">
+        <Link
+          href="/"
+          className="brandLink"
+          onClick={closeMenu}
+          aria-label="Cosmic Zodiac Astrology home"
+        >
+          <span className="brandIcon" aria-hidden="true">
+            ☾
+          </span>
+
+          <span className="brandName">Cosmic Zodiac Astrology</span>
         </Link>
 
         <button
-          aria-label="Toggle menu"
-          className={`nav-toggle ${menuOpen ? "open" : ""}`}
-          onClick={toggleMenu}
+          type="button"
+          className={`menuButton ${menuOpen ? "menuButtonOpen" : ""}`}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          aria-controls="main-navigation-links"
+          onClick={() => setMenuOpen((current) => !current)}
         >
           <span />
           <span />
           <span />
         </button>
 
-        <ul className={`nav-links ${menuOpen ? "nav-active" : ""}`}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/compatibility">Compatibility</Link>
-          </li>
-          <li>
-            <Link href="/astrology-2025">Your Dark Side</Link>
-          </li>
+        <ul
+          id="main-navigation-links"
+          className={`navigationLinks ${
+            menuOpen ? "navigationLinksOpen" : ""
+          }`}
+        >
+          {navigationItems.map((item) => {
+            const isActive =
+              item.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(item.href);
+
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`navigationLink ${
+                    isActive ? "navigationLinkActive" : ""
+                  }`}
+                  aria-current={isActive ? "page" : undefined}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
       <style jsx>{`
-        .navbar {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background: linear-gradient(135deg, #1b1b2f, #16213e);
-          padding: 0.75rem 1.5rem;
-          color: #eee;
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        .siteHeader {
           position: sticky;
           top: 0;
           z-index: 1000;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+
+          background: rgba(8, 9, 26, 0.84);
+          border-bottom: 1px solid var(--border-soft);
+
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
         }
 
-        .nav-brand {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #f4c430;
-          text-shadow: 1px 1px 3px silver;
-          user-select: none;
-          text-decoration: none;
-          transition: color 0.3s ease;
-          cursor: pointer;
-          display: inline-block;
-        }
+        .navigation {
+          width: min(var(--content-width), calc(100% - 2rem));
+          min-height: 72px;
+          margin: 0 auto;
 
-        .nav-brand:hover {
-          color: #fff4a3;
-        }
-
-        .nav-links {
-          list-style: none;
           display: flex;
-          gap: 1.75rem;
-          margin: 0;
-          padding: 0;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
         }
 
-        .nav-links li :global(a) {
-          color: #eee;
+        .brandLink {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+
+          color: var(--accent-gold-bright);
           text-decoration: none;
+        }
+
+        .brandIcon {
+          font-size: 1.45rem;
+          line-height: 1;
+
+          filter: drop-shadow(
+            0 0 10px rgba(223, 198, 120, 0.32)
+          );
+        }
+
+        .brandName {
+          font-family: var(--font-display), serif;
+          font-size: clamp(0.92rem, 2vw, 1.08rem);
           font-weight: 600;
-          position: relative;
-          transition: color 0.3s ease;
+          letter-spacing: 0.05em;
         }
 
-        .nav-links li :global(a)::after {
+        .navigationLinks {
+          display: flex;
+          align-items: center;
+          gap: 1.75rem;
+
+          list-style: none;
+        }
+
+        .navigationLink {
+          position: relative;
+
+          color: var(--text-secondary);
+          font-size: 0.94rem;
+          font-weight: 600;
+          text-decoration: none;
+
+          transition: color 180ms ease;
+        }
+
+        .navigationLink::after {
           content: "";
-          display: block;
-          height: 2px;
-          background: #f4c430;
-          width: 0;
-          transition: width 0.3s ease;
+
           position: absolute;
-          bottom: -5px;
           left: 0;
-        }
+          bottom: -0.45rem;
 
-        .nav-links li :global(a):hover {
-          color: #f4c430;
-        }
-
-        .nav-links li :global(a):hover::after {
           width: 100%;
+          height: 1px;
+
+          background: var(--accent-gold);
+
+          transform: scaleX(0);
+          transform-origin: center;
+
+          transition: transform 180ms ease;
         }
 
-        .nav-toggle {
+        .navigationLink:hover,
+        .navigationLink:focus-visible,
+        .navigationLinkActive {
+          color: var(--accent-gold-bright);
+        }
+
+        .navigationLink:hover::after,
+        .navigationLink:focus-visible::after,
+        .navigationLinkActive::after {
+          transform: scaleX(1);
+        }
+
+        .menuButton {
           display: none;
-          flex-direction: column;
-          justify-content: space-around;
-          width: 28px;
-          height: 22px;
-          background: transparent;
-          border: none;
-          cursor: pointer;
-          padding: 0;
-          z-index: 1100;
-        }
 
-        .nav-toggle span {
-          width: 100%;
-          height: 3px;
-          background: #f4c430;
-          border-radius: 2px;
-          transition: all 0.3s linear;
           position: relative;
+
+          width: 32px;
+          height: 26px;
+
+          padding: 0;
+          background: transparent;
         }
 
-        .nav-toggle.open span:nth-child(1) {
-          transform: rotate(45deg);
-          top: 8px;
+        .menuButton span {
           position: absolute;
+          left: 0;
+
+          width: 100%;
+          height: 2px;
+
+          border-radius: 999px;
+          background: var(--accent-gold-bright);
+
+          transition:
+            top 200ms ease,
+            transform 200ms ease,
+            opacity 200ms ease;
         }
 
-        .nav-toggle.open span:nth-child(2) {
+        .menuButton span:nth-child(1) {
+          top: 3px;
+        }
+
+        .menuButton span:nth-child(2) {
+          top: 12px;
+        }
+
+        .menuButton span:nth-child(3) {
+          top: 21px;
+        }
+
+        .menuButtonOpen span:nth-child(1) {
+          top: 12px;
+          transform: rotate(45deg);
+        }
+
+        .menuButtonOpen span:nth-child(2) {
           opacity: 0;
         }
 
-        .nav-toggle.open span:nth-child(3) {
+        .menuButtonOpen span:nth-child(3) {
+          top: 12px;
           transform: rotate(-45deg);
-          bottom: 8px;
-          position: absolute;
         }
 
-        @media (max-width: 768px) {
-          .nav-toggle {
-            display: flex;
+        @media (max-width: 760px) {
+          .navigation {
+            min-height: 66px;
           }
 
-          .nav-links {
+          .brandName {
+            font-size: 0.88rem;
+          }
+
+          .menuButton {
+            display: block;
+          }
+
+          .navigationLinks {
             position: fixed;
+            top: 66px;
             right: 0;
-            top: 0;
-            height: 100vh;
-            background: #1b1b2f;
+
+            width: min(320px, 82vw);
+            height: calc(100vh - 66px);
+
+            padding: 3rem 2rem;
+
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 60%;
-            max-width: 280px;
+            align-items: flex-start;
+            gap: 2rem;
+
+            background: rgba(8, 9, 26, 0.97);
+            border-left: 1px solid var(--border-soft);
+
             transform: translateX(100%);
-            transition: transform 0.3s ease-in-out;
-            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.6);
+            visibility: hidden;
+
+            transition:
+              transform 220ms ease,
+              visibility 220ms ease;
           }
 
-          .nav-links.nav-active {
+          .navigationLinksOpen {
             transform: translateX(0);
+            visibility: visible;
           }
 
-          .nav-links li {
-            margin: 1.5rem 0;
+          .navigationLink {
+            font-size: 1.1rem;
           }
+        }
 
-          .nav-links li :global(a) {
-            font-size: 1.25rem;
+        @media (prefers-reduced-motion: reduce) {
+          .navigationLink,
+          .navigationLink::after,
+          .navigationLinks,
+          .menuButton span {
+            transition: none;
           }
         }
       `}</style>
-    </>
+    </header>
   );
 }

@@ -1,12 +1,23 @@
 "use client";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <>
-      <footer className="footer">
-        <p>✨ Guiding you through the cosmos — one celestial sign at a time ✨</p>
-        <p>
-          © 2025 Cosmic Zodiac Astrology | Enchanted into existence by{" "}
+    <footer className="footer">
+      <div className="footerContent">
+        <p className="footerTagline">
+          <span aria-hidden="true">✦</span>
+          Guiding you through the cosmos — one celestial sign at a time
+          <span aria-hidden="true">✦</span>
+        </p>
+
+        <p className="footerCredit">
+          © {currentYear} Cosmic Zodiac Astrology
+          <span className="footerDivider" aria-hidden="true">
+            ·
+          </span>
+          Enchanted into existence by{" "}
           <a
             href="https://pamelajterrell.com"
             target="_blank"
@@ -15,7 +26,20 @@ export default function Footer() {
             Pamela Terrell
           </a>
         </p>
-        <p>
+
+        <p className="brandCredit">
+          Part of the{" "}
+          <a
+            href="https://stabileusa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            StabileUSA.com
+          </a>{" "}
+          digital brand
+        </p>
+
+        <p className="visualCredit">
           Starry visuals by{" "}
           <a
             href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=759373"
@@ -23,51 +47,133 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             Alexa
-          </a>{" "}
+          </a>
         </p>
-         
-      </footer>
+      </div>
 
       <style jsx>{`
         .footer {
+          width: 100%;
+          margin-top: 5rem;
+          padding: 2.5rem 1rem;
+
+          border-top: 1px solid var(--border-soft);
+
+          background:
+            radial-gradient(
+              circle at 50% 0%,
+              rgba(155, 141, 227, 0.08),
+              transparent 55%
+            ),
+            rgba(7, 7, 18, 0.55);
+
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+        }
+
+        .footerContent {
+          width: min(760px, 100%);
+          margin: 0 auto;
           text-align: center;
-          padding: 1.5rem;
-          margin-top: 3rem;
-          background: radial-gradient(circle, rgba(106,13,173,0.2) 0%, transparent 100%);
-          border-top: 1px solid #b18aff;
-          font-family: 'Georgia', serif;
-          letter-spacing: 0.07em;
-          text-shadow: 0 0 8px rgba(217, 179, 255, 0.8);
-          animation: shimmer 10s infinite alternate;
         }
 
-        .footer p {
-          font-size: 0.95rem;
-          font-weight: 300;
-          color: #e0c3fc;
-          margin: 0.35rem 0;
+        .footerTagline {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.65rem;
+
+          color: var(--accent-gold-bright);
+          font-family: var(--font-display), serif;
+          font-size: clamp(0.9rem, 2vw, 1rem);
+          letter-spacing: 0.04em;
         }
 
-        .footer a {
-          color: #dcb9ff;
+        .footerTagline span {
+          color: var(--accent-gold);
+          font-size: 0.72rem;
+        }
+
+        .footerCredit,
+        .brandCredit {
+          margin-top: 0.9rem;
+
+          color: var(--text-secondary);
+          font-size: 0.84rem;
+          line-height: 1.7;
+        }
+
+        .brandCredit {
+          margin-top: 0.45rem;
+          color: var(--text-muted);
+        }
+
+        .footerDivider {
+          display: inline-block;
+          margin: 0 0.4rem;
+          color: var(--text-muted);
+        }
+
+        .footerCredit a,
+        .brandCredit a,
+        .visualCredit a {
+          color: var(--accent-gold-bright);
+          text-decoration: none;
+          transition: color 180ms ease;
+        }
+
+        .footerCredit a:hover,
+        .brandCredit a:hover,
+        .visualCredit a:hover {
+          color: var(--text-primary);
           text-decoration: underline;
-          font-weight: 400;
-          transition: color 0.3s ease;
         }
 
-        .footer a:hover {
-          color: #ffffff;
+        .visualCredit {
+          margin-top: 0.55rem;
+
+          color: var(--text-muted);
+          font-size: 0.75rem;
         }
 
-        @keyframes shimmer {
-          0% {
-            text-shadow: 0 0 5px rgba(217, 179, 255, 0.6);
+        @media (max-width: 560px) {
+          .footer {
+            margin-top: 3.5rem;
+            padding: 2rem 1rem;
           }
-          100% {
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+
+          .footerTagline {
+            display: block;
+            line-height: 1.7;
+          }
+
+          .footerTagline span {
+            margin: 0 0.25rem;
+          }
+
+          .footerDivider {
+            display: none;
+          }
+
+          .footerCredit,
+          .brandCredit {
+            max-width: 340px;
+            margin-inline: auto;
+          }
+
+          .brandCredit {
+            margin-top: 0.5rem;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .footerCredit a,
+          .brandCredit a,
+          .visualCredit a {
+            transition: none;
           }
         }
       `}</style>
-    </>
+    </footer>
   );
 }
