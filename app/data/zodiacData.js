@@ -1966,35 +1966,42 @@ const zodiacSigns = [
   
    
   
-  const relationshipTypes = ["heterosexual", "gay", "lesbian", "lgbtq"];
   
-  const compatibility = {};
-  
-  // This loop generates *all* sorted combinations
-  for (let i = 0; i < zodiacSigns.length; i++) {
-    for (let j = i; j < zodiacSigns.length; j++) {  // <-- changed from i + 1
-      const sign1 = zodiacSigns[i];
-      const sign2 = zodiacSigns[j];
-      const baseKey = `${sign1}-${sign2}`;
-  
-      compatibility[baseKey] =
-        existingCompatibility[baseKey] ||
-        `Compatibility information for ${sign1} and ${sign2} is not yet defined.`;
-  
-      for (const rel of relationshipTypes) {
-        const relKey = `${baseKey}-${rel}`;
-        if (existingCompatibility[relKey]) {
-          compatibility[relKey] = existingCompatibility[relKey];
-        }
-      }
+const compatibility = {};
+
+for (let i = 0; i < zodiacSigns.length; i++) {
+  for (let j = i; j < zodiacSigns.length; j++) {
+    const sign1 = zodiacSigns[i];
+    const sign2 = zodiacSigns[j];
+
+    const forwardKey = `${sign1}-${sign2}`;
+    const reverseKey = `${sign2}-${sign1}`;
+
+    const compatibilityDetails =
+      existingCompatibility[forwardKey] ??
+      existingCompatibility[reverseKey];
+
+    if (!compatibilityDetails) {
+      console.warn(
+        `Missing compatibility information for ${sign1} and ${sign2}`
+      );
+      continue;
+    }
+
+    compatibility[forwardKey] = compatibilityDetails;
+
+    if (sign1 !== sign2) {
+      compatibility[reverseKey] = compatibilityDetails;
     }
   }
-  
-  
-  const zodiacData = {
-    signs: zodiacSigns,
-    compatibility,
-  };
+}
+
+const zodiacData = {
+  signs: zodiacSigns,
+  compatibility,
+};
+
+
   
   export default zodiacData;
   
